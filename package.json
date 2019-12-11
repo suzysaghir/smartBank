@@ -1,0 +1,10 @@
+{
+	"dependencies": {
+		"@smartface/smartface.ui-editor": "6.15.1"
+	},
+	"marketplace-assets": {
+		"materialtextbox": "1.3.9",
+		"customerinfo": "1.0.0",
+		"registrationpage": "1.0.0"
+	}
+}

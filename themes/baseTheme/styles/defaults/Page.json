@@ -1,0 +1,20 @@
+{
+    ".page": {
+    "flexProps": {
+        "alignContent": "STRETCH",
+        "alignItems": "STRETCH",
+        "direction": "INHERIT",
+        "flexDirection": "COLUMN",
+        "flexWrap": "NOWRAP",
+        "justifyContent": "FLEX_START"
+    },
+    "backgroundColor": { 
+		"startColor": "#53D9F5",
+		"endColor": "#7AE8FF",
+		"direction": "VERTICAL"
+			},
+    "alphaColor": 100,
+    "orientation": "PORTRAIT"
+}
+}
+

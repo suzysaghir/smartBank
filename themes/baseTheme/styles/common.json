@@ -1,0 +1,51 @@
+{
+	".sf": {
+		"&-statusBar": {
+			"android": {
+				"color": "rgba( 83, 217, 245, 1 )"
+			}
+		},
+		"&-headerBar": {
+			"backgroundColor": "rgba( 83, 217, 245, 1 )"
+		},
+		"&-page": {
+			"backgroundColor": "rgba( 184, 233, 134, 1 )"
+		},
+		"&-button": {
+			"backgroundColor": {
+				"normal": "rgba( 55, 255, 185, 1 )",
+				"pressed": "rgba( 87, 202, 179, 1 )"
+			},
+			"borderRadius": 30,
+			"textColor": "rgba( 87, 202, 179, 1 )",
+			"minHeight": null,
+			"maxHeight": 60
+		},
+		"&-textView": {
+			"backgroundColor": "rgba( 255, 255, 255, 0 )",
+			"textColor": "rgba(255,255,255,1)",
+			"flexProps": {
+				"alignSelf": "CENTER"
+			},
+			"font": {
+				"family": "SFProText",
+				"style": "Regular",
+				"bold": false,
+				"italic": false,
+				"size": null
+			}
+		},
+		"&-pin": {
+			"borderColor": "rgba(255,255,255,1)",
+			"borderWidth": 3,
+			"borderRadius": 50,
+			"height": 30,
+			"width": 30,
+			"backgroundColor": "rgba( 255, 255, 255, 0 )",
+			"&-inside": {
+				"backgroundColor": "rgba(255,255,255,1)",
+				"padding": 4
+			}
+		}
+	}
+}

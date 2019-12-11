@@ -1,0 +1,12 @@
+{
+	".label": {
+		"textColor": "rgba( 87, 178, 203, 1 )",
+		"font": {
+			"size": 16,
+			"bold": false,
+			"italic": false,
+			"family": "SFProText",
+			"style": "Medium"
+		}
+	}
+}
