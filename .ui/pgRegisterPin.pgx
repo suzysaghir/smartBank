@@ -1,0 +1,244 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "8079-705b-db41-ecdb",
+			"initialized": true,
+			"props": {
+				"children": [
+					"3572-25b5-625c-db53",
+					"0962-656b-1a4f-8315",
+					"8e32-c248-f680-761f",
+					"2afa-17f8-518b-15d8",
+					"61ac-cc6e-350b-8b4c"
+				],
+				"name": "pgRegisterPin",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "3572-25b5-625c-db53",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "8079-705b-db41-ecdb"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "0962-656b-1a4f-8315",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "8079-705b-db41-ecdb"
+			},
+			"type": "HeaderBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "8e32-c248-f680-761f",
+			"props": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "8079-705b-db41-ecdb"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "CENTER",
+					"flexShrink": 1
+				},
+				"height": 42.626725473711566,
+				"image": "smartlogo.png",
+				"imageFillType": "STRETCH",
+				"width": 192.1448738344254
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "2afa-17f8-518b-15d8",
+			"props": {
+				"autoHeight": 19.11764705882353,
+				"autoWidth": 1.4705882352941175,
+				"children": [],
+				"html": "<br>",
+				"name": "tvpasscode",
+				"parent": "8079-705b-db41-ecdb",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 19.11764705882353,
+				"autoWidth": 1.4705882352941175,
+				"html": "<br>",
+				"text": "\n",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "61ac-cc6e-350b-8b4c",
+			"props": {
+				"children": [
+					"db37-95e8-7c28-4c25",
+					"d7e5-af7d-ea16-6609",
+					"bab9-9c8a-705b-1cf8",
+					"f4c3-089e-0e88-d4ef",
+					"747f-d3af-c034-d6ff"
+				],
+				"name": "flexContainer",
+				"parent": "8079-705b-db41-ecdb",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 1,
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "SPACE_AROUND",
+					"flexDirection": "ROW",
+					"alignSelf": "CENTER",
+					"positionType": "RELATIVE"
+				},
+				"height": 233.84615384615384,
+				"usePageVariable": true,
+				"width": 238.92308161808893
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "db37-95e8-7c28-4c25",
+			"props": {
+				"children": [
+					"9072-5ba4-407e-78a2"
+				],
+				"name": "flx1",
+				"parent": "61ac-cc6e-350b-8b4c"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "9072-5ba4-407e-78a2",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "db37-95e8-7c28-4c25"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "d7e5-af7d-ea16-6609",
+			"props": {
+				"children": [
+					"7665-4cc2-e123-af9b"
+				],
+				"name": "flx2",
+				"parent": "61ac-cc6e-350b-8b4c"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "7665-4cc2-e123-af9b",
+			"props": {
+				"children": [],
+				"name": "flexLayout2",
+				"parent": "d7e5-af7d-ea16-6609"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "bab9-9c8a-705b-1cf8",
+			"props": {
+				"children": [
+					"db54-8c46-78b0-2547"
+				],
+				"name": "flx3",
+				"parent": "61ac-cc6e-350b-8b4c"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "db54-8c46-78b0-2547",
+			"props": {
+				"children": [],
+				"name": "flexLayout3",
+				"parent": "bab9-9c8a-705b-1cf8"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "f4c3-089e-0e88-d4ef",
+			"props": {
+				"children": [
+					"3b93-3dc4-2104-ac1c"
+				],
+				"name": "flx4",
+				"parent": "61ac-cc6e-350b-8b4c"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "3b93-3dc4-2104-ac1c",
+			"props": {
+				"children": [],
+				"name": "flexLayout4",
+				"parent": "f4c3-089e-0e88-d4ef"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-imageView",
+			"hiddenComponent": true,
+			"id": "747f-d3af-c034-d6ff",
+			"props": {
+				"autoHeight": 218.46153846153845,
+				"autoWidth": 218.46153846153845,
+				"children": [],
+				"name": "imgBackground",
+				"parent": "61ac-cc6e-350b-8b4c"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"alpha": 0.51,
+				"autoHeight": 218.46153846153845,
+				"autoWidth": 218.46153846153845,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"image": "c_background.png",
+				"imageFillType": "MIDLEFT"
+			}
+		}
+	]
+}

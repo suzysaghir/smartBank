@@ -1,0 +1,158 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "3e6e-c438-2929-470d",
+			"initialized": true,
+			"props": {
+				"children": [
+					"9e9d-a765-4d6b-9d33",
+					"fc92-53f4-87b2-e1a3",
+					"1e6e-95c4-f10c-d2af",
+					"a9c7-c46e-05fb-3f80",
+					"0949-3c3b-1e62-ae87"
+				],
+				"name": "pgRegisterEmail",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "9e9d-a765-4d6b-9d33",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "3e6e-c438-2929-470d"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "fc92-53f4-87b2-e1a3",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "3e6e-c438-2929-470d"
+			},
+			"type": "HeaderBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "1e6e-95c4-f10c-d2af",
+			"props": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "3e6e-c438-2929-470d"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "CENTER"
+				},
+				"height": 42.626725473711566,
+				"image": "smartlogo.png",
+				"imageFillType": "STRETCH",
+				"width": 192.1448738344254
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "a9c7-c46e-05fb-3f80",
+			"props": {
+				"autoHeight": 20.3125,
+				"autoWidth": 266.1458492279053,
+				"children": [],
+				"html": "<font size=\"1\">What is your e-mail address?</font><br>",
+				"name": "tvEmailDetails",
+				"parent": "3e6e-c438-2929-470d",
+				"text": "What is your e-mail address?\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 20.3125,
+				"autoWidth": 266.1458492279053,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"family": "SFProText",
+					"style": "Medium",
+					"bold": false,
+					"italic": false
+				},
+				"height": null,
+				"html": "<font size=\"1\">What is your e-mail address?</font><br>",
+				"marginTop": 30,
+				"text": "What is your e-mail address?\n",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "0949-3c3b-1e62-ae87",
+			"props": {
+				"children": [
+					"cf3b-d7d6-20ad-3054"
+				],
+				"name": "flexLayout1",
+				"parent": "3e6e-c438-2929-470d",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_AROUND"
+				},
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "cf3b-d7d6-20ad-3054",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbEmail",
+				"parent": "0949-3c3b-1e62-ae87",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

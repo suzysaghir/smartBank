@@ -1,0 +1,203 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "1af3-7c3d-e207-d5ce",
+			"initialized": true,
+			"props": {
+				"children": [
+					"32ab-96cc-2a93-25b5",
+					"e640-489d-f868-9dbb",
+					"1590-562f-bbbe-6269",
+					"33ec-f634-0686-467b",
+					"0d47-96e8-117c-f6da",
+					"8363-3410-7af7-1ee8",
+					"65a2-dd05-6667-ab01"
+				],
+				"name": "pgRegisterPersonalDetails",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "32ab-96cc-2a93-25b5",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "1af3-7c3d-e207-d5ce"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "e640-489d-f868-9dbb",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "1af3-7c3d-e207-d5ce"
+			},
+			"type": "HeaderBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "1590-562f-bbbe-6269",
+			"props": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "1af3-7c3d-e207-d5ce"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "CENTER"
+				},
+				"height": 42.626725473711566,
+				"image": "smartlogo.png",
+				"imageFillType": "STRETCH",
+				"width": 192.1448738344254
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "33ec-f634-0686-467b",
+			"props": {
+				"autoHeight": 19.11764705882353,
+				"autoWidth": 270.2205882352941,
+				"children": [],
+				"html": "<font size=\"1\">What are your personal details?</font><br>",
+				"name": "tvPersonalDetails",
+				"parent": "1af3-7c3d-e207-d5ce",
+				"text": "What are your personal details?\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 19.11764705882353,
+				"autoWidth": 270.2205882352941,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"family": "SFProText",
+					"style": "Medium",
+					"bold": false,
+					"italic": false
+				},
+				"height": null,
+				"html": "<font size=\"1\">What are your personal details?</font><br>",
+				"marginTop": 30,
+				"text": "What are your personal details?\n",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "0d47-96e8-117c-f6da",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbFirstName",
+				"parent": "1af3-7c3d-e207-d5ce",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 48,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "8363-3410-7af7-1ee8",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbLastName",
+				"parent": "1af3-7c3d-e207-d5ce",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "65a2-dd05-6667-ab01",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbBirthDate",
+				"parent": "1af3-7c3d-e207-d5ce",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

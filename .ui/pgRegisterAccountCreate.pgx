@@ -1,0 +1,90 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "bb59-da6e-df17-233b",
+			"initialized": true,
+			"props": {
+				"children": [
+					"6e43-1581-556e-2ae1",
+					"c55b-988c-f176-32c8",
+					"5076-4ca3-2fc5-e4d6",
+					"7d6a-7ad2-5911-53f9"
+				],
+				"name": "pgRegisterAccountCreate",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingLeft": null,
+				"paddingRight": null
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "6e43-1581-556e-2ae1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "bb59-da6e-df17-233b"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "c55b-988c-f176-32c8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "bb59-da6e-df17-233b",
+				"title": "pgRegister"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgRegister"
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "5076-4ca3-2fc5-e4d6",
+			"props": {
+				"autoHeight": 428.125,
+				"children": [],
+				"name": "imageView1",
+				"parent": "bb59-da6e-df17-233b"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 428.125,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"image": "created_account.png",
+				"imageFillType": "ASPECTFILL",
+				"marginBottom": null,
+				"marginTop": null
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "7d6a-7ad2-5911-53f9",
+			"props": {
+				"autoHeight": 24.47916716337204,
+				"children": [],
+				"name": "button1",
+				"parent": "bb59-da6e-df17-233b",
+				"text": "Done"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 24.47916716337204,
+				"text": "Done"
+			}
+		}
+	]
+}
