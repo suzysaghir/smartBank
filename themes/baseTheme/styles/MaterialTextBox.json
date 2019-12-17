@@ -7,7 +7,7 @@
         "hintTextColor": "rgba( 87,178,203,1 )",
         "cursorColor": "rgba( 0,161,241,1 )",
         "selectedHintTextColor": "rgba( 87,178,203,1 )",
-        "lineColor": { 
+        "lineColor": {
             "normal": "rgba( 80,217,246,1 )",
             "selected": "rgba( 255,255,255,1 )"
         },

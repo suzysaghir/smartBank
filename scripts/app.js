@@ -16,4 +16,5 @@ Application.onUnhandledError = function(e) {
 require("sf-extension-utils");
 require("./theme");
 const router = require("./routes");
-router.push("/pages/pgRegisterPhoneNumber");
+// router.push("/pages/pgRegisterPhoneNumber");
+router.push("/pages/pgRegisterSummary");

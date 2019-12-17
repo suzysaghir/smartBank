@@ -41,6 +41,17 @@ const router = Router.of({
                 Route.of({
                     path: "/pages/pgRegisterPin",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPin"), headerBarStyle: { visible: true } })
+                }),                
+                Route.of({
+                    path: "/pages/pgRegisterActivationCode",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterActivationCode"), headerBarStyle: { visible: true } })
+                }),                Route.of({
+                    path: "/pages/pgRegisterActivationCode",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterActivationCode"), headerBarStyle: { visible: true } })
+                }),
+                Route.of({
+                    path: "/pages/pgRegisterSummary",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterSummary"), headerBarStyle: { visible: true } })
                 }),
             ]
         })

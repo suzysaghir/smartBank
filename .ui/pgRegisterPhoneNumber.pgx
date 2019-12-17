@@ -10,9 +10,7 @@
 					"d801-b329-832d-f0da",
 					"b0a4-7521-7732-7166",
 					"6e98-b1f6-eeaa-3383",
-					"c766-c31d-2c87-deb5",
-					"43a9-6e14-5e7e-8d4a",
-					"f543-0524-35a0-905f"
+					"56ec-09b5-75ed-6296"
 				],
 				"name": "pgRegisterPhoneNumber",
 				"orientation": "PORTRAIT",
@@ -74,8 +72,8 @@
 			"className": ".sf-textView",
 			"id": "6e98-b1f6-eeaa-3383",
 			"props": {
-				"autoHeight": 20.3125,
-				"autoWidth": 1.5625,
+				"autoHeight": 19.583333730697632,
+				"autoWidth": 1.25,
 				"children": [],
 				"html": "<br>",
 				"name": "tvPhoneNumber",
@@ -85,29 +83,47 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 20.3125,
-				"autoWidth": 1.5625,
+				"autoHeight": 19.583333730697632,
+				"autoWidth": 1.25,
+				"html": "<br>",
+				"text": "\n",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "56ec-09b5-75ed-6296",
+			"props": {
+				"children": [
+					"dece-f165-1c8a-4930",
+					"f5af-9b41-39e6-66d8"
+				],
+				"name": "flexLayout1",
+				"parent": "655d-dc09-13ed-ee80",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 0.2 )",
 				"flexProps": {
-					"flexShrink": 1
+					"flexGrow": 1,
+					"justifyContent": "CENTER",
+					"alignItems": "AUTO",
+					"alignContent": "CENTER"
 				},
 				"height": null,
-				"html": "<br>",
-				"maxLines": null,
-				"text": "\n",
-				"textAlignment": "MIDCENTER",
-				"usePageVariable": true,
-				"width": null
+				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".materialTextBox-wrapper",
 			"hiddenComponent": false,
-			"id": "c766-c31d-2c87-deb5",
+			"id": "dece-f165-1c8a-4930",
 			"initialized": false,
 			"props": {
 				"children": [],
-				"name": "mtbFirstName",
-				"parent": "655d-dc09-13ed-ee80",
+				"name": "mtbCountry",
+				"parent": "56ec-09b5-75ed-6296",
 				"usePageVariable": true
 			},
 			"source": {
@@ -119,28 +135,18 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"height": 48,
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
-				"width": null
+				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".materialTextBox-wrapper",
 			"hiddenComponent": false,
-			"id": "43a9-6e14-5e7e-8d4a",
+			"id": "f5af-9b41-39e6-66d8",
 			"initialized": false,
 			"props": {
 				"children": [],
-				"name": "mtbLastName",
-				"parent": "655d-dc09-13ed-ee80",
+				"name": "mtbPhoneNumber",
+				"parent": "56ec-09b5-75ed-6296",
 				"usePageVariable": true
 			},
 			"source": {
@@ -152,45 +158,6 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true
-			}
-		},
-		{
-			"className": ".materialTextBox-wrapper",
-			"hiddenComponent": false,
-			"id": "f543-0524-35a0-905f",
-			"initialized": false,
-			"props": {
-				"children": [],
-				"name": "mtbBirthDate",
-				"parent": "655d-dc09-13ed-ee80",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__modules__",
-				"moduleName": "Materialtextbox",
-				"modulePath": "materialtextbox",
-				"type": "Materialtextbox",
-				"id": "8fb2-10a8-12e4-9b45"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
 				"usePageVariable": true
 			}
 		}
