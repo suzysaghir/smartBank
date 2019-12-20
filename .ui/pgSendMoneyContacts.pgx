@@ -1,0 +1,264 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "8e8e-7b7a-0e4b-8e91",
+			"initialized": false,
+			"props": {
+				"children": [
+					"bb68-0b22-4c82-6ba1",
+					"eb92-b754-5a4b-3952",
+					"5dfc-cbb6-ffc0-d23f",
+					"b3b6-c020-0dc3-ffb0",
+					"d14a-f946-45fc-1a65",
+					"697e-8a81-04e4-0b6b",
+					"903d-0900-596f-9e0d",
+					"5e1f-a05d-edb0-8e72"
+				],
+				"name": "pgSendMoneyContacts",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"flexWrap": "NOWRAP"
+				},
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "bb68-0b22-4c82-6ba1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "8e8e-7b7a-0e4b-8e91"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "eb92-b754-5a4b-3952",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "8e8e-7b7a-0e4b-8e91"
+			},
+			"type": "HeaderBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "5dfc-cbb6-ffc0-d23f",
+			"props": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "8e8e-7b7a-0e4b-8e91"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 28.571428571428573,
+				"autoWidth": 125.39682539682539,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "FLEX_START"
+				},
+				"height": 42.626725473711566,
+				"image": "smartlogo.png",
+				"imageFillType": "STRETCH",
+				"left": 9.375,
+				"top": 17.1875,
+				"width": 192.1448738344254
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "b3b6-c020-0dc3-ffb0",
+			"props": {
+				"autoHeight": 24.47916716337204,
+				"autoWidth": 104.72005605697632,
+				"children": [],
+				"name": "btnThisMonth",
+				"parent": "8e8e-7b7a-0e4b-8e91",
+				"text": "This Month"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 24.47916716337204,
+				"autoWidth": 104.72005605697632,
+				"flexProps": {
+					"alignSelf": "FLEX_END"
+				},
+				"height": 46.87499701976776,
+				"text": "This Month",
+				"width": 134.4075083732605
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "d14a-f946-45fc-1a65",
+			"props": {
+				"autoHeight": 63.013698630136986,
+				"autoWidth": 156.21789383561645,
+				"children": [],
+				"html": "<span style=\"white-space: pre-wrap; background-color: rgba(255, 255, 255, 0);\">$200</span>",
+				"name": "tvAccountBalanceAmount",
+				"parent": "8e8e-7b7a-0e4b-8e91",
+				"text": "$200"
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 1,
+				"autoHeight": 63.013698630136986,
+				"autoWidth": 156.21789383561645,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"family": "SFProText",
+					"style": "Medium",
+					"bold": false,
+					"italic": false,
+					"size": 60
+				},
+				"height": null,
+				"html": "<span style=\"white-space: pre-wrap; background-color: rgba(255, 255, 255, 0);\">$200</span>",
+				"text": "$200",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "697e-8a81-04e4-0b6b",
+			"props": {
+				"autoHeight": 19.662921348314608,
+				"autoWidth": 127.89676966292134,
+				"children": [],
+				"html": "<span style=\"font-size: 16px; white-space: pre-wrap;\">Acoount Balance</span><br>",
+				"name": "tvAccountBalanceText",
+				"parent": "8e8e-7b7a-0e4b-8e91",
+				"text": "Acoount Balance\n"
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 19.662921348314608,
+				"autoWidth": 127.89676966292134,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"height": null,
+				"html": "<span style=\"font-size: 16px; white-space: pre-wrap;\">Acoount Balance</span><br>",
+				"text": "Acoount Balance\n",
+				"textColor": "rgba( 203, 244, 255, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "903d-0900-596f-9e0d",
+			"props": {
+				"children": [
+					"076e-423e-dcdb-dc8a",
+					"a77e-157d-b4f6-58af"
+				],
+				"name": "flexLayoutbtn",
+				"parent": "8e8e-7b7a-0e4b-8e91"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_AROUND",
+					"flexGrow": 1,
+					"positionType": "RELATIVE",
+					"flexWrap": "NOWRAP",
+					"alignContent": "CENTER"
+				}
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "076e-423e-dcdb-dc8a",
+			"props": {
+				"autoWidth": 107.53348214285715,
+				"children": [],
+				"name": "btnAddMoney",
+				"parent": "903d-0900-596f-9e0d",
+				"text": "Add Money"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoWidth": 107.53348214285715,
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"left": 0,
+				"text": "Add Money",
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "a77e-157d-b4f6-58af",
+			"props": {
+				"autoWidth": 118.01339285714286,
+				"children": [],
+				"name": "btnSendMoney",
+				"parent": "903d-0900-596f-9e0d",
+				"text": "Send Money"
+			},
+			"type": "Button",
+			"userProps": {
+				"autoWidth": 118.01339285714286,
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"left": 0,
+				"text": "Send Money",
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-listView",
+			"id": "5e1f-a05d-edb0-8e72",
+			"props": {
+				"children": [],
+				"itemCount": 4,
+				"name": "listView1",
+				"parent": "8e8e-7b7a-0e4b-8e91",
+				"rowHeight": 80,
+				"usePageVariable": true
+			},
+			"type": "ListView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"borderColor": "rgba( 242, 242, 242, 1 )",
+				"borderWidth": 1,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"itemCount": 4,
+				"right": -1,
+				"rowHeight": 80,
+				"usePageVariable": true
+			}
+		}
+	]
+}

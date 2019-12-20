@@ -13,7 +13,13 @@ function onShow(superOnShow) {
 }
 
 function onLoad(superOnLoad) {
-	superOnLoad();
+    superOnLoad();
+    const page = this; 
+    const router = this.router;
+
+    const {btnDone} = page;
+    console.log(btnDone);
+    btnDone.onpress = () => router.push("/pages/pgRegisterSummary");
 }
 
-module.exports = PgRegisterAccountCreate;
+module.exports = PgRegisterAccountCreate

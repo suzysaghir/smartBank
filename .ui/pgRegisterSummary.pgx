@@ -107,14 +107,14 @@
 			"className": ".sf-imageView",
 			"id": "e26b-8b24-6f46-bf32",
 			"props": {
-				"autoHeight": 220.96774193548387,
+				"autoHeight": 0,
 				"children": [],
 				"name": "imageView1",
 				"parent": "3a10-9f4f-ca02-5d54"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 220.96774193548387,
+				"autoHeight": 0,
 				"image": "summary.png",
 				"imageFillType": "STRETCH"
 			}

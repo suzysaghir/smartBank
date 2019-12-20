@@ -53,14 +53,14 @@
 			"className": ".sf-imageView",
 			"id": "5076-4ca3-2fc5-e4d6",
 			"props": {
-				"autoHeight": 428.125,
+				"autoHeight": 0,
 				"children": [],
 				"name": "imageView1",
 				"parent": "bb59-da6e-df17-233b"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 428.125,
+				"autoHeight": 0,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -74,16 +74,18 @@
 			"className": ".sf-button",
 			"id": "7d6a-7ad2-5911-53f9",
 			"props": {
-				"autoHeight": 24.47916716337204,
+				"autoHeight": 28.688524590163937,
 				"children": [],
-				"name": "button1",
+				"name": "btnDone",
 				"parent": "bb59-da6e-df17-233b",
-				"text": "Done"
+				"text": "Done",
+				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 24.47916716337204,
-				"text": "Done"
+				"autoHeight": 28.688524590163937,
+				"text": "Done",
+				"usePageVariable": true
 			}
 		}
 	]
