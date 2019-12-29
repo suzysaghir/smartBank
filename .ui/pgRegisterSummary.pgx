@@ -8,8 +8,8 @@
 				"children": [
 					"eddf-f463-a17a-e425",
 					"9cbe-741a-ac70-6f83",
-					"bea4-8523-d021-70b2",
 					"43d4-19dc-3893-31f4",
+					"bea4-8523-d021-70b2",
 					"e26b-8b24-6f46-bf32",
 					"391f-d6d1-79f2-f23a"
 				],
@@ -52,7 +52,33 @@
 				"parent": "3a10-9f4f-ca02-5d54"
 			},
 			"type": "HeaderBar",
-			"userProps": {}
+			"userProps": {
+				"visible": false
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "43d4-19dc-3893-31f4",
+			"props": {
+				"autoHeight": 21.27659574468085,
+				"autoWidth": 107.14760638297874,
+				"children": [],
+				"name": "btnThisMonth",
+				"parent": "3a10-9f4f-ca02-5d54",
+				"text": "  This Month  "
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 21.27659574468085,
+				"autoWidth": 107.14760638297874,
+				"flexProps": {
+					"alignSelf": "FLEX_END",
+					"positionType": "RELATIVE"
+				},
+				"marginLeft": 10,
+				"marginRight": 10,
+				"text": "  This Month  "
+			}
 		},
 		{
 			"className": ".sf-imageView",
@@ -72,51 +98,34 @@
 					"positionType": "ABSOLUTE",
 					"alignSelf": "FLEX_START"
 				},
-				"height": 42.626725473711566,
+				"height": 42.5531914893617,
 				"image": "smartlogo.png",
 				"imageFillType": "STRETCH",
-				"left": 9.375,
-				"top": 17.1875,
-				"width": 192.1448738344254
-			}
-		},
-		{
-			"className": ".sf-button",
-			"id": "43d4-19dc-3893-31f4",
-			"props": {
-				"autoHeight": 24.47916716337204,
-				"autoWidth": 104.72005605697632,
-				"children": [],
-				"name": "btnThisMonth",
-				"parent": "3a10-9f4f-ca02-5d54",
-				"text": "This Month"
-			},
-			"type": "Button",
-			"userProps": {
-				"autoHeight": 24.47916716337204,
-				"autoWidth": 104.72005605697632,
-				"flexProps": {
-					"alignSelf": "FLEX_END"
-				},
-				"height": 46.87499701976776,
-				"text": "This Month",
-				"width": 134.4075083732605
+				"left": 17.88563829787234,
+				"top": 49.10239361702128,
+				"width": 172.99593661693817
 			}
 		},
 		{
 			"className": ".sf-imageView",
 			"id": "e26b-8b24-6f46-bf32",
 			"props": {
-				"autoHeight": 0,
+				"autoHeight": 220.6896551724138,
 				"children": [],
 				"name": "imageView1",
-				"parent": "3a10-9f4f-ca02-5d54"
+				"parent": "3a10-9f4f-ca02-5d54",
+				"usePageVariable": true
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 0,
+				"autoHeight": 220.6896551724138,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
 				"image": "summary.png",
-				"imageFillType": "STRETCH"
+				"imageFillType": "STRETCH",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -126,7 +135,6 @@
 				"children": [
 					"7d3f-885f-885c-cd19"
 				],
-				"itemCount": 4,
 				"name": "listView1",
 				"parent": "3a10-9f4f-ca02-5d54",
 				"rowHeight": 80,
@@ -141,7 +149,6 @@
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
 				},
-				"itemCount": 4,
 				"right": -1,
 				"rowHeight": 80,
 				"usePageVariable": true

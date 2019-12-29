@@ -1,0 +1,153 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem",
+			"hiddenComponent": false,
+			"id": "3179-64b7-16eb-e9b7",
+			"initialized": true,
+			"props": {
+				"children": [
+					"2eca-6c5c-1733-80b2",
+					"8052-5b87-f652-ac25",
+					"2019-7d07-efaa-2363"
+				],
+				"name": "lstvSelect",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"height": 81.42857142857143,
+				"left": 13.122300632664414,
+				"top": 508.5388683881916,
+				"width": 385.80357142857144
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "2eca-6c5c-1733-80b2",
+			"props": {
+				"children": [
+					"ebfb-f7c9-ca38-15e9"
+				],
+				"name": "flexLayout1",
+				"parent": "3179-64b7-16eb-e9b7",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"borderRadius": 30,
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"alignItems": "STRETCH",
+					"justifyContent": "CENTER",
+					"flexGrow": null
+				},
+				"height": 60,
+				"marginLeft": 15,
+				"usePageVariable": true,
+				"width": 60
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "ebfb-f7c9-ca38-15e9",
+			"props": {
+				"autoHeight": 218.57142857142858,
+				"children": [],
+				"name": "imgIcon",
+				"parent": "2eca-6c5c-1733-80b2",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 218.57142857142858,
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"image": "app_icon.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"hiddenComponent": false,
+			"id": "8052-5b87-f652-ac25",
+			"props": {
+				"autoWidth": 1.6666666666666667,
+				"children": [],
+				"html": "<br>",
+				"name": "tvTitle",
+				"parent": "3179-64b7-16eb-e9b7",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoWidth": 1.6666666666666667,
+				"font": {
+					"family": "SFProText",
+					"style": "Regular",
+					"bold": false,
+					"italic": false,
+					"size": null
+				},
+				"html": "<br>",
+				"text": "\n",
+				"textColor": "rgba( 0, 0, 0, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "2019-7d07-efaa-2363",
+			"props": {
+				"autoHeight": 19.29824561403509,
+				"autoWidth": 1.7543859649122808,
+				"children": [],
+				"html": "<br>",
+				"name": "tvsign",
+				"parent": "3179-64b7-16eb-e9b7",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 19.29824561403509,
+				"autoWidth": 1.7543859649122808,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "CENTER"
+				},
+				"height": null,
+				"html": "<br>",
+				"text": "\n",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 140, 140, 140, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

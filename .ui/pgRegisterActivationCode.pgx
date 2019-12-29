@@ -197,8 +197,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "c371-6648-1b4a-dd05",
 			"props": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"children": [],
 				"html": "___",
 				"name": "tvLine6",
@@ -208,8 +208,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -263,8 +263,8 @@
 			"hiddenComponent": false,
 			"id": "594c-fbed-bac3-2a2e",
 			"props": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"children": [],
 				"html": "___",
 				"name": "tvLine5",
@@ -274,8 +274,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -327,8 +327,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "86f3-70cd-0e82-3398",
 			"props": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"children": [],
 				"html": "___",
 				"name": "tvLine4",
@@ -338,8 +338,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -391,8 +391,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "e90f-fd45-c1d9-7248",
 			"props": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"children": [],
 				"html": "___",
 				"name": "tvLine3",
@@ -402,8 +402,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -455,8 +455,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "8bb4-0e7f-c6ae-00e9",
 			"props": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"children": [],
 				"html": "___",
 				"name": "tvLine2",
@@ -466,8 +466,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -520,8 +520,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "36f0-a39f-892d-0f72",
 			"props": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"children": [],
 				"html": "___",
 				"name": "tvLine1",
@@ -531,8 +531,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.21428571428571,
-				"autoWidth": 32.738096373421804,
+				"autoHeight": 24.305555555555557,
+				"autoWidth": 28.53732638888889,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -598,11 +598,11 @@
 					"alignSelf": "CENTER",
 					"flexGrow": 29
 				},
-				"height": 400,
-				"left": 6.99999579067888,
-				"top": 41.37931034482759,
+				"height": 209.72222222222223,
+				"left": 4.222218195597331,
+				"top": 70.54597801632352,
 				"usePageVariable": true,
-				"width": 400
+				"width": 397.22222222222223
 			}
 		}
 	]

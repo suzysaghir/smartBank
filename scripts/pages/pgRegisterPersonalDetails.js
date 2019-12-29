@@ -105,7 +105,7 @@ function onLoad(superOnLoad) {
 	};
 	
 		// touch.addPressEvent(this.btnContinue, () => {
-  //      this.router.push("/pages/pgRegisterAddress", { message: "Hello World!" });
+        // this.router.push("/pages/pgRegisterAddress", { message: "Hello World!" });
 		// });
 		// btnContinue.onPress(Router.push('/pgRegisterAddress'));
 		// check the button 

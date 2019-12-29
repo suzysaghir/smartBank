@@ -26,32 +26,20 @@ function onShow(superOnShow) {
  
 function onLoad(superOnLoad) {
 	superOnLoad();
-}
-// 		_super(this);
-// 		this.onShow = onShow.bind(this, this.onShow.bind(this));
-// 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        		
-// 	}
-// );
-
-// function onShow(superOnShow) {
-// 	superOnShow();
-// }
-
-// var count = 0;
-// function onLoad(superOnLoad) {
-// 	superOnLoad();
-// 	const page = this;
-// 	const router = this.router;
-// 	const {tvEnterDigits, tvSendToPhone, btnResend, viewDigitCode, tbHidden,
-// 			tvDigit1, tvDigit2, tvDigit3, tvDigit4, tvDigit5, tvDigit6,
-// 		tvLine1, tvLine2, tvLine3, tvLine4, tvLine5, tvLine6 } = page;
+		const page = this;
+		const router = this.router;
+		const {tvEnterDigits, tvSendToPhone, btnResend, viewDigitCode, tbHidden,
+				tvDigit1, tvDigit2, tvDigit3, tvDigit4, tvDigit5, tvDigit6,
+		tvLine1, tvLine2, tvLine3, tvLine4, tvLine5, tvLine6 } = page;
 		
-// 		tvEnterDigits.text = "Enter the 6 digit code";
-// 		tvSendToPhone.text = "We’ve send it to your phone number";
-// 		tvSendToPhone.textColor = Color.create(203, 244, 255);
+		tvEnterDigits.text = "Enter the 6 digit code";
+		tvSendToPhone.text = "We’ve send it to your phone number";
+		tvSendToPhone.textColor = Color.create(203, 244, 255);
 	
-// 		btnResend.onPress = () => router.push("/pages/pgRegisterPersonalDetails");
+		btnResend.onPress = () => router.push("/pages/pgRegisterPersonalDetails");
+
+}
+
 // 		tbHidden.visible = false ;
 // 		// tbHidden.android.zIndex = -30;
 // 		// viewDigitCode.onTouchEnded = () => {

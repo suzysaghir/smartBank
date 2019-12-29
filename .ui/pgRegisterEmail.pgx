@@ -118,7 +118,8 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
-					"justifyContent": "SPACE_AROUND"
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
 				},
 				"usePageVariable": true
 			}
@@ -143,14 +144,6 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0,
 				"usePageVariable": true
 			}
 		}

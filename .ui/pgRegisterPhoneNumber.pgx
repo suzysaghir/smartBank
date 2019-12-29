@@ -104,15 +104,18 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"backgroundColor": "rgba( 208, 2, 27, 0.2 )",
+				"backgroundColor": "rgba( 208, 2, 27, 0 )",
 				"flexProps": {
-					"flexGrow": 1,
-					"justifyContent": "CENTER",
-					"alignItems": "AUTO",
-					"alignContent": "CENTER"
+					"flexGrow": null,
+					"justifyContent": "SPACE_AROUND",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"flexDirection": "ROW",
+					"alignSelf": "STRETCH"
 				},
 				"height": null,
-				"usePageVariable": true
+				"usePageVariable": true,
+				"width": null
 			}
 		},
 		{

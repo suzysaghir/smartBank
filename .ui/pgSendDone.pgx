@@ -1,0 +1,143 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "127f-5e89-3ad9-894f",
+			"initialized": true,
+			"props": {
+				"children": [
+					"b181-d9aa-0474-bd21",
+					"c5cc-601b-4d1d-b8f4",
+					"5533-34f0-5810-eabd",
+					"bb27-b5bb-462c-6825"
+				],
+				"name": "pgSendDone",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingLeft": null,
+				"paddingRight": null
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "b181-d9aa-0474-bd21",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "127f-5e89-3ad9-894f"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "c5cc-601b-4d1d-b8f4",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "127f-5e89-3ad9-894f",
+				"title": "Send Money"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Send Money"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5533-34f0-5810-eabd",
+			"props": {
+				"children": [
+					"9547-69d8-bddb-cab2",
+					"b2b7-64ad-2106-8b8a"
+				],
+				"name": "flexLayout2",
+				"parent": "127f-5e89-3ad9-894f"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"borderRadius": 200,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": null,
+				"marginTop": null,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "9547-69d8-bddb-cab2",
+			"props": {
+				"autoHeight": 39.6551724137931,
+				"children": [],
+				"name": "imgBackground",
+				"parent": "5533-34f0-5810-eabd",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 39.6551724137931,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH",
+					"positionType": "ABSOLUTE"
+				},
+				"height": null,
+				"image": "blue_background.png",
+				"imageFillType": "ASPECTFILL",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "b2b7-64ad-2106-8b8a",
+			"props": {
+				"autoHeight": 39.6551724137931,
+				"autoWidth": 43.10344827586207,
+				"children": [],
+				"name": "imgProfile",
+				"parent": "5533-34f0-5810-eabd"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 39.6551724137931,
+				"autoWidth": 43.10344827586207,
+				"borderRadius": 50,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"height": 79,
+				"image": "adam.png",
+				"imageFillType": "ASPECTFILL",
+				"width": 100
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "bb27-b5bb-462c-6825",
+			"props": {
+				"autoHeight": 30.172413793103452,
+				"children": [],
+				"name": "btnDone",
+				"parent": "127f-5e89-3ad9-894f",
+				"text": "Done",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 30.172413793103452,
+				"text": "Done",
+				"usePageVariable": true
+			}
+		}
+	]
+}

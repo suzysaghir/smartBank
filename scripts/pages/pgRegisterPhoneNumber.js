@@ -1,3 +1,4 @@
+const Font = require("sf-core/ui/font");
 const Color = require("sf-core/ui/color");
 const Button = require("sf-core/ui/button");
 const FlexLayout = require("sf-core/ui/flexlayout");
@@ -5,7 +6,7 @@ const extend = require('js-base/core/extend');
 const PgRegisterPhoneNumberDesign = require('ui/ui_pgRegisterPhoneNumber');
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 
-
+// how to display a material textbox in flexbox
 const PgRegisterPhoneNumber = extend(PgRegisterPhoneNumberDesign)(
 	function(_super) {
 		_super(this);
@@ -47,24 +48,45 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
-	const {tvPhoneNumber, mtbCountry, mtbPhoneNumber} = page;
+	const {tvPhoneNumber, flexLayout1, mtbCountry, mtbPhoneNumber} = page;
 
 	const tvStyle = getCombinedStyle(".sf-textView");
 	Object.assign(tvPhoneNumber, tvStyle);
 	tvPhoneNumber.text = "Welcome to Smartbank,\n	please register or login with your \n phone number to use app";
 	tvPhoneNumber.maxLines=5;
 	
-	mtbCountry.option = {
-		hint: "COUNTRY ",
-		backgroundColor: Color.BLACK,
-		height: 35
-		};
-	mtbPhoneNumber.option = {
-		hint: "PHONE NUMBER",
-		backgroundColor: Color.BLACK,
-		height: 35
-	};
+	mtbCountry.hint = "COUNTRY";
+	// mtbCountry.hintTextColor = Color.WHITE;
+	// mtbCountry.font = "SFProText";
+	// mtbCountry.minimumFontSize  = 100;
+	// mtbCountry.backgroundColor = Color.RED;
+	// mtbCountry.minWidth = 100;
+	mtbCountry.minHeight = 50;
 	
+	
+	mtbPhoneNumber.hint = "PHONE NUMBER";
+	// mtbPhoneNumber.hintTextColor = Color.WHITE;
+	// mtbPhoneNumber.font = "SFProText";
+	// mtbPhoneNumber.minimumFontSize  = 100;
+	// // mtbPhoneNumber.minWidth = 100;
+	mtbPhoneNumber.minHeight = 50;
+	
+
+	// mtbPhoneNumber.backgroundColor = Color.GREEN;
+
+	
+	// mtbCountry.option = {
+	// 	hint: "COUNTRY ",
+	// 	font: Font.create("SFProText", 16, "Medium"),
+	// 	backgroundColor: Color.BLACK,
+	// 	};
+		
+	// mtbPhoneNumber.option = {
+	// 	hint: "PHONE NUMBER",
+	// 	font: Font.create("SFProText", 16, "Medium"),
+	// 	backgroundColor: Color.BLACK,
+	// };
+
 
 }
 

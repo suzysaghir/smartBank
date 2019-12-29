@@ -1,0 +1,121 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "422d-e611-238d-a402",
+			"initialized": false,
+			"props": {
+				"children": [
+					"4df3-1bc1-26ca-23ce",
+					"4f76-febe-9bd2-36ac",
+					"7221-c799-bfc3-f80b",
+					"4f12-baab-ae2f-e130",
+					"bff4-0703-85ad-80e4",
+					"aa6a-f2c6-b75b-a083"
+				],
+				"name": "pgSend",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"paddingLeft": null,
+				"paddingRight": null
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "4df3-1bc1-26ca-23ce",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "422d-e611-238d-a402"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "4f76-febe-9bd2-36ac",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "422d-e611-238d-a402",
+				"title": "pgRegisterAccountCreate"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgRegisterAccountCreate"
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "7221-c799-bfc3-f80b",
+			"props": {
+				"autoHeight": 40,
+				"children": [],
+				"name": "imageView1",
+				"parent": "422d-e611-238d-a402"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 40,
+				"borderRadius": 500,
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"positionType": "RELATIVE"
+				},
+				"height": 500,
+				"image": "blue_background.png",
+				"imageFillType": "ASPECTFILL",
+				"marginBottom": null,
+				"marginLeft": -20,
+				"marginRight": -20,
+				"marginTop": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "4f12-baab-ae2f-e130",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "422d-e611-238d-a402"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button",
+			"id": "bff4-0703-85ad-80e4",
+			"props": {
+				"autoHeight": 26.923076923076923,
+				"children": [],
+				"name": "btnDone",
+				"parent": "422d-e611-238d-a402",
+				"text": "Done",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 26.923076923076923,
+				"text": "Done",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "aa6a-f2c6-b75b-a083",
+			"props": {
+				"children": [],
+				"name": "flexLayout2",
+				"parent": "422d-e611-238d-a402"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		}
+	]
+}

@@ -2,12 +2,15 @@
 	"components": [
 		{
 			"className": ".sf-listViewItem",
+			"hiddenComponent": false,
 			"id": "4eb6-cb4a-5fa1-a594",
 			"initialized": true,
 			"props": {
 				"children": [
 					"c2d1-2738-ad4b-ed2a",
 					"0196-08ed-8528-4a84",
+					"bca9-0ca2-cb77-fca8",
+					"53a4-2828-5039-9b9d",
 					"157a-4716-f265-0a46"
 				],
 				"name": "lstvSummary",
@@ -35,7 +38,8 @@
 					"90d5-247e-bdcc-8b3c"
 				],
 				"name": "flexLayout1",
-				"parent": "4eb6-cb4a-5fa1-a594"
+				"parent": "4eb6-cb4a-5fa1-a594",
+				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
@@ -51,6 +55,7 @@
 				},
 				"height": 60,
 				"marginLeft": 15,
+				"usePageVariable": true,
 				"width": 60
 			}
 		},
@@ -61,7 +66,8 @@
 				"autoHeight": 218.57142857142858,
 				"children": [],
 				"name": "imgIcon",
-				"parent": "c2d1-2738-ad4b-ed2a"
+				"parent": "c2d1-2738-ad4b-ed2a",
+				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
@@ -75,6 +81,7 @@
 				"height": null,
 				"image": "app_icon.png",
 				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
 				"width": null
 			}
 		},
@@ -83,19 +90,20 @@
 			"hiddenComponent": false,
 			"id": "0196-08ed-8528-4a84",
 			"props": {
-				"autoWidth": 56.205357142857146,
+				"autoWidth": 1.6666666666666667,
 				"children": [],
-				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Travle</span>",
+				"html": "<br>",
 				"name": "tvTitle",
 				"parent": "4eb6-cb4a-5fa1-a594",
-				"text": "Travle"
+				"text": "\n",
+				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoWidth": 56.205357142857146,
+				"autoWidth": 1.6666666666666667,
 				"font": {
 					"family": "SFProText",
 					"style": "Regular",
@@ -103,41 +111,107 @@
 					"italic": false,
 					"size": null
 				},
-				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">Travle</span>",
-				"text": "Travle",
+				"html": "<br>",
+				"text": "\n",
 				"textColor": "rgba( 0, 0, 0, 1 )",
-				"width": 100
+				"usePageVariable": true,
+				"width": null
 			}
 		},
 		{
 			"className": ".sf-textView",
-			"id": "157a-4716-f265-0a46",
+			"id": "bca9-0ca2-cb77-fca8",
 			"props": {
-				"autoHeight": 18.571428571428573,
-				"autoWidth": 38.49330357142858,
+				"autoHeight": 19.29824561403509,
+				"autoWidth": 1.7543859649122808,
 				"children": [],
-				"html": "$40",
-				"name": "tvPrice",
+				"html": "<br>",
+				"name": "tvsign",
 				"parent": "4eb6-cb4a-5fa1-a594",
-				"text": "$40"
+				"text": "\n",
+				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 18.571428571428573,
-				"autoWidth": 38.49330357142858,
+				"autoHeight": 19.29824561403509,
+				"autoWidth": 1.7543859649122808,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "CENTER"
 				},
-				"html": "$40",
-				"marginRight": 20,
-				"text": "$40",
+				"height": null,
+				"html": "<br>",
+				"text": "\n",
 				"textAlignment": "MIDRIGHT",
 				"textColor": "rgba( 140, 140, 140, 1 )",
-				"width": 50
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "53a4-2828-5039-9b9d",
+			"props": {
+				"autoHeight": 19.44444497426351,
+				"autoWidth": 14.652778307596844,
+				"children": [],
+				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
+				"name": "tvDollersign",
+				"parent": "4eb6-cb4a-5fa1-a594",
+				"text": "$"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 19.44444497426351,
+				"autoWidth": 14.652778307596844,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"height": null,
+				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
+				"text": "$",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 140, 140, 140, 1 )",
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "157a-4716-f265-0a46",
+			"props": {
+				"autoHeight": 18.852459016393443,
+				"autoWidth": 31.147540983606557,
+				"children": [],
+				"html": "",
+				"name": "tvPrice",
+				"parent": "4eb6-cb4a-5fa1-a594",
+				"text": "",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 18.852459016393443,
+				"autoWidth": 31.147540983606557,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"height": null,
+				"html": "",
+				"marginRight": 20,
+				"text": "",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 140, 140, 140, 1 )",
+				"usePageVariable": true,
+				"width": null
 			}
 		}
 	]

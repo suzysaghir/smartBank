@@ -37,7 +37,10 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;	 
-	const { mtbEmail, btnContinue } = page;
+	const { mtbEmail, btnContinue, tvEmailDetails } = page;
+
+	tvEmailDetails.text = "What is your e-mail address?";
+
 
 	mtbEmail.options = {
 		hint: "EMAL",

@@ -42,25 +42,26 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "bb59-da6e-df17-233b",
-				"title": "pgRegister"
+				"title": "pgRegisterAccountCreate"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "pgRegister"
+				"title": "pgRegisterAccountCreate",
+				"visible": false
 			}
 		},
 		{
 			"className": ".sf-imageView",
 			"id": "5076-4ca3-2fc5-e4d6",
 			"props": {
-				"autoHeight": 0,
+				"autoHeight": 427.58620689655174,
 				"children": [],
 				"name": "imageView1",
 				"parent": "bb59-da6e-df17-233b"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 0,
+				"autoHeight": 427.58620689655174,
 				"flexProps": {
 					"flexGrow": 1
 				},
@@ -74,7 +75,7 @@
 			"className": ".sf-button",
 			"id": "7d6a-7ad2-5911-53f9",
 			"props": {
-				"autoHeight": 28.688524590163937,
+				"autoHeight": 21.27659574468085,
 				"children": [],
 				"name": "btnDone",
 				"parent": "bb59-da6e-df17-233b",
@@ -83,7 +84,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 28.688524590163937,
+				"autoHeight": 21.27659574468085,
 				"text": "Done",
 				"usePageVariable": true
 			}

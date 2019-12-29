@@ -247,7 +247,7 @@
 		},
 		{
 			"className": ".sf-view",
-			"hiddenComponent": true,
+			"hiddenComponent": false,
 			"id": "2d1b-6764-bafc-2d9f",
 			"props": {
 				"children": [],
@@ -264,11 +264,11 @@
 					"alignSelf": "CENTER",
 					"flexGrow": 29
 				},
-				"height": 400,
-				"left": 8.724133721713363,
-				"top": 6.8965517241379315,
+				"height": 206.94444444444446,
+				"left": 35.1130227247874,
+				"top": 36.063218116760254,
 				"usePageVariable": true,
-				"width": 400
+				"width": 345.83333333333337
 			}
 		}
 	]

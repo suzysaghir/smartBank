@@ -1,0 +1,43 @@
+const Image = require("sf-core/ui/image");
+const extend = require('js-base/core/extend');
+const PgSendMoneyDesign = require('ui/ui_pgSendMoney');
+
+const PgSendMoney = extend(PgSendMoneyDesign)(
+	function(_super) {
+		_super(this);
+		this.onShow = onShow.bind(this, this.onShow.bind(this));
+		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+	}
+);
+
+function onShow(superOnShow) {
+	superOnShow();
+}
+
+function onLoad(superOnLoad) {
+	superOnLoad();
+	const page = this;
+	const {tvSelect, listView1} = page;
+	tvSelect.text = "SELECT CONTACT";
+
+var myDataSet = [{
+		title: 'John Doe',
+		image: Image.createFromFile("images://adam.png"),
+
+	}, {
+		title: 'Frank James',
+		image: Image.createFromFile("images://adam2.png"),
+
+	}];
+		listView1.itemCount =  myDataSet.length;
+
+	listView1.onRowBind = function(listViewItem, index) {
+		var iconImage = listViewItem.imgIcon;
+		var myTitle = listViewItem.tvTitle;
+
+		iconImage.image = myDataSet[index].image;
+		myTitle.text = myDataSet[index].title;
+		
+	}
+}
+module.exports = PgSendMoney;

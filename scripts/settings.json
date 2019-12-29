@@ -1,11 +1,12 @@
 {
 	"config": {
 		"theme": {
-			"currentTheme": "baseTheme",
+			"currentTheme": "smartBankTheme",
 			"baseTheme": "baseTheme",
 			"themes": [
 				"baseTheme",
-				"defaultTheme"
+				"defaultTheme",
+				"smartBankTheme"
 			]
 		},
 		"paths": {
