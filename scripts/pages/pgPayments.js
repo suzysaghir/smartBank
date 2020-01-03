@@ -17,7 +17,7 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
-	const router = this.router;
+	const router = require("routes");
 	const { tvMoney, tvAccountBalance, flexLayoutPayments, tvDate, tvAmount, listView1, btnSendMoney } = page;
 	
 	tvMoney.text = "$1230";
@@ -69,7 +69,7 @@ function onLoad(superOnLoad) {
             for (var j = 0; j <  rowData[i].length; j++) {
                 dataArray.push({isHeader : false, data : rowData[i][j]});
             }
-            console.log("dataArray", dataArray)
+            // console.log("dataArray", dataArray)
         }
     };
     pushDataToArray(_headerData,_rowData);
@@ -83,7 +83,7 @@ function onLoad(superOnLoad) {
         
 	listView1.onRowBind = function(listViewItem, index) {
         // var myLabelTitle = listViewItem.myLabelTitle;
-        console.log(dataArray[index])
+        // console.log(dataArray[index])
         if (dataArray[index].isHeader) {
         	var myFlexLayout = flexLayoutPayments;
         	var tvdate = tvDate;
@@ -112,7 +112,7 @@ function onLoad(superOnLoad) {
 	}
 
     listView1.onRowType = function(index){
-    	console.log(" the index is:  ",index)
+    	// console.log(" the index is:  ",index)
             if (dataArray[index].isHeader) {
                 return 2;
             }else{

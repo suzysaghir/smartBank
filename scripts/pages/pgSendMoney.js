@@ -17,18 +17,20 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
+	const router = this.router;
 	const {tvSelect, listView1} = page;
 	tvSelect.text = "SELECT CONTACT";
 
 var myDataSet = [{
 		title: 'John Doe',
 		image: Image.createFromFile("images://adam.png"),
+		imagePath: "images://adam.png"
 
 	}, {
 		title: 'Frank James',
 		image: Image.createFromFile("images://adam2.png"),
-
-	}];
+		imagePath: "images://adam2.png"
+		}];
 		listView1.itemCount =  myDataSet.length;
 
 	listView1.onRowBind = function(listViewItem, index) {
@@ -37,7 +39,20 @@ var myDataSet = [{
 
 		iconImage.image = myDataSet[index].image;
 		myTitle.text = myDataSet[index].title;
+	}	
+    listView1.onRowSelected = function(listViewItem, index) {
+			var myImage = myDataSet[index].image;
+			var myTitle = myDataSet[index].title;
 		
-	}
+			router.push("/pages/pgSendMoneyAmount/title,image", {title:myTitle, image:myImage})
+		
+        };
+
+	
+	
+	
+	
 }
+
+
 module.exports = PgSendMoney;

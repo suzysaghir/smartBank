@@ -1,3 +1,4 @@
+const Picker = require("sf-core/ui/picker");
 const Image = require("sf-core/ui/image");
 const extend = require('js-base/core/extend');
 const PgRegisterSummaryDesign = require('ui/ui_pgRegisterSummary');
@@ -17,7 +18,40 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
-	const {listView1} = page;
+	const {listView1, btnThisMonth}  = page;
+	
+	
+	var items = [
+	    "Yesterday",
+	    "Today",
+	    "This Month ",
+	    "Last Month"
+	];
+
+    var index = 0;
+	function btnPickOnPress() {
+        console.log(`Showing the picker with index ${index}`);
+        const itemPicker = new Picker({
+            items: items,
+            currentIndex: index //restores previous selection
+        });
+        itemPicker.show(okCallback, cancelCallback);
+    }
+
+	var okCallback = function(params) {
+    console.log('Selected index: ' + params.index);
+	}
+	var cancelCallback = function() {
+	    console.log('Canceled');
+	}
+	btnThisMonth.onPress = () =>{
+		console.log(`Showing the picker with index ${index}`);
+        const itemPicker = new Picker({
+            items: items,
+            currentIndex: index //restores previous selection
+        });
+        itemPicker.show(okCallback, cancelCallback);
+	} 
 
 	var myDataSet = [{
 		title: 'Travel',
@@ -48,10 +82,6 @@ function onLoad(superOnLoad) {
 		myPrice.text = myDataSet[index].price;
 		
 	}
-	
-	
-	
-	
 	
 }
 module.exports = PgRegisterSummary;

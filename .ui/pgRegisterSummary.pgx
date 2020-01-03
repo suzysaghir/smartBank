@@ -60,24 +60,26 @@
 			"className": ".sf-button",
 			"id": "43d4-19dc-3893-31f4",
 			"props": {
-				"autoHeight": 21.27659574468085,
-				"autoWidth": 107.14760638297874,
+				"autoHeight": 27.77777777777778,
+				"autoWidth": 142.32390873015873,
 				"children": [],
 				"name": "btnThisMonth",
 				"parent": "3a10-9f4f-ca02-5d54",
-				"text": "  This Month  "
+				"text": "  This Month  ",
+				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 21.27659574468085,
-				"autoWidth": 107.14760638297874,
+				"autoHeight": 27.77777777777778,
+				"autoWidth": 142.32390873015873,
 				"flexProps": {
 					"alignSelf": "FLEX_END",
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": 10,
 				"marginRight": 10,
-				"text": "  This Month  "
+				"text": "  This Month  ",
+				"usePageVariable": true
 			}
 		},
 		{

@@ -61,7 +61,8 @@
 			"className": ".sf-imageView",
 			"id": "ebfb-f7c9-ca38-15e9",
 			"props": {
-				"autoHeight": 218.57142857142858,
+				"autoHeight": 219.6078431372549,
+				"autoWidth": 219.6078431372549,
 				"children": [],
 				"name": "imgIcon",
 				"parent": "2eca-6c5c-1733-80b2",
@@ -72,13 +73,14 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 218.57142857142858,
+				"autoHeight": 219.6078431372549,
+				"autoWidth": 219.6078431372549,
 				"flexProps": {
-					"alignSelf": "STRETCH"
+					"alignSelf": "CENTER"
 				},
 				"height": null,
 				"image": "app_icon.png",
-				"imageFillType": "ASPECTFIT",
+				"imageFillType": "ASPECTFILL",
 				"usePageVariable": true,
 				"width": null
 			}
@@ -110,6 +112,7 @@
 					"size": null
 				},
 				"html": "<br>",
+				"marginLeft": 9,
 				"text": "\n",
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"usePageVariable": true,

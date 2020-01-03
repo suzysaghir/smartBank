@@ -23,13 +23,15 @@ require("./theme");
 const router = require("./routes");
 
 
-router.push("/pages/pgRegisterPhoneNumber");
-// router.push("/pages/pgRegisterEmail");
+// router.push("/pages/pgRegisterPhoneNumber");
+// router.push("/pages/pgRegisterAccountCreate");
 // router.push("/pages/pgRegisterSummary");
 // router.push("/pages/pgSendDone");
-// router.push("/pages/pgSendMoney");
+// router.push("/pages/pgSendMoneyAmount");
 // router.push("/pages/pgPayments");
 // router.push("/tabs");
+router.push("/pages/pgSendMoney");
+
 
 
 

@@ -75,8 +75,22 @@ const router = Router.of({
                     path: "/pages/pgSendMoney",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendMoney"), headerBarStyle: { visible: true } })
                 }),                
-           
-        	        
+               Route.of({
+                    path: "/pages/pgSendMoneyAmount/:title,image",
+                    build: buildExtender({ getPageClass: () => require("pages/pgSendMoneyAmount"), headerBarStyle: { visible: true } })
+                }),                
+               Route.of({
+                    path: "/pages/pgSend",
+                    build: buildExtender({ getPageClass: () => require("pages/pgSend"), headerBarStyle: { visible: true } })
+                }),   
+               Route.of({
+                    path: "/pages/pgSendMoneyReview",
+                    build: buildExtender({ getPageClass: () => require("pages/pgSendMoneyReview"), headerBarStyle: { visible: true } })
+                }),   
+              Route.of({
+                    path: "/pages/pgSendMoneyAmount",
+                    build: buildExtender({ getPageClass: () => require("pages/pgSendMoneyAmount"), headerBarStyle: { visible: true } })
+                }),  
                 ]
             }),     BottomTabBarRouter.of({
                     path: "/tabs",

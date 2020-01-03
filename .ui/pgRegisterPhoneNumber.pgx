@@ -10,14 +10,19 @@
 					"d801-b329-832d-f0da",
 					"b0a4-7521-7732-7166",
 					"6e98-b1f6-eeaa-3383",
-					"56ec-09b5-75ed-6296"
+					"56ec-09b5-75ed-6296",
+					"aa8b-53b0-4f4a-20fa"
 				],
 				"name": "pgRegisterPhoneNumber",
 				"orientation": "PORTRAIT",
 				"parent": null
 			},
 			"type": "Page",
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN"
+				}
+			},
 			"version": "6.15.1"
 		},
 		{
@@ -65,6 +70,7 @@
 				"height": 42.626725473711566,
 				"image": "smartlogo.png",
 				"imageFillType": "STRETCH",
+				"marginTop": 20,
 				"width": 192.1448738344254
 			}
 		},
@@ -86,6 +92,7 @@
 				"autoHeight": 19.583333730697632,
 				"autoWidth": 1.25,
 				"html": "<br>",
+				"marginTop": 20,
 				"text": "\n",
 				"usePageVariable": true
 			}
@@ -95,8 +102,8 @@
 			"id": "56ec-09b5-75ed-6296",
 			"props": {
 				"children": [
-					"dece-f165-1c8a-4930",
-					"f5af-9b41-39e6-66d8"
+					"47e9-7753-1694-fa5e",
+					"bc0f-f219-88b2-6cba"
 				],
 				"name": "flexLayout1",
 				"parent": "655d-dc09-13ed-ee80",
@@ -113,20 +120,39 @@
 					"flexDirection": "ROW",
 					"alignSelf": "STRETCH"
 				},
-				"height": null,
+				"height": 159.23529730902777,
 				"usePageVariable": true,
-				"width": null
+				"width": 377.23810105096726
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "47e9-7753-1694-fa5e",
+			"props": {
+				"children": [
+					"acc6-8b79-781a-361d"
+				],
+				"name": "flxCountry",
+				"parent": "56ec-09b5-75ed-6296"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				},
+				"maxWidth": 100
 			}
 		},
 		{
 			"className": ".materialTextBox-wrapper",
 			"hiddenComponent": false,
-			"id": "dece-f165-1c8a-4930",
+			"id": "acc6-8b79-781a-361d",
 			"initialized": false,
 			"props": {
 				"children": [],
 				"name": "mtbCountry",
-				"parent": "56ec-09b5-75ed-6296",
+				"parent": "47e9-7753-1694-fa5e",
 				"usePageVariable": true
 			},
 			"source": {
@@ -138,18 +164,44 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "bc0f-f219-88b2-6cba",
+			"props": {
+				"children": [
+					"db2b-de75-7ccd-aafd"
+				],
+				"name": "flxNumber",
+				"parent": "56ec-09b5-75ed-6296"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				}
 			}
 		},
 		{
 			"className": ".materialTextBox-wrapper",
 			"hiddenComponent": false,
-			"id": "f5af-9b41-39e6-66d8",
+			"id": "db2b-de75-7ccd-aafd",
 			"initialized": false,
 			"props": {
 				"children": [],
 				"name": "mtbPhoneNumber",
-				"parent": "56ec-09b5-75ed-6296",
+				"parent": "bc0f-f219-88b2-6cba",
 				"usePageVariable": true
 			},
 			"source": {
@@ -161,6 +213,33 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "aa8b-53b0-4f4a-20fa",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvChangeNum",
+				"parent": "655d-dc09-13ed-ee80",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "STRETCH"
+				},
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"usePageVariable": true
 			}
 		}

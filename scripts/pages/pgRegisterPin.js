@@ -46,7 +46,7 @@ function onLoad(superOnLoad) {
 	superOnLoad();
 	
 	const page = this;	 
-	const { tvpasscode, viewRegPin, tbHidden } = page;
+	const { tvpasscode, viewRegPin, tbHidden, tvAgreed } = page;
 
 	
 	const tvStyle = getCombinedStyle(".sf-textView");
@@ -67,7 +67,8 @@ function onLoad(superOnLoad) {
 		 	
 		 	
 		 };
-		
+	tvAgreed.text = "By entering your passcode, you agree to our\n Terms of Services"	;
+	tvAgreed.maxLines=3;
 
 }
 

@@ -8,8 +8,8 @@
 				"children": [
 					"b181-d9aa-0474-bd21",
 					"c5cc-601b-4d1d-b8f4",
-					"5533-34f0-5810-eabd",
-					"bb27-b5bb-462c-6825"
+					"3d1b-4da5-4b87-6ce4",
+					"608a-ac39-2349-b4ed"
 				],
 				"name": "pgSendDone",
 				"orientation": "PORTRAIT",
@@ -51,92 +51,206 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "5533-34f0-5810-eabd",
+			"id": "3d1b-4da5-4b87-6ce4",
 			"props": {
 				"children": [
-					"9547-69d8-bddb-cab2",
-					"b2b7-64ad-2106-8b8a"
+					"de8e-d46d-18d4-1fc4",
+					"2049-bd87-1481-890a",
+					"2110-b910-4913-3309",
+					"1270-1ece-6778-f3e4"
 				],
-				"name": "flexLayout2",
-				"parent": "127f-5e89-3ad9-894f"
+				"name": "flexLayout1",
+				"parent": "127f-5e89-3ad9-894f",
+				"usePageVariable": true
 			},
 			"type": "FlexLayout",
 			"userProps": {
 				"borderRadius": 200,
 				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "CENTER",
 					"justifyContent": "CENTER"
 				},
-				"height": null,
-				"marginTop": null,
-				"width": null
+				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-imageView",
-			"id": "9547-69d8-bddb-cab2",
+			"id": "de8e-d46d-18d4-1fc4",
 			"props": {
-				"autoHeight": 39.6551724137931,
+				"autoHeight": 39.34426229508197,
+				"autoWidth": 39.34426229508197,
 				"children": [],
-				"name": "imgBackground",
-				"parent": "5533-34f0-5810-eabd",
+				"name": "imgvBackground",
+				"parent": "3d1b-4da5-4b87-6ce4",
 				"usePageVariable": true
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 39.6551724137931,
+				"autoHeight": 39.34426229508197,
+				"autoWidth": 39.34426229508197,
 				"flexProps": {
 					"flexGrow": 1,
-					"alignSelf": "STRETCH",
+					"alignSelf": "CENTER",
 					"positionType": "ABSOLUTE"
 				},
-				"height": null,
+				"height": 10000,
 				"image": "blue_background.png",
 				"imageFillType": "ASPECTFILL",
-				"usePageVariable": true
+				"marginLeft": -20,
+				"marginRight": -20,
+				"usePageVariable": true,
+				"width": 10000
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "2049-bd87-1481-890a",
+			"props": {
+				"children": [
+					"c6e1-a971-85f9-54b7",
+					"a7a8-42f9-1154-3e55"
+				],
+				"name": "flexLayout1",
+				"parent": "3d1b-4da5-4b87-6ce4"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"flexGrow": null
+				},
+				"height": 120,
+				"width": 120
 			}
 		},
 		{
 			"className": ".sf-imageView",
-			"id": "b2b7-64ad-2106-8b8a",
+			"id": "c6e1-a971-85f9-54b7",
 			"props": {
-				"autoHeight": 39.6551724137931,
-				"autoWidth": 43.10344827586207,
 				"children": [],
-				"name": "imgProfile",
-				"parent": "5533-34f0-5810-eabd"
+				"name": "imgProfile2",
+				"parent": "2049-bd87-1481-890a",
+				"usePageVariable": true
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 39.6551724137931,
-				"autoWidth": 43.10344827586207,
 				"borderRadius": 50,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
-				"height": 79,
-				"image": "adam.png",
+				"height": 100,
 				"imageFillType": "ASPECTFILL",
+				"usePageVariable": true,
 				"width": 100
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "bb27-b5bb-462c-6825",
+			"className": ".sf-imageView",
+			"id": "a7a8-42f9-1154-3e55",
 			"props": {
-				"autoHeight": 30.172413793103452,
+				"autoHeight": 35.9375,
+				"autoWidth": 35.9375,
 				"children": [],
-				"name": "btnDone",
-				"parent": "127f-5e89-3ad9-894f",
-				"text": "Done",
+				"name": "imgIcon",
+				"parent": "2049-bd87-1481-890a",
 				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 35.9375,
+				"autoWidth": 35.9375,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "CENTER"
+				},
+				"height": 100,
+				"image": "tick_icon.png",
+				"imageFillType": "NORMAL",
+				"usePageVariable": true,
+				"width": 100
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "2110-b910-4913-3309",
+			"props": {
+				"autoHeight": 63.333333333333336,
+				"autoWidth": 3.3333333333333335,
+				"children": [],
+				"html": "<br>",
+				"name": "tvAmount",
+				"parent": "3d1b-4da5-4b87-6ce4",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 63.333333333333336,
+				"autoWidth": 3.3333333333333335,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"bold": true,
+					"size": 60,
+					"style": "Semibold",
+					"family": "SFProText",
+					"italic": false
+				},
+				"height": null,
+				"html": "<br>",
+				"text": "\n",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "1270-1ece-6778-f3e4",
+			"props": {
+				"autoHeight": 22.65625,
+				"autoWidth": 1.5625,
+				"children": [],
+				"html": "<br>",
+				"name": "tvSend",
+				"parent": "3d1b-4da5-4b87-6ce4",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 22.65625,
+				"autoWidth": 1.5625,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"family": "SFProText",
+					"style": "Medium",
+					"italic": false,
+					"size": null,
+					"bold": false
+				},
+				"height": null,
+				"html": "<br>",
+				"text": "\n",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "608a-ac39-2349-b4ed",
+			"props": {
+				"autoHeight": 27.34375,
+				"children": [],
+				"name": "button1",
+				"parent": "127f-5e89-3ad9-894f",
+				"text": "Done"
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 30.172413793103452,
-				"text": "Done",
-				"usePageVariable": true
+				"autoHeight": 27.34375,
+				"text": "Done"
 			}
 		}
 	]

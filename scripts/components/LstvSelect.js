@@ -1,3 +1,4 @@
+const Image = require("sf-core/ui/image");
 const extend = require('js-base/core/extend');
 const LstvSelectDesign = require('library/LstvSelect');
 
@@ -7,6 +8,7 @@ const LstvSelect = extend(LstvSelectDesign)(
 		// Initalizes super class for this scope
 		_super(this, props);
 		this.pageName = pageName;
+		
 	}
 );
 
