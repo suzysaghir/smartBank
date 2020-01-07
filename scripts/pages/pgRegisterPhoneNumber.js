@@ -1,4 +1,7 @@
-const Font = require("sf-core/ui/font");
+const KeyboardType = require("sf-core/ui/keyboardtype");
+const Screen = require("sf-core/device/screen");
+const ImageView = require("sf-core/ui/imageview");
+	const Font = require("sf-core/ui/font");
 const Color = require("sf-core/ui/color");
 const Button = require("sf-core/ui/button");
 const FlexLayout = require("sf-core/ui/flexlayout");
@@ -49,17 +52,29 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
-	const {tvPhoneNumber, flexLayout1, mtbCountry, mtbPhoneNumber, tvChangeNum} = page;
+	const {img_background, tvPhoneNumber, flexLayout1, mtbCountry, mtbPhoneNumber, tvChangeNum} = page;
 
+	img_background.height = Screen.height;
+	img_background.width = Screen.width;
+	
 	const tvStyle = getCombinedStyle(".sf-textView");
 	Object.assign(tvPhoneNumber, tvStyle);
 	tvPhoneNumber.text = "Welcome to Smartbank,\n	please register or login with your \n phone number to use app";
 	tvPhoneNumber.maxLines = 5;
+	
+	var imgShow = new ImageView({
+		image: "images://phone_number_icon_arrow.png",
+		height:10,
+		width:10
+	});
 	mtbCountry.options = {
 		hint: "COUNTRY",
+		rightLayout:{view: imgShow, width: 15},
+		keyboardType: KeyboardType.NUMBER,
 	};
 	mtbPhoneNumber.options = {
 		hint: "PHONE NUMBER",
+		keyboardType: KeyboardType.NUMBER,
 	};
 	
 	// mtbCountry.hint = "COUNTRY";
@@ -98,13 +113,20 @@ function onLoad(superOnLoad) {
 	// 	// backgroundColor: Color.GREEN,
 	// };
 
-	var attributeString = new AttributedString();
-	attributeString.string = "Changed your phone number?\n";
-	attributeString.foregroundColor = Color.create("#cbf4ff");
-    attributeString.underline = true;
-    attributeString.ios.underlineColor = Color.create("#cbf4ff");
-	tvChangeNum.attributedText = [attributeString];
-
+	// var attributeString = new AttributedString();
+	// let attributeString = new AttributedString({
+	// 	string: "Changed your phone number?\n",
+	// 	underline: true,
+	// 	foregroundColor: Color.create("#cbf4ff")
+	// });
+	
+	
+	// attributeString.string = "Changed your phone number?\n";
+	// attributeString.foregroundColor = Color.create("#cbf4ff");
+ //   attributeString.ios.underline = true;
+    // attributeString.ios.underlineColor = Color.create("#cbf4ff");
+	// tvChangeNum.attributedText = [attributeString];
+		tvChangeNum.text =  "Changed your phone number?\n"; 
 }
 
 module.exports = PgRegisterPhoneNumber;

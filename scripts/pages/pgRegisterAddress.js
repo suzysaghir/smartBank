@@ -66,7 +66,7 @@ function onLoad(superOnLoad) {
 		}
 	};
 
-
+	tvAddressDetails.text = "What are your home address?";
 	
 	
 	

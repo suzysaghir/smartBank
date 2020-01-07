@@ -49,28 +49,17 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "0be3-c9fa-1b82-dffe",
 			"props": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
+				"autoHeight": 0,
 				"children": [],
 				"name": "imgvSmartbankLogo",
 				"parent": "645a-f4d6-6461-2e2c"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "CENTER",
-					"flexShrink": 1
-				},
-				"height": 42.626725473711566,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
-				"width": 192.1448738344254
+				"autoHeight": 0
 			}
 		},
 		{
@@ -580,7 +569,7 @@
 			"className": ".sf-button",
 			"id": "a77a-3fe6-614b-bd17",
 			"props": {
-				"autoHeight": 27.77777777777778,
+				"autoHeight": 21.25,
 				"children": [],
 				"name": "btnResend",
 				"parent": "645a-f4d6-6461-2e2c",
@@ -589,7 +578,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 27.77777777777778,
+				"autoHeight": 21.25,
 				"backgroundColor": "rgba( 158, 238, 255, 1 )",
 				"text": "Resend",
 				"textColor": "rgba( 129, 215, 238, 1 )",

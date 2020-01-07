@@ -127,6 +127,19 @@
 			},
 			"paddingLeft": 20,
 			"paddingRight": 20
+		},
+		"&-img": {
+			"&-smartbank": {
+				"flexProps": {
+					"positionType": "RELATIVE",
+					"alignSelf": "CENTER"
+				},
+				"imageFillType": "ASPECTFILL",
+				"image": "logo_smartbank.png",
+				"marginTop": 30,
+				"marginBottom": 30,
+				"height": null
+			}
 		}
 	}
 }

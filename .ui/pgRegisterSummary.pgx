@@ -60,8 +60,8 @@
 			"className": ".sf-button",
 			"id": "43d4-19dc-3893-31f4",
 			"props": {
-				"autoHeight": 27.77777777777778,
-				"autoWidth": 142.32390873015873,
+				"autoHeight": 21.25,
+				"autoWidth": 107.44140625,
 				"children": [],
 				"name": "btnThisMonth",
 				"parent": "3a10-9f4f-ca02-5d54",
@@ -70,8 +70,8 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 27.77777777777778,
-				"autoWidth": 142.32390873015873,
+				"autoHeight": 21.25,
+				"autoWidth": 107.44140625,
 				"flexProps": {
 					"alignSelf": "FLEX_END",
 					"positionType": "RELATIVE"
@@ -83,7 +83,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "bea4-8523-d021-70b2",
 			"props": {
 				"autoHeight": 28.571428571428573,
@@ -97,15 +97,11 @@
 				"autoHeight": 28.571428571428573,
 				"autoWidth": 125.39682539682539,
 				"flexProps": {
-					"positionType": "ABSOLUTE",
-					"alignSelf": "FLEX_START"
+					"alignSelf": "FLEX_START",
+					"positionType": "ABSOLUTE"
 				},
-				"height": 42.5531914893617,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
 				"left": 17.88563829787234,
-				"top": 49.10239361702128,
-				"width": 172.99593661693817
+				"top": 49.10239361702128
 			}
 		},
 		{

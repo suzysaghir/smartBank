@@ -90,11 +90,13 @@ function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this 
 	const { flexLayout1, imgBackground, imgProfile2, imgIcon, tvAmount, tvSend } = page;
-	 
-	 let radius = imgProfile2.borderRadius;
-	// imgProfile = imgProfile.android.round(50);
-    // imgProfile2 = imgProfile2.android.round(radius);
-	imgProfile2.image = Image.createFromFile("images://adam.png").android.round(radius);
+
+	var img_profile =  page.routeData.image;
+	var title_profile =  page.routeData.title;
+	var profile_amount = page.routeData.amount;
+    
+	let radius = imgProfile2.borderRadius;
+	imgProfile2.image = img_profile.android.round(radius);
 	var imgPost = imgProfile2.getScreenLocation();
 	imgIcon.right = imgPost.x - 30;
 	imgIcon.bottom = imgPost.y - 5;
@@ -114,8 +116,8 @@ function onLoad(superOnLoad) {
  //       });
 	        
 	// flexLayout1.addChild(imgvProfile); 
-	tvAmount.text = "$233";
-	tvSend.text = "Sent to John Doe";
+	tvAmount.text = profile_amount.text;
+	tvSend.text = "Sent to " + title_profile;
 
 }
 

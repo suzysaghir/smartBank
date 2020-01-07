@@ -47,7 +47,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "1e6e-95c4-f10c-d2af",
 			"props": {
 				"autoHeight": 28.571428571428573,
@@ -59,23 +59,15 @@
 			"type": "ImageView",
 			"userProps": {
 				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "CENTER"
-				},
-				"height": 42.626725473711566,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
-				"width": 192.1448738344254
+				"autoWidth": 125.39682539682539
 			}
 		},
 		{
 			"className": ".sf-textView",
 			"id": "a9c7-c46e-05fb-3f80",
 			"props": {
-				"autoHeight": 20.3125,
-				"autoWidth": 266.1458492279053,
+				"autoHeight": 21.484375,
+				"autoWidth": 475.17578125,
 				"children": [],
 				"html": "<font size=\"1\">What is your e-mail address?</font><br>",
 				"name": "tvEmailDetails",
@@ -85,8 +77,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 20.3125,
-				"autoWidth": 266.1458492279053,
+				"autoHeight": 21.484375,
+				"autoWidth": 475.17578125,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},

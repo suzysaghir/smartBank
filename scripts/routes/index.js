@@ -90,7 +90,25 @@ const router = Router.of({
               Route.of({
                     path: "/pages/pgSendMoneyAmount",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendMoneyAmount"), headerBarStyle: { visible: true } })
+                }),
+        Route.of({
+                    path: "/pages/pgPayments_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgPayments_1"), headerBarStyle: { visible: true } })
+                }),      
+        Route.of({
+                    path: "/pages/pgRegisterPhoneNumber_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterPhoneNumber_1"), headerBarStyle: { visible: true } })
+                }),
+        Route.of({
+                    path: "/pages/pgRegisterPin_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterPin_1"), headerBarStyle: { visible: true } })
                 }),  
+        Route.of({
+                    path: "/pages/pgRegisterActivationCode_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterActivationCode_1"), headerBarStyle: { visible: true } })
+                }), 
+
+                
                 ]
             }),     BottomTabBarRouter.of({
                     path: "/tabs",
@@ -103,11 +121,11 @@ const router = Router.of({
                     },
                     backgroundColor: Color.create("#f8f8f8")
                 }),
-            items: () => [{title: "Accounts", icon: Image.createFromFile("images://btb_account.png")},
-                          {title: "Summary", icon: Image.createFromFile("images://btb_summary.png") },
-                          {title: "Payments", icon: Image.createFromFile("images://btb_payments.png")},
-                          { title: "Cards", icon: Image.createFromFile("images://btb_cards.png")},
-                          { title: "My Profiles", icon: Image.createFromFile("images://btb_my_profile.png")}],
+            items: () => [{title: "Accounts", icon: Image.createFromFile("images://icon_search.png")},
+                          {title: "Summary", icon: Image.createFromFile("images://icon_search.png") },
+                          {title: "Payments", icon: Image.createFromFile("images://icon_search.png")},
+                          { title: "Cards", icon: Image.createFromFile("images://icon_search.png")},
+                          { title: "My Profiles", icon: Image.createFromFile("images://icon_search.png")}],
         
         
         	routes: [

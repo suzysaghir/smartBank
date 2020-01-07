@@ -47,7 +47,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "1590-562f-bbbe-6269",
 			"props": {
 				"autoHeight": 28.571428571428573,
@@ -59,23 +59,15 @@
 			"type": "ImageView",
 			"userProps": {
 				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "CENTER"
-				},
-				"height": 42.626725473711566,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
-				"width": 192.1448738344254
+				"autoWidth": 125.39682539682539
 			}
 		},
 		{
 			"className": ".sf-textView",
 			"id": "33ec-f634-0686-467b",
 			"props": {
-				"autoHeight": 19.11764705882353,
-				"autoWidth": 270.2205882352941,
+				"autoHeight": 21.484375,
+				"autoWidth": 516.484375,
 				"children": [],
 				"html": "<font size=\"1\">What are your personal details?</font><br>",
 				"name": "tvPersonalDetails",
@@ -85,8 +77,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.11764705882353,
-				"autoWidth": 270.2205882352941,
+				"autoHeight": 21.484375,
+				"autoWidth": 516.484375,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},

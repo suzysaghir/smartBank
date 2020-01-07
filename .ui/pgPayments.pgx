@@ -9,6 +9,7 @@
 					"e616-846a-4d92-282a",
 					"da1f-6116-9f7a-3416",
 					"fd7c-30d0-172b-55fd",
+					"d3b6-edd7-6b97-f47e",
 					"cf01-7676-bf04-c766",
 					"a422-0a68-b60d-8194",
 					"a08a-2e62-a34a-71db",
@@ -59,7 +60,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "fd7c-30d0-172b-55fd",
 			"props": {
 				"autoHeight": 28.571428571428573,
@@ -70,20 +71,32 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"alpha": 1,
 				"autoHeight": 28.571428571428573,
 				"autoWidth": 125.39682539682539,
 				"flexProps": {
-					"positionType": "RELATIVE",
 					"alignSelf": "FLEX_START"
+				}
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "d3b6-edd7-6b97-f47e",
+			"props": {
+				"autoHeight": 13.88888888888889,
+				"children": [],
+				"name": "imageView1",
+				"parent": "d287-ec3e-6e42-f9b7"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 13.88888888888889,
+				"flexProps": {
+					"alignSelf": "FLEX_END"
 				},
-				"height": 42.626725473711566,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
-				"left": 9.375,
-				"marginTop": 10,
-				"top": 17.1875,
-				"width": 192.1448738344254
+				"height": 20,
+				"image": "icon_search.png",
+				"marginRight": 30,
+				"width": 20
 			}
 		},
 		{
@@ -181,8 +194,8 @@
 			"className": ".sf-button",
 			"id": "018e-f8a0-eba8-ba01",
 			"props": {
-				"autoHeight": 28.688524590163937,
-				"autoWidth": 158.7858606557377,
+				"autoHeight": 21.25,
+				"autoWidth": 115.9375,
 				"children": [],
 				"name": "btnAddMoney",
 				"parent": "a08a-2e62-a34a-71db",
@@ -191,8 +204,8 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 28.688524590163937,
-				"autoWidth": 158.7858606557377,
+				"autoHeight": 21.25,
+				"autoWidth": 115.9375,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
@@ -204,8 +217,8 @@
 			"className": ".sf-button",
 			"id": "0c55-eaba-d924-378a",
 			"props": {
-				"autoHeight": 28.688524590163937,
-				"autoWidth": 170.81198770491804,
+				"autoHeight": 21.25,
+				"autoWidth": 124.609375,
 				"children": [],
 				"name": "btnSendMoney",
 				"parent": "a08a-2e62-a34a-71db",
@@ -214,8 +227,8 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 28.688524590163937,
-				"autoWidth": 170.81198770491804,
+				"autoHeight": 21.25,
+				"autoWidth": 124.609375,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
@@ -241,7 +254,9 @@
 				"flexProps": {
 					"flexDirection": "ROW",
 					"justifyContent": "SPACE_BETWEEN",
-					"flexGrow": null
+					"flexGrow": null,
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
 				},
 				"usePageVariable": true
 			}

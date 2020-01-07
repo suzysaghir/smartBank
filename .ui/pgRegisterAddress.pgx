@@ -49,35 +49,25 @@
 			"userProps": {}
 		},
 		{
-			"className": ".sf-imageView",
+			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "3e19-e9c9-9e92-bf7f",
 			"props": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
+				"autoHeight": 0,
 				"children": [],
 				"name": "imgvSmartbankLogo",
 				"parent": "9230-d007-5d3c-eb6b"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
-				"flexProps": {
-					"positionType": "RELATIVE",
-					"alignSelf": "CENTER"
-				},
-				"height": 42.626725473711566,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
-				"width": 192.1448738344254
+				"autoHeight": 0
 			}
 		},
 		{
 			"className": ".sf-textView",
 			"id": "fac5-93d2-9a2a-c4ac",
 			"props": {
-				"autoHeight": 20.3125,
-				"autoWidth": 271.2239742279053,
+				"autoHeight": 21.484375,
+				"autoWidth": 487.890625,
 				"children": [],
 				"html": "<font size=\"1\">What are your home address?</font><br>",
 				"name": "tvAddressDetails",
@@ -87,8 +77,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 20.3125,
-				"autoWidth": 271.2239742279053,
+				"autoHeight": 21.484375,
+				"autoWidth": 487.890625,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
