@@ -27,7 +27,6 @@ function onLoad(superOnLoad) {
 	img_background.height = Screen.height;
 	img_background.width = Screen.width;
 			
-	// const {tvEnterDigits, tvSendToPhone, btnResend, viewDigitCode, tbHidden,
 	tbHidden.visible = false;
 
 	const tvStyle = getCombinedStyle(".sf-textView");
