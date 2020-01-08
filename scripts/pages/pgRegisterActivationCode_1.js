@@ -24,9 +24,6 @@ function onLoad(superOnLoad) {
 			tvDigit1, tvDigit2, tvDigit3, tvDigit4, tvDigit5, tvDigit6,
 			tvLine1, tvLine2, tvLine3, tvLine4, tvLine5, tvLine6 } = page;
 
-
-	// , flexContainer, viewRegPin, viewRemoveTouch, tbHidden, btnContinue,
-	// 		flxInside1, flxInside2, flxInside3, flxInside4 
 	img_background.height = Screen.height;
 	img_background.width = Screen.width;
 			
@@ -53,7 +50,6 @@ function onLoad(superOnLoad) {
 		}
 		
 	var count = -1;
-	// var arr = [flxInside1, flxInside2, flxInside3, flxInside4]
 	var digits = [tvDigit1, tvDigit2, tvDigit3, tvDigit4, tvDigit5, tvDigit6];
 	var lines = [tvLine1, tvLine2, tvLine3, tvLine4, tvLine5, tvLine6];
 	tbHidden.onTextChanged = (e) => {
