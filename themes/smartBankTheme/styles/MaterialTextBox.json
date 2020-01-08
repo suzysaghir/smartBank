@@ -5,7 +5,7 @@
         "textColor": "rgba( 255, 255, 255, 1 )",
         "errorColor": "rgba( 255,0,0,1 )",
         "hintTextColor": "rgba( 87, 178, 203, 1 )",
-        "cursorColor": "rgba( 87, 178, 203 ,1 )",
+        "cursorColor": "rgba( 255, 255, 255, 1 )",
         "selectedHintTextColor": "rgba(87, 178, 203, 1 )",
         "lineColor": {
             "normal": "rgba( 80, 217, 246, 1 )",

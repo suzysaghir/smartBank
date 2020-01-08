@@ -52,14 +52,16 @@
 			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "0be3-c9fa-1b82-dffe",
 			"props": {
-				"autoHeight": 0,
+				"autoHeight": 40.42553191489362,
+				"autoWidth": 195.74468085106383,
 				"children": [],
 				"name": "imgvSmartbankLogo",
 				"parent": "645a-f4d6-6461-2e2c"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 0
+				"autoHeight": 40.42553191489362,
+				"autoWidth": 195.74468085106383
 			}
 		},
 		{
@@ -119,7 +121,8 @@
 					"7559-528f-4c5a-e8bc",
 					"ded9-01a4-5832-7ddb",
 					"5d08-3e78-6c69-15f2",
-					"47dd-e5a5-fd73-e828"
+					"47dd-e5a5-fd73-e828",
+					"44e0-4e49-7ecf-2012"
 				],
 				"name": "flexContainer",
 				"parent": "645a-f4d6-6461-2e2c",
@@ -187,8 +190,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "c371-6648-1b4a-dd05",
 			"props": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"children": [],
 				"html": "___",
 				"name": "tvLine6",
@@ -198,8 +201,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -253,8 +256,8 @@
 			"hiddenComponent": false,
 			"id": "594c-fbed-bac3-2a2e",
 			"props": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"children": [],
 				"html": "___",
 				"name": "tvLine5",
@@ -264,8 +267,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -317,8 +320,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "86f3-70cd-0e82-3398",
 			"props": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"children": [],
 				"html": "___",
 				"name": "tvLine4",
@@ -328,8 +331,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -381,8 +384,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "e90f-fd45-c1d9-7248",
 			"props": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"children": [],
 				"html": "___",
 				"name": "tvLine3",
@@ -392,8 +395,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -445,8 +448,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "8bb4-0e7f-c6ae-00e9",
 			"props": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"children": [],
 				"html": "___",
 				"name": "tvLine2",
@@ -456,8 +459,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -510,8 +513,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "36f0-a39f-892d-0f72",
 			"props": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"children": [],
 				"html": "___",
 				"name": "tvLine1",
@@ -521,8 +524,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 23.015873015873016,
-				"autoWidth": 30.67956349206349,
+				"autoHeight": 24.46808510638298,
+				"autoWidth": 41.12367021276596,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
@@ -547,6 +550,29 @@
 				"text": "  textBox1",
 				"usePageVariable": true,
 				"width": 30
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "44e0-4e49-7ecf-2012",
+			"props": {
+				"autoWidth": 2.127659574468085,
+				"children": [],
+				"html": "<br>",
+				"name": "tvSendToPhone",
+				"parent": "9465-5a8f-8fcb-24de",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoWidth": 2.127659574468085,
+				"height": null,
+				"html": "<br>",
+				"left": 0,
+				"text": "\n",
+				"top": 0,
+				"usePageVariable": true
 			}
 		},
 		{

@@ -39,5 +39,6 @@ const router = require("./routes");
 router.push("/pages/pgRegisterPhoneNumber_1");
 // router.push("/pages/pgRegisterPin_1");
 
+// router.push("/pages/pgRegisterActivationCode_1");
 
 

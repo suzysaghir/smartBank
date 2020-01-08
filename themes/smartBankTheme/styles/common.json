@@ -42,7 +42,7 @@
 				"size": null
 			},
 			"height": null,
-			"paddingTop": 20,
+			"paddingTop": 0,
 			"textAlignment": "MIDCENTER",
 			"borderColor": "rgba( 255, 255, 255, 0 )"
 		},
@@ -136,8 +136,8 @@
 				},
 				"imageFillType": "ASPECTFILL",
 				"image": "logo_smartbank.png",
-				"marginTop": 30,
-				"marginBottom": 30,
+				"marginTop": null,
+				"marginBottom": null,
 				"height": null
 			}
 		}
