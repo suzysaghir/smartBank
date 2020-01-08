@@ -1,0 +1,445 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "59fa-f500-8c58-c9f4",
+			"initialized": true,
+			"props": {
+				"children": [
+					"f8a6-8874-0571-f8e7",
+					"7811-0bb5-925a-aae8",
+					"eb34-a821-eb34-5915"
+				],
+				"name": "pgRegisterPin_1",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN"
+				}
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "f8a6-8874-0571-f8e7",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "59fa-f500-8c58-c9f4"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "7811-0bb5-925a-aae8",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "59fa-f500-8c58-c9f4"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"visible": false
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "eb34-a821-eb34-5915",
+			"props": {
+				"children": [
+					"dbb8-dcfc-8067-89c0",
+					"5afc-61e5-5789-ceca",
+					"68ff-d8db-ab73-4ff2"
+				],
+				"name": "flexLayout1",
+				"parent": "59fa-f500-8c58-c9f4"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"positionType": "RELATIVE"
+				}
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "dbb8-dcfc-8067-89c0",
+			"props": {
+				"autoHeight": 107.46268656716417,
+				"children": [],
+				"name": "img_background",
+				"parent": "eb34-a821-eb34-5915",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 107.46268656716417,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"image": "background_image.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5afc-61e5-5789-ceca",
+			"props": {
+				"children": [
+					"cfff-57cd-addf-b6d4",
+					"2f36-1ae8-949d-f981",
+					"d67a-c86b-9f33-b1d8",
+					"50db-db25-fe5a-15d7",
+					"5b92-9403-36ad-b7fe",
+					"8f22-86c4-e816-212b"
+				],
+				"name": "flexLayout1",
+				"parent": "eb34-a821-eb34-5915",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2,
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "cfff-57cd-addf-b6d4",
+			"props": {
+				"autoHeight": 14.0625,
+				"autoWidth": 14.0625,
+				"children": [],
+				"name": "imgBack",
+				"parent": "5afc-61e5-5789-ceca"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 14.0625,
+				"autoWidth": 14.0625,
+				"flexProps": {
+					"alignSelf": "FLEX_START"
+				},
+				"height": null,
+				"image": "icon_back.png",
+				"imageFillType": "ASPECTFILL"
+			}
+		},
+		{
+			"className": ".sf-imageView .sf-img-smartbank",
+			"id": "2f36-1ae8-949d-f981",
+			"props": {
+				"autoHeight": 35.82089552238806,
+				"autoWidth": 168.65671641791045,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "5afc-61e5-5789-ceca",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 35.82089552238806,
+				"autoWidth": 168.65671641791045,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "d67a-c86b-9f33-b1d8",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvPasscode",
+				"parent": "5afc-61e5-5789-ceca",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "50db-db25-fe5a-15d7",
+			"props": {
+				"children": [
+					"5c8a-c2c0-ac08-70d4",
+					"3d4c-d156-2c42-68bc",
+					"1d0e-2268-067c-4d5e",
+					"60af-f006-aa55-4ba8",
+					"3bc2-733d-cad9-736e"
+				],
+				"name": "flexContainer",
+				"parent": "5afc-61e5-5789-ceca",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"alpha": 1,
+				"flexProps": {
+					"alignItems": "CENTER",
+					"justifyContent": "SPACE_AROUND",
+					"flexDirection": "ROW",
+					"alignSelf": "CENTER",
+					"positionType": "RELATIVE"
+				},
+				"height": 689.4911667396283,
+				"left": 0,
+				"paddingTop": 10,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 234.1234141382678
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "5c8a-c2c0-ac08-70d4",
+			"props": {
+				"children": [
+					"9202-c187-34b9-4181"
+				],
+				"name": "flx1",
+				"parent": "50db-db25-fe5a-15d7"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "9202-c187-34b9-4181",
+			"props": {
+				"children": [],
+				"name": "flxInside1",
+				"parent": "5c8a-c2c0-ac08-70d4",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0.5 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "3d4c-d156-2c42-68bc",
+			"props": {
+				"children": [
+					"e831-c047-e9a7-74e7"
+				],
+				"name": "flx2",
+				"parent": "50db-db25-fe5a-15d7"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "e831-c047-e9a7-74e7",
+			"props": {
+				"children": [],
+				"name": "flxInside2",
+				"parent": "3d4c-d156-2c42-68bc",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "1d0e-2268-067c-4d5e",
+			"props": {
+				"children": [
+					"791a-75d3-9f5a-eb36"
+				],
+				"name": "flx3",
+				"parent": "50db-db25-fe5a-15d7"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "791a-75d3-9f5a-eb36",
+			"props": {
+				"children": [],
+				"name": "flxInside3",
+				"parent": "1d0e-2268-067c-4d5e",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin",
+			"id": "60af-f006-aa55-4ba8",
+			"props": {
+				"children": [
+					"ed31-11d1-8a57-c859"
+				],
+				"name": "flx4",
+				"parent": "50db-db25-fe5a-15d7"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-flexLayout .sf-pin-inside",
+			"id": "ed31-11d1-8a57-c859",
+			"props": {
+				"children": [],
+				"name": "flxInside4",
+				"parent": "60af-f006-aa55-4ba8",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"hiddenComponent": false,
+			"id": "3bc2-733d-cad9-736e",
+			"props": {
+				"autoHeight": 27.011494800962254,
+				"autoWidth": 7.579023262550091,
+				"children": [],
+				"name": "tbHidden",
+				"parent": "50db-db25-fe5a-15d7",
+				"text": " ",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"autoHeight": 27.011494800962254,
+				"autoWidth": 7.579023262550091,
+				"flexProps": {
+					"alignSelf": "FLEX_END",
+					"positionType": "ABSOLUTE"
+				},
+				"text": " ",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-view",
+			"hiddenComponent": false,
+			"id": "5b92-9403-36ad-b7fe",
+			"props": {
+				"children": [],
+				"name": "viewRegPin",
+				"parent": "5afc-61e5-5789-ceca",
+				"usePageVariable": true
+			},
+			"type": "View",
+			"userProps": {
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"height": 500,
+				"usePageVariable": true,
+				"width": 500
+			}
+		},
+		{
+			"className": ".sf-view",
+			"id": "8f22-86c4-e816-212b",
+			"props": {
+				"children": [],
+				"name": "viewRemoveTouch",
+				"parent": "5afc-61e5-5789-ceca",
+				"usePageVariable": true
+			},
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"borderColor": "rgba( 208, 2, 27, 1 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "68ff-d8db-ab73-4ff2",
+			"props": {
+				"children": [
+					"efb5-17d0-3a0c-4aff",
+					"364c-c249-7fca-9366"
+				],
+				"name": "flexLayout2",
+				"parent": "eb34-a821-eb34-5915"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignItems": "FLEX_END",
+					"alignContent": "CENTER"
+				}
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "efb5-17d0-3a0c-4aff",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvAgreed",
+				"parent": "68ff-d8db-ab73-4ff2",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"bottom": 20,
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "364c-c249-7fca-9366",
+			"props": {
+				"autoHeight": 28.225806451612904,
+				"children": [],
+				"name": "btnContinue",
+				"parent": "68ff-d8db-ab73-4ff2",
+				"text": "Continue",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 28.225806451612904,
+				"text": "Continue",
+				"usePageVariable": true
+			}
+		}
+	]
+}

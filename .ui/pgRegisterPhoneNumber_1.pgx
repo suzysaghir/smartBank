@@ -1,0 +1,360 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "0277-1256-f2d8-6bb3",
+			"initialized": true,
+			"props": {
+				"children": [
+					"ed8d-b5be-9819-2260",
+					"2dcc-be61-a8d3-2421",
+					"e6f9-b1da-d491-420d"
+				],
+				"name": "pgRegisterPhoneNumber_1",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN"
+				}
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "ed8d-b5be-9819-2260",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "0277-1256-f2d8-6bb3"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "2dcc-be61-a8d3-2421",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "0277-1256-f2d8-6bb3"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"visible": false
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "e6f9-b1da-d491-420d",
+			"props": {
+				"children": [
+					"ea07-e33f-8387-b926",
+					"0041-2fe4-e3b0-619b",
+					"9ad5-f2aa-db0a-5787"
+				],
+				"name": "flexLayout1",
+				"parent": "0277-1256-f2d8-6bb3"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"positionType": "RELATIVE"
+				}
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "ea07-e33f-8387-b926",
+			"props": {
+				"autoHeight": 125.92592592592592,
+				"children": [],
+				"name": "img_background",
+				"parent": "e6f9-b1da-d491-420d",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 125.92592592592592,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"image": "background_image.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "0041-2fe4-e3b0-619b",
+			"props": {
+				"children": [
+					"4e53-b4b0-de28-8856",
+					"9eb9-f319-9121-cc36",
+					"18eb-16ba-1808-cc6e"
+				],
+				"name": "flexLayout1",
+				"parent": "e6f9-b1da-d491-420d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2,
+					"justifyContent": "SPACE_AROUND"
+				}
+			}
+		},
+		{
+			"className": ".sf-imageView .sf-img-smartbank",
+			"id": "4e53-b4b0-de28-8856",
+			"props": {
+				"autoHeight": 41.17647058823529,
+				"autoWidth": 196.078431372549,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "0041-2fe4-e3b0-619b",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 41.17647058823529,
+				"autoWidth": 196.078431372549,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "9eb9-f319-9121-cc36",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvPhoneNumber",
+				"parent": "0041-2fe4-e3b0-619b",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"marginLeft": 20,
+				"marginRight": 20,
+				"maxWidth": 600,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "18eb-16ba-1808-cc6e",
+			"props": {
+				"children": [
+					"0115-cd71-0062-9b3a",
+					"241d-f8be-5901-c610"
+				],
+				"name": "flexMtb",
+				"parent": "0041-2fe4-e3b0-619b",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 0 )",
+				"flexProps": {
+					"flexGrow": null,
+					"justifyContent": "SPACE_AROUND",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"flexDirection": "ROW",
+					"alignSelf": "STRETCH"
+				},
+				"height": 159.23529730902777,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 377.23810105096726
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "0115-cd71-0062-9b3a",
+			"props": {
+				"children": [
+					"1344-87d6-6e1c-6044"
+				],
+				"name": "flxCountry",
+				"parent": "18eb-16ba-1808-cc6e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				},
+				"maxWidth": 100
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "1344-87d6-6e1c-6044",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbCountry",
+				"parent": "0115-cd71-0062-9b3a",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"marginLeft": 3,
+				"marginRight": 3,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "241d-f8be-5901-c610",
+			"props": {
+				"children": [
+					"32e5-fbec-6998-55f5"
+				],
+				"name": "flxNumber",
+				"parent": "18eb-16ba-1808-cc6e"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				}
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "32e5-fbec-6998-55f5",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbPhoneNumber",
+				"parent": "241d-f8be-5901-c610",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"marginLeft": 3,
+				"marginRight": 3,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "9ad5-f2aa-db0a-5787",
+			"props": {
+				"children": [
+					"8bf5-3e3b-1d5c-7e7b",
+					"88ca-1117-4e99-2bb7"
+				],
+				"name": "flexLayout2",
+				"parent": "e6f9-b1da-d491-420d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1
+				}
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "8bf5-3e3b-1d5c-7e7b",
+			"props": {
+				"children": [
+					"2618-7d6b-0ddc-9d25"
+				],
+				"name": "flexLayout3",
+				"parent": "9ad5-f2aa-db0a-5787"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null
+				}
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "2618-7d6b-0ddc-9d25",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvChangeNum",
+				"parent": "8bf5-3e3b-1d5c-7e7b",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"left": 0,
+				"textAlignment": "BOTTOMCENTER",
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "88ca-1117-4e99-2bb7",
+			"props": {
+				"autoHeight": 28.688524590163937,
+				"children": [],
+				"name": "btnContinue",
+				"parent": "9ad5-f2aa-db0a-5787",
+				"text": "Continue",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 28.688524590163937,
+				"text": "Continue",
+				"usePageVariable": true
+			}
+		}
+	]
+}
