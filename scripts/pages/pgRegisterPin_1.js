@@ -72,7 +72,7 @@ function onLoad(superOnLoad) {
 	tvAgreed.maxLines=3;
 	
 	btnContinue.onPress = () => page.router.push("/pages/pgRegisterActivationCode_1");
-	// btnContinue.text = 'Continue';
+
 }
 
 module.exports = PgRegisterPin_1;
