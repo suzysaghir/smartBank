@@ -23,28 +23,15 @@ function onLoad(superOnLoad) {
 	const router = this.router;
 	const { imgvProfile, tvName, tvAmount, tvSchedulePy, btnSendMoney} = page;
 	
-	// let radius = imgvProfile.borderRadius;
 	var img_profile =  page.routeData.image;
 	var title_profile =  page.routeData.title;
 	var profile_amount = page.routeData.amount;
+	console.log("this is the device")
 	imgvProfile.image =img_profile.android.round(50);
 	
 	tvName.text = title_profile;
 	tvAmount.text = profile_amount.text;
 	tvSchedulePy.text = "Schedule payment";
-	btnSendMoney.onPress = () => router.push("/pages/pgSendDone", {title:title_profile, image:img_profile, amount:tvAmount});
-	
-	// var attributeString = new AttributedString();
-	// attributeString.underline = true;
- //   // attributeString.string = "Schedule payment";
- //    attributeString.backgroundColor = Color.RED;
-
-	
-	// tvSchedulePy.attributedText = [attributeString];
-	
-	// page.layout.removeChild( tvSchedulePy );
-	// page.layout.addChild(tvSchedulePy);
-	
+	btnSendMoney.onPress = () => router.push("/pages/pgSendDone_1", {title:title_profile, image:img_profile, amount:tvAmount});
 }
-
 module.exports = PgSendMoneyReview;

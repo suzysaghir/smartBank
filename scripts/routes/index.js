@@ -55,11 +55,6 @@ const router = Router.of({
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPin"), headerBarStyle: { visible: true } })
                 }),                
                 Route.of({
-                    path: "/pages/pgRegisterActivationCode",
-                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterActivationCode"), headerBarStyle: { visible: true } })
-                }), 
-
-                Route.of({
                     path: "/pages/pgPayments",
                     build: buildExtender({ getPageClass: () => require("pages/pgPayments"), headerBarStyle: { visible: true } })
                 }),               
@@ -104,11 +99,21 @@ const router = Router.of({
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPin_1"), headerBarStyle: { visible: true } })
                 }),  
         Route.of({
-                    path: "/pages/pgRegisterActivationCode_1",
-                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterActivationCode_1"), headerBarStyle: { visible: true } })
+                    path: "/pages/pgRegisterActivationCode_11",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterActivationCode_11"), headerBarStyle: { visible: true } })
                 }), 
-
-                
+        Route.of({
+                    path: "/pages/pgSendDone_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgSendDone_1"), headerBarStyle: { visible: true } })
+                }),  
+        Route.of({
+                    path: "/pages/pgRegisterAccountCreate_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterAccountCreate_1"), headerBarStyle: { visible: true } })
+                }),
+        Route.of({
+                    path: "/pages/pgRegisterPersonalDetails_11",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterPersonalDetails_11"), headerBarStyle: { visible: true } })
+                }),
                 ]
             }),     BottomTabBarRouter.of({
                     path: "/tabs",
@@ -121,11 +126,11 @@ const router = Router.of({
                     },
                     backgroundColor: Color.create("#f8f8f8")
                 }),
-            items: () => [{title: "Accounts", icon: Image.createFromFile("images://icon_search.png")},
-                          {title: "Summary", icon: Image.createFromFile("images://icon_search.png") },
-                          {title: "Payments", icon: Image.createFromFile("images://icon_search.png")},
-                          { title: "Cards", icon: Image.createFromFile("images://icon_search.png")},
-                          { title: "My Profiles", icon: Image.createFromFile("images://icon_search.png")}],
+            items: () => [{title: "Accounts", icon: Image.createFromFile("images://tab_account.png")},
+                          {title: "Summary", icon: Image.createFromFile("images://tab_summary.png") },
+                          {title: "Payments", icon: Image.createFromFile("images://tab_payments.png")},
+                          { title: "Cards", icon: Image.createFromFile("images://tab_cards.png")},
+                          { title: "My Profiles", icon: Image.createFromFile("images://tab_my_profile.png")}],
         
         
         	routes: [

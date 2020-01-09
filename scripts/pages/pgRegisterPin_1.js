@@ -23,8 +23,8 @@ function onLoad(superOnLoad) {
 	const page = this;
 	const { img_background, tvPasscode, tvAgreed, flexContainer, viewRegPin, viewRemoveTouch, tbHidden, btnContinue,
 			flxInside1, flxInside2, flxInside3, flxInside4 } = page;
-	img_background.height = Screen.height;
-	img_background.width = Screen.width;
+	img_background.height = Screen.height/3*2;
+	img_background.width = Screen.width/3*2;
 	
 	const tvStyle = getCombinedStyle(".sf-textView");
 	Object.assign(tvPasscode, tvStyle);
@@ -32,12 +32,6 @@ function onLoad(superOnLoad) {
 	tvPasscode.maxLines=3;
 	
 	tbHidden.visible = false;
-	
-	// var passCodePos = flexContainer.getScreenLocation();
-	// viewRegPin.left = passCodePos.x + 30; 
-	// viewRegPin.top = passCodePos.y + 30;
-
-
 	
 	viewRegPin.onTouchEnded = () => {
 		 tbHidden.requestFocus();
@@ -71,7 +65,7 @@ function onLoad(superOnLoad) {
 	tvAgreed.text = "By entering your passcode, you agree to our Terms of Services"	;
 	tvAgreed.maxLines=3;
 	
-	btnContinue.onPress = () => page.router.push("/pages/pgRegisterActivationCode_1");
+	btnContinue.onPress = () => page.router.push("/pages/pgRegisterActivationCode_11");
 
 }
 

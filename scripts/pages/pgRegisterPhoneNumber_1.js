@@ -22,8 +22,8 @@ function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
 	const { img_background, tvPhoneNumber, mtbCountry, mtbPhoneNumber, tvChangeNum, btnContinue } = page;
-	img_background.height = Screen.height;
-	img_background.width = Screen.width;
+	img_background.height = Screen.height/3*2;
+	img_background.width = Screen.width/3*2;
 	
 	const tvStyle = getCombinedStyle(".sf-textView");
 	Object.assign(tvPhoneNumber, tvStyle);

@@ -7,7 +7,7 @@
 			"initialized": true,
 			"props": {
 				"children": [
-					"2eca-6c5c-1733-80b2",
+					"7548-6d21-c089-971e",
 					"8052-5b87-f652-ac25",
 					"2019-7d07-efaa-2363"
 				],
@@ -30,12 +30,12 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "2eca-6c5c-1733-80b2",
+			"id": "7548-6d21-c089-971e",
 			"props": {
 				"children": [
-					"ebfb-f7c9-ca38-15e9"
+					"286b-5e72-b99e-942f"
 				],
-				"name": "flexLayout1",
+				"name": "flexLayout1_1",
 				"parent": "3179-64b7-16eb-e9b7",
 				"usePageVariable": true
 			},
@@ -59,13 +59,12 @@
 		},
 		{
 			"className": ".sf-imageView",
-			"id": "ebfb-f7c9-ca38-15e9",
+			"id": "286b-5e72-b99e-942f",
 			"props": {
-				"autoHeight": 219.6078431372549,
-				"autoWidth": 219.6078431372549,
+				"autoHeight": 218.57142857142858,
 				"children": [],
 				"name": "imgIcon",
-				"parent": "2eca-6c5c-1733-80b2",
+				"parent": "7548-6d21-c089-971e",
 				"usePageVariable": true
 			},
 			"source": {
@@ -73,14 +72,13 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 219.6078431372549,
-				"autoWidth": 219.6078431372549,
+				"autoHeight": 218.57142857142858,
 				"flexProps": {
-					"alignSelf": "CENTER"
+					"alignSelf": "STRETCH"
 				},
 				"height": null,
 				"image": "app_icon.png",
-				"imageFillType": "ASPECTFILL",
+				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true,
 				"width": null
 			}

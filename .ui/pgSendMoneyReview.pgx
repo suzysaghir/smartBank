@@ -8,9 +8,8 @@
 				"children": [
 					"8764-ddab-0462-8b23",
 					"02b4-ab64-09c5-a084",
-					"b2ce-8fde-3cc6-0781",
-					"739e-017f-682b-fe9b",
-					"b1dd-4d11-0ed4-80eb"
+					"6d83-03f8-2aaf-6d54",
+					"48d5-d0fa-f02b-1c43"
 				],
 				"name": "pgSendMoneyReview",
 				"orientation": "PORTRAIT",
@@ -24,7 +23,8 @@
 				},
 				"paddingBottom": null,
 				"paddingLeft": null,
-				"paddingRight": null
+				"paddingRight": null,
+				"paddingTop": null
 			},
 			"version": "6.15.1"
 		},
@@ -50,23 +50,20 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e2bc-a452-7e1b-4417",
-				"title": "Send Money"
+				"title": "Review Payment"
 			},
 			"type": "HeaderBar",
 			"userProps": {
 				"borderVisibility": true,
-				"title": "Send Money"
+				"title": "Review Payment"
 			}
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "b2ce-8fde-3cc6-0781",
+			"id": "6d83-03f8-2aaf-6d54",
 			"props": {
 				"children": [
-					"1eea-ae56-9f9e-045d",
-					"db02-711f-ce16-48e4",
-					"2224-6d01-fb9a-ad48",
-					"b0c3-61d0-8959-c0ff"
+					"f0cc-0d67-68eb-1f29"
 				],
 				"name": "flexLayout1",
 				"parent": "e2bc-a452-7e1b-4417",
@@ -78,25 +75,61 @@
 				"flexProps": {
 					"flexDirection": "COLUMN",
 					"justifyContent": "FLEX_START",
-					"flexGrow": null
+					"flexGrow": 1
 				},
 				"height": null,
+				"marginBottom": null,
+				"marginTop": null,
 				"usePageVariable": true,
 				"width": null
 			}
 		},
 		{
+			"className": ".sf-scrollView",
+			"id": "f0cc-0d67-68eb-1f29",
+			"props": {
+				"children": [
+					"5af2-8158-40c5-e24d",
+					"4a2f-1be3-fc76-4d16",
+					"33e6-05ad-0440-5c76",
+					"f0b7-9a3e-80a0-126d"
+				],
+				"name": "scrollView1",
+				"parent": "6d83-03f8-2aaf-6d54"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"layout": {
+					"flexProps": {
+						"justifyContent": "FLEX_END",
+						"alignItems": "STRETCH",
+						"alignContent": "STRETCH",
+						"flexDirection": "COLUMN"
+					}
+				},
+				"width": null
+			}
+		},
+		{
 			"className": ".sf-imageView",
-			"id": "1eea-ae56-9f9e-045d",
+			"id": "5af2-8158-40c5-e24d",
 			"props": {
 				"children": [],
 				"name": "imgvProfile",
-				"parent": "b2ce-8fde-3cc6-0781",
+				"parent": "f0cc-0d67-68eb-1f29",
 				"usePageVariable": true
 			},
 			"type": "ImageView",
 			"userProps": {
 				"borderRadius": 50,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
 				"height": 100,
 				"imageFillType": "ASPECTFILL",
 				"usePageVariable": true,
@@ -105,16 +138,19 @@
 		},
 		{
 			"className": ".sf-textView",
-			"id": "db02-711f-ce16-48e4",
+			"id": "4a2f-1be3-fc76-4d16",
 			"props": {
 				"children": [],
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"name": "tvName",
-				"parent": "b2ce-8fde-3cc6-0781",
+				"parent": "f0cc-0d67-68eb-1f29",
 				"usePageVariable": true
 			},
 			"type": "TextView",
 			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"textColor": "rgba( 56, 56, 56, 1 )",
 				"usePageVariable": true
@@ -122,32 +158,35 @@
 		},
 		{
 			"className": ".sf-imageView",
-			"id": "2224-6d01-fb9a-ad48",
+			"id": "33e6-05ad-0440-5c76",
 			"props": {
-				"autoHeight": 8.823529411764705,
-				"autoWidth": 17.64705882352941,
+				"autoHeight": 16.25,
+				"autoWidth": 33.75,
 				"children": [],
 				"name": "imgIcon",
-				"parent": "b2ce-8fde-3cc6-0781"
+				"parent": "f0cc-0d67-68eb-1f29"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 8.823529411764705,
-				"autoWidth": 17.64705882352941,
+				"autoHeight": 16.25,
+				"autoWidth": 33.75,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
 				"height": null,
-				"image": "icon_payment_review.png",
+				"image": "send_money_review_arrow.png",
 				"imageFillType": "ASPECTFILL",
 				"width": null
 			}
 		},
 		{
 			"className": ".sf-textView",
-			"id": "b0c3-61d0-8959-c0ff",
+			"id": "f0b7-9a3e-80a0-126d",
 			"props": {
 				"children": [],
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"name": "tvAmount",
-				"parent": "b2ce-8fde-3cc6-0781",
+				"parent": "f0cc-0d67-68eb-1f29",
 				"usePageVariable": true
 			},
 			"type": "TextView",
@@ -155,10 +194,10 @@
 				"flexProps": {},
 				"font": {
 					"family": "SFProText",
-					"style": "Regular",
-					"bold": false,
+					"style": "Semibold",
+					"bold": true,
 					"italic": false,
-					"size": null
+					"size": 50
 				},
 				"height": null,
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
@@ -168,20 +207,41 @@
 			}
 		},
 		{
-			"className": ".sf-textView",
-			"id": "739e-017f-682b-fe9b",
+			"className": ".sf-flexLayout",
+			"id": "48d5-d0fa-f02b-1c43",
 			"props": {
-				"autoHeight": 19.402985074626866,
+				"children": [
+					"92f6-fa47-545d-0ffc",
+					"f794-f163-6af4-b6b9"
+				],
+				"name": "flexLayout2",
+				"parent": "e2bc-a452-7e1b-4417"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 1,
+					"justifyContent": "SPACE_AROUND"
+				},
+				"marginBottom": null,
+				"marginTop": null
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "92f6-fa47-545d-0ffc",
+			"props": {
+				"autoHeight": 19.444444444444446,
 				"children": [],
 				"html": "<br>",
 				"name": "tvSchedulePy",
-				"parent": "e2bc-a452-7e1b-4417",
+				"parent": "48d5-d0fa-f02b-1c43",
 				"text": "\n",
 				"usePageVariable": true
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.402985074626866,
+				"autoHeight": 19.444444444444446,
 				"flexProps": {},
 				"font": {
 					"family": "SFProText",
@@ -192,28 +252,32 @@
 				},
 				"height": null,
 				"html": "<br>",
+				"left": 0,
 				"text": "\n",
 				"textColor": "rgba( 87, 217, 246, 1 )",
+				"top": 0,
 				"usePageVariable": true,
 				"width": null
 			}
 		},
 		{
 			"className": ".sf-button",
-			"id": "b1dd-4d11-0ed4-80eb",
+			"id": "f794-f163-6af4-b6b9",
 			"props": {
-				"autoHeight": 25.816994554856244,
+				"autoHeight": 23.333333333333332,
 				"children": [],
 				"name": "btnSendMoney",
-				"parent": "e2bc-a452-7e1b-4417",
+				"parent": "48d5-d0fa-f02b-1c43",
 				"text": "Send Money",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 25.816994554856244,
+				"autoHeight": 23.333333333333332,
+				"left": 0,
 				"text": "Send Money",
 				"textColor": "rgba( 255, 255, 255, 1 )",
+				"top": 0,
 				"usePageVariable": true
 			}
 		}

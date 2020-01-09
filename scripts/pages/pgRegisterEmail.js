@@ -18,7 +18,7 @@ const PgRegisterEmail = extend(PgRegisterEmailDesign)(
 		var btnContinue= new Button({
             text: "Continue",
             onPress: function() {
-              this.router.push("/pages/pgRegisterAccountCreate");
+              this.router.push("/pages/pgRegisterAccountCreate_1");
             }.bind(this)
         });
         

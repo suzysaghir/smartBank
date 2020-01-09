@@ -20,10 +20,10 @@ function onLoad(superOnLoad) {
 	const page = this;
 	const router = this.router;
 	const {listView1, tvUsd, tvAmount, tvLine, materialtextbox, btnCont} = page;
-		// ######################
+		// ########## NOTE ############
 		// page.match.params.myparam
     	// router.push("/pages/pgSendMoneyAmount/"+index);
-		// ######################
+		// ########### NOTE ###########
 		//page.routeData.myparam
 		// router.push("/pages/pgSendMoneyAmount/suzy", {index:'suzy'})
 		// router.push("/pages/pgSendMoneyAmount/title,image", {title:myTitle, image:myImage})
@@ -32,6 +32,7 @@ function onLoad(superOnLoad) {
 
 	var img_profile =  page.routeData.image;
 	var title_profile =  page.routeData.title;
+	
 	listView1.onRowBind = function(listViewItem, index) {
 		var iconImage = listViewItem.imgIcon;
 		var myTitle = listViewItem.tvTitle;

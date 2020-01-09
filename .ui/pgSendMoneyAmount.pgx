@@ -8,10 +8,8 @@
 				"children": [
 					"e817-195a-74f5-c45c",
 					"db29-3b02-29b6-f428",
-					"5235-a692-ba68-ef64",
-					"159b-2e4e-6168-ffa9",
-					"53eb-3a9c-22dd-7ba8",
-					"29d4-0fd2-1716-7244"
+					"5c95-6c67-a516-8cd1",
+					"060e-eed4-2b85-f567"
 				],
 				"name": "pgSendMoneyAmount",
 				"orientation": "PORTRAIT",
@@ -25,7 +23,8 @@
 				},
 				"paddingBottom": null,
 				"paddingLeft": null,
-				"paddingRight": null
+				"paddingRight": null,
+				"paddingTop": null
 			},
 			"version": "6.15.1"
 		},
@@ -51,23 +50,44 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "41c7-e864-487d-1e67",
-				"title": "Send Money"
+				"title": "Amount "
 			},
 			"type": "HeaderBar",
 			"userProps": {
 				"borderVisibility": true,
-				"title": "Send Money"
+				"title": "Amount "
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flexLayout1",
+			"id": "5c95-6c67-a516-8cd1",
+			"props": {
+				"children": [
+					"8b3a-b77b-d499-5db4",
+					"b06a-5cf1-8ecc-283c",
+					"eff1-f5e0-0a2b-3f25"
+				],
+				"name": "flexLayout1",
+				"parent": "41c7-e864-487d-1e67"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "FLEX_START"
+				},
+				"paddingLeft": null,
+				"paddingRight": null
 			}
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "5235-a692-ba68-ef64",
+			"id": "8b3a-b77b-d499-5db4",
 			"props": {
 				"children": [
-					"67b6-71a6-755c-931d"
+					"9408-119d-d240-2e54"
 				],
 				"name": "flexLayout1",
-				"parent": "41c7-e864-487d-1e67",
+				"parent": "5c95-6c67-a516-8cd1",
 				"usePageVariable": true
 			},
 			"type": "FlexLayout",
@@ -79,20 +99,22 @@
 					"flexGrow": null
 				},
 				"height": null,
+				"left": 0,
+				"top": 0,
 				"usePageVariable": true,
 				"width": null
 			}
 		},
 		{
 			"className": ".sf-listView",
-			"id": "67b6-71a6-755c-931d",
+			"id": "9408-119d-d240-2e54",
 			"props": {
 				"children": [
-					"a4d9-e52e-338d-c910"
+					"6903-ca15-f2b7-efad"
 				],
 				"itemCount": 1,
 				"name": "listView1",
-				"parent": "5235-a692-ba68-ef64",
+				"parent": "8b3a-b77b-d499-5db4",
 				"rowHeight": 54,
 				"usePageVariable": true
 			},
@@ -108,12 +130,12 @@
 		{
 			"className": ".sf-listViewItem",
 			"hiddenComponent": false,
-			"id": "a4d9-e52e-338d-c910",
+			"id": "6903-ca15-f2b7-efad",
 			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "lstvSelect",
-				"parent": "67b6-71a6-755c-931d"
+				"parent": "9408-119d-d240-2e54"
 			},
 			"source": {
 				"page": "__library__",
@@ -139,15 +161,14 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "159b-2e4e-6168-ffa9",
+			"id": "b06a-5cf1-8ecc-283c",
 			"props": {
 				"children": [
-					"b92e-f379-3262-e892",
-					"2b98-6680-f96c-5ba2",
-					"cebe-6325-c993-0479"
+					"b2ae-4ea4-ba04-0afe",
+					"3ef9-13af-db18-fd44"
 				],
 				"name": "flexLayout2",
-				"parent": "41c7-e864-487d-1e67"
+				"parent": "5c95-6c67-a516-8cd1"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -156,17 +177,19 @@
 					"justifyContent": "SPACE_BETWEEN",
 					"flexGrow": null,
 					"alignSelf": "STRETCH"
-				}
+				},
+				"left": 0,
+				"top": 0
 			}
 		},
 		{
 			"className": ".sf-textView",
-			"id": "b92e-f379-3262-e892",
+			"id": "b2ae-4ea4-ba04-0afe",
 			"props": {
 				"children": [],
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"name": "tvUsd",
-				"parent": "159b-2e4e-6168-ffa9",
+				"parent": "b06a-5cf1-8ecc-283c",
 				"usePageVariable": true
 			},
 			"type": "TextView",
@@ -176,8 +199,8 @@
 				},
 				"font": {
 					"family": "SFProText",
-					"style": "Medium",
-					"bold": false,
+					"style": "Semibold",
+					"bold": true,
 					"italic": false,
 					"size": 60
 				},
@@ -189,12 +212,12 @@
 		},
 		{
 			"className": ".sf-textView",
-			"id": "2b98-6680-f96c-5ba2",
+			"id": "3ef9-13af-db18-fd44",
 			"props": {
 				"children": [],
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"name": "tvAmount",
-				"parent": "159b-2e4e-6168-ffa9",
+				"parent": "b06a-5cf1-8ecc-283c",
 				"usePageVariable": true
 			},
 			"type": "TextView",
@@ -205,8 +228,8 @@
 				},
 				"font": {
 					"family": "SFProText",
-					"style": "Regular",
-					"bold": false,
+					"style": "Semibold",
+					"bold": true,
 					"italic": false,
 					"size": 70
 				},
@@ -219,41 +242,12 @@
 			}
 		},
 		{
-			"className": ".materialTextBox-wrapper",
-			"hiddenComponent": false,
-			"id": "cebe-6325-c993-0479",
-			"initialized": true,
-			"props": {
-				"children": [],
-				"name": "materialtextbox",
-				"parent": "159b-2e4e-6168-ffa9"
-			},
-			"source": {
-				"page": "__modules__",
-				"moduleName": "Materialtextbox",
-				"modulePath": "materialtextbox",
-				"type": "Materialtextbox",
-				"id": "8fb2-10a8-12e4-9b45"
-			},
-			"type": "FlexLayout",
-			"userProps": {
-				"flex": {
-					"positionType": 0
-				},
-				"flexProps": {
-					"positionType": "RELATIVE"
-				},
-				"left": 0,
-				"top": 0
-			}
-		},
-		{
 			"className": ".sf-flexLayout",
-			"id": "53eb-3a9c-22dd-7ba8",
+			"id": "eff1-f5e0-0a2b-3f25",
 			"props": {
 				"children": [],
 				"name": "flxLine",
-				"parent": "41c7-e864-487d-1e67",
+				"parent": "5c95-6c67-a516-8cd1",
 				"usePageVariable": true
 			},
 			"type": "FlexLayout",
@@ -263,27 +257,47 @@
 				"flexProps": {
 					"flexGrow": null
 				},
+				"left": 0,
 				"marginLeft": 30,
 				"marginRight": 30,
+				"top": 0,
 				"usePageVariable": true
 			}
 		},
 		{
+			"className": ".sf-flexLayout .sf-flexLayout2",
+			"id": "060e-eed4-2b85-f567",
+			"props": {
+				"children": [
+					"e77b-f803-e623-d980"
+				],
+				"name": "flexLayout2",
+				"parent": "41c7-e864-487d-1e67"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"paddingLeft": null,
+				"paddingRight": null
+			}
+		},
+		{
 			"className": ".sf-button",
-			"id": "29d4-0fd2-1716-7244",
+			"id": "e77b-f803-e623-d980",
 			"props": {
 				"autoHeight": 20.731707317073173,
 				"children": [],
 				"name": "btnCont",
-				"parent": "41c7-e864-487d-1e67",
-				"text": "continue",
+				"parent": "060e-eed4-2b85-f567",
+				"text": "Continue",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
 				"autoHeight": 20.731707317073173,
-				"text": "continue",
+				"left": 0,
+				"text": "Continue",
 				"textColor": "rgba( 255, 255, 255, 1 )",
+				"top": 0,
 				"usePageVariable": true
 			}
 		}

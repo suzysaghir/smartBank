@@ -137,9 +137,36 @@
 				"imageFillType": "ASPECTFILL",
 				"image": "logo_smartbank.png",
 				"marginTop": null,
-				"marginBottom": null,
+				"marginBottom": 10,
 				"height": null
 			}
+		},
+		"&-ImageView": {
+			"&-icon": {
+				"&-tick": {
+					"top": 80,
+					"left": 80
+				}
+			}
+		},
+		"&-flexLayout2": {
+			"flexProps": {
+				"justifyContent": "CENTER",
+				"flexGrow": 1
+			},
+			"paddingLeft": 16,
+			"paddingRight": 16
+		},
+		"&-flexLayout1": {
+			"flexProps": {
+				"flexGrow": 2,
+				"justifyContent": "SPACE_AROUND"
+			},
+			"paddingLeft": 16,
+			"paddingRight": 16
+		},
+		"&-view": {
+			"backgroundColor": "rgba( 255, 255, 255, 0 )"
 		}
 	}
 }

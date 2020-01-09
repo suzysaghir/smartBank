@@ -60,25 +60,25 @@
 			"className": ".sf-button",
 			"id": "43d4-19dc-3893-31f4",
 			"props": {
-				"autoHeight": 21.25,
-				"autoWidth": 107.44140625,
+				"autoHeight": 23.333333333333332,
+				"autoWidth": 119.55208333333333,
 				"children": [],
 				"name": "btnThisMonth",
 				"parent": "3a10-9f4f-ca02-5d54",
-				"text": "  This Month  ",
+				"text": " This Month ",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 21.25,
-				"autoWidth": 107.44140625,
+				"autoHeight": 23.333333333333332,
+				"autoWidth": 119.55208333333333,
 				"flexProps": {
 					"alignSelf": "FLEX_END",
 					"positionType": "RELATIVE"
 				},
 				"marginLeft": 10,
 				"marginRight": 10,
-				"text": "  This Month  ",
+				"text": " This Month ",
 				"usePageVariable": true
 			}
 		},
@@ -86,16 +86,16 @@
 			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "bea4-8523-d021-70b2",
 			"props": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
+				"autoHeight": 41.333333333333336,
+				"autoWidth": 196,
 				"children": [],
 				"name": "imgvSmartbankLogo",
 				"parent": "3a10-9f4f-ca02-5d54"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
+				"autoHeight": 41.333333333333336,
+				"autoWidth": 196,
 				"flexProps": {
 					"alignSelf": "FLEX_START",
 					"positionType": "ABSOLUTE"
