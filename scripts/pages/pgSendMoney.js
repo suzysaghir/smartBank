@@ -37,11 +37,11 @@ var myDataSet = [{
 		var iconImage = listViewItem.imgIcon;
 		var myTitle = listViewItem.tvTitle;
 
-		iconImage.image = myDataSet[index].image;
+		iconImage.image = myDataSet[index].image.android.round(50);
 		myTitle.text = myDataSet[index].title;
 	}	
     listView1.onRowSelected = function(listViewItem, index) {
-			var myImage = myDataSet[index].image;
+			var myImage = myDataSet[index].image.android.round(50);
 			var myTitle = myDataSet[index].title;
 		
 			router.push("/pages/pgSendMoneyAmount/title,image", {title:myTitle, image:myImage})

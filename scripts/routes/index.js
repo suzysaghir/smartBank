@@ -5,10 +5,11 @@ const Color = require("sf-core/ui/color");
 const Image = require("sf-core/ui/image");
 const OS = require('sf-core/device/system').OS;
 const buildExtender = require("sf-extension-utils/lib/router/buildExtender");
+const backClose = require("sf-extension-utils/lib/router/back-close");
 
 const pgAccounts = require('sf-core/ui/page');
-const pgTabs = require("pages/pgRegisterSummary");
-const pgPayments = require('pages/pgPayments');
+const pgTabs = require("pages/pgTabSummary");
+const pgPayments = require('pages/pgPayments_1');
 const pgCards = require('sf-core/ui/page');
 const pgMyProfile = require('sf-core/ui/page');
 
@@ -19,11 +20,14 @@ const {
 } = require("@smartface/router");
 require("sf-extension-utils/lib/router/goBack"); // Implements onBackButtonPressed
 
+
+backClose.setDefaultBackStyle({image: Image.createFromFile("images://icon_back.png"), hideTitle: true });
+
 const router = Router.of({
     path: "/",
     isRoot: true,
     routes: [
-        Route.of({
+        StackRouter.of({
             path: "/pages",
             routes: [
                 Route.of({
@@ -35,12 +39,12 @@ const router = Router.of({
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPersonalDetails"), headerBarStyle: { visible: true } })
                 }),
                 Route.of({
-                    path: "/pages/pgRegisterAddress",
-                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterAddress"), headerBarStyle: { visible: true } })
+                    path: "/pages/pgRegisterAddress_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterAddress_1"), headerBarStyle: { visible: true } })
                 }),
                 Route.of({
-                    path: "/pages/pgRegisterEmail",
-                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterEmail"), headerBarStyle: { visible: true } })
+                    path: "/pages/pgRegisterEmail_1",
+                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterEmail_1"), headerBarStyle: { visible: true } })
                 }),
                 Route.of({
                     path: "/pages/pgRegisterAccountCreate",
@@ -63,8 +67,8 @@ const router = Router.of({
                     build: buildExtender({ getPageClass: () => require("pages/pgSendDone"), headerBarStyle: { visible: true } })
                 }),   
                 Route.of({
-                    path: "/pages/pgRegisterSummary",
-                    build: buildExtender({ getPageClass: () => require("pages/pgRegisterSummary"), headerBarStyle: { visible: true } })
+                    path: "/pages/pgTabSummary",
+                    build: buildExtender({ getPageClass: () => require("pages/pgTabSummary"), headerBarStyle: { visible: true } })
                 }),
                 Route.of({
                     path: "/pages/pgSendMoney",

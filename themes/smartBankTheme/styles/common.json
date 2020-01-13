@@ -138,7 +138,8 @@
 				"image": "logo_smartbank.png",
 				"marginTop": null,
 				"marginBottom": 10,
-				"height": null
+				"height": 32,
+				"width": 153
 			}
 		},
 		"&-ImageView": {
@@ -167,6 +168,21 @@
 		},
 		"&-view": {
 			"backgroundColor": "rgba( 255, 255, 255, 0 )"
+		},
+		"&-flx": {
+			"&-btn": {
+				"&-icon": {
+					"backgroundColor": "rgba( 55, 255, 185, 1 )",
+					"borderRadius": 30,
+					"height": 50,
+					"paddingLeft": 10,
+					"paddingRight": 10,
+					"flexProps": {
+						"flexDirection": "ROW",
+						"justifyContent": "CENTER"
+					}
+				}
+			}
 		}
 	}
 }

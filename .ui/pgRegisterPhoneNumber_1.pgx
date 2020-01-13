@@ -78,8 +78,8 @@
 			"className": ".sf-imageView",
 			"id": "a27c-35fc-4757-48a1",
 			"props": {
-				"autoHeight": 125.33333333333333,
-				"autoWidth": 86.66666666666667,
+				"autoHeight": 94.44444444444444,
+				"autoWidth": 63.88888888888889,
 				"children": [],
 				"name": "img_background",
 				"parent": "e6f9-b1da-d491-420d",
@@ -87,8 +87,8 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 125.33333333333333,
-				"autoWidth": 86.66666666666667,
+				"autoHeight": 94.44444444444444,
+				"autoWidth": 63.88888888888889,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"alignSelf": "FLEX_END"
@@ -107,7 +107,8 @@
 				"children": [
 					"4e53-b4b0-de28-8856",
 					"9eb9-f319-9121-cc36",
-					"18eb-16ba-1808-cc6e"
+					"18eb-16ba-1808-cc6e",
+					"c131-0acb-8491-0dae"
 				],
 				"name": "flexLayout1",
 				"parent": "e6f9-b1da-d491-420d"
@@ -116,7 +117,8 @@
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 2,
-					"justifyContent": "SPACE_AROUND"
+					"justifyContent": "SPACE_AROUND",
+					"alignSelf": "STRETCH"
 				},
 				"paddingLeft": 16,
 				"paddingRight": 16
@@ -182,11 +184,9 @@
 					"flexDirection": "ROW",
 					"alignSelf": "STRETCH"
 				},
-				"height": 159.23529730902777,
-				"left": 0,
-				"top": 0,
+				"height": null,
 				"usePageVariable": true,
-				"width": 377.23810105096726
+				"width": null
 			}
 		},
 		{
@@ -294,6 +294,22 @@
 		},
 		{
 			"className": ".sf-flexLayout",
+			"id": "c131-0acb-8491-0dae",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "0041-2fe4-e3b0-619b"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"height": null,
+				"maxHeight": 100,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
 			"id": "9ad5-f2aa-db0a-5787",
 			"props": {
 				"children": [
@@ -336,7 +352,7 @@
 			"className": ".sf-button",
 			"id": "88ca-1117-4e99-2bb7",
 			"props": {
-				"autoHeight": 23.333333333333332,
+				"autoHeight": 23.61111111111111,
 				"children": [],
 				"name": "btnContinue",
 				"parent": "9ad5-f2aa-db0a-5787",
@@ -345,7 +361,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 23.333333333333332,
+				"autoHeight": 23.61111111111111,
 				"text": "Continue",
 				"usePageVariable": true
 			}

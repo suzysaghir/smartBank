@@ -1,88 +1,60 @@
+const Font = require("sf-core/ui/font");
+const Label = require("sf-core/ui/label");
+const ListViewItem = require("sf-core/ui/listviewitem");
+const TextAlignment = require("sf-core/ui/textalignment");
 const Color = require("sf-core/ui/color");
 const FlexLayout = require("sf-core/ui/flexlayout");
 const Image = require("sf-core/ui/image");
 const TextView = require("sf-core/ui/textview");
-const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
+const addChild = require("@smartface/contx/lib/smartface/action/addChild");
 
-/* 
-		You can modify its contents.
-*/
+const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
+var LstvSummary = require("components/LstvSummary")
+var ListViewItemHeader = require("components/FlexListViewHeader")
+
 const extend = require('js-base/core/extend');
 const PgPayments_1Design = require('ui/ui_pgPayments_1');
-
 const PgPayments_1 = extend(PgPayments_1Design)(
-	// Constructor
 	function(_super) {
-		// Initalizes super class for this page scope
 		_super(this);
-		// Overrides super.onShow method
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
-		// Overrides super.onLoad method
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 	}
 );
 
-/**
- * @event onShow
- * This event is called when a page appears on the screen (everytime).
- * @param {function} superOnShow super onShow function
- * @param {Object} parameters passed from Router.go function
- */
 function onShow(superOnShow) {
 	superOnShow();
 }
 
-/**
- * @event onLoad
- * This event is called once when page is created.
- * @param {function} superOnLoad super onLoad function
- */
+
 function onLoad(superOnLoad) {
 	superOnLoad();
-		const page = this;
+	const page = this;
 	const router = require("routes");
-	const { tvMoney, tvAccountBalance, listView1, btnSendMoney } = page;
-	
+	const { tvMoney, tvAccountBalance, flexBtnIconAddMoney, flexBtnIconSendMoney, flxLstvHeader, listView1, lstvSummary } = page;
+
+	flexBtnIconAddMoney.imgIcon.image = Image.createFromFile("images://payment_icon_add_money.png");
+	flexBtnIconSendMoney.imgIcon.image = Image.createFromFile("images://payment_icon_send_money.png");
+
+	flexBtnIconAddMoney.label1.text = "Add Money";
+	flexBtnIconSendMoney.label1.text = "Send Money";
 	tvMoney.text = "$1230";
 	tvAccountBalance.text = "Acoount Balance";
-	
-	btnSendMoney.onPress = () => router.push("/pages/pgSendMoney");
+	flexBtnIconSendMoney.onTouchEnded = () => router.push("/pages/pgSendMoney");
+
 	// tvDate.text = "TODAY";
 	// tvAmount.text = "$200";
-
-
-	var myDataSet = [{
-		title: 'John Doe',
-		image: Image.createFromFile("images://travel.png"),
-		price: '40',
-		sign: "+"
-	}, {
-		title: 'Frank James',
-		image: Image.createFromFile("images://shopping.png"),
-		price: '20',
-		sign: "-"
-	}, {
-		title: 'Starbucks',
-		image: Image.createFromFile("images://resturant.png"),
-		price: '200',
-		sign: "+"
-	}, {
-		title: 'Amazon',
-		image: Image.createFromFile("images://personal_care.png"),
-		price: '38',
-		sign: "-"
-	}];
-	
+// "TODAY", "YESTERDAY", "2 DAYS AGO", "LAST MONTH"
     var _headerData = [
-        {date:"Today", amount:"$200"},
-        {date:"Yesterday", amount:"$650"},
-        {date:"2 Days ago", amount:"$943"},
-        // {date:"1 Month ago", amount:"$140"},
+        "Complementary",
+        "Analogous",
+        "Tetradic",
+        "Monochromatic"
     ];
     
     var _rowData = [
         [{
-		title: 'John Doe',
+		title: '111 Doe',
 		image: Image.createFromFile("images://travel.png"),
 		price: '40',
 		sign: "+"
@@ -91,29 +63,37 @@ function onLoad(superOnLoad) {
 		image: Image.createFromFile("images://shopping.png"),
 		price: '20',
 		sign: "-"
-	}],
-        [ {
-		title: 'Starbucks',
-		image: Image.createFromFile("images://resturant.png"),
-		price: '200',
+	}], [{
+		title: '222 Doe',
+		image: Image.createFromFile("images://adam.png"),
+		price: '40',
 		sign: "+"
 		},{
-		title: 'Amazon',
-		image: Image.createFromFile("images://personal_care.png"),
-		price: '38',
+		title: 'Frank James',
+		image: Image.createFromFile("images://adam2.png"),
+		price: '20',
 		sign: "-"
 	}], [{
-		title: 'Facebook',
-		image: Image.createFromFile("images://resturant.png"),
-		price: '394',
+		title: '333 Doe',
+		image: Image.createFromFile("images://travel.png"),
+		price: '40',
 		sign: "+"
 		},{
-		title: 'Amazon',
-		image: Image.createFromFile("images://personal_care.png"),
-		price: '38',
+		title: 'Frank James',
+		image: Image.createFromFile("images://shopping.png"),
+		price: '20',
 		sign: "-"
-	}]
-    ];
+	}], [{
+		title: '444 Doe',
+		image: Image.createFromFile("images://travel.png"),
+		price: '40',
+		sign: "+"
+		},{
+		title: 'Frank James',
+		image: Image.createFromFile("images://shopping.png"),
+		price: '20',
+		sign: "-"
+	}]];
 
     var dataArray = [];
         function pushDataToArray(headerData,rowData){
@@ -126,87 +106,99 @@ function onLoad(superOnLoad) {
         };
     
     pushDataToArray(_headerData,_rowData);
-   	listView1.itemCount =  myDataSet.length;
+   	// listView1.itemCount =  myDataSet.length;
+   	listView1.itemCount = 8;
+   	
+    var itemIndex = 0;
+   	 listView1.onRowCreate = function(type) {
+            var myListViewItem = new ListViewItem();
+            if (type == 1) {// Header
+    //         	var myFlexLayout = new FlexLayout({
+				//     // flexGrow:1,
+    // 				backgroundColor: Color.create("#d3f6ff"),
+    // 				height: 20,
+    // 				alignSelf: FlexLayout.AlignSelf.STRETCH
+				// });
+    //         	var tvDate = new TextView({
+				//     visible: true,
+				//     textColor: Color.WHITE,
+				//     text: " "
+				// });
+				// myFlexLayout.addChild(tvDate,"myDate");
+    //             myListViewItem.addChild(myFlexLayout);
 
+    //             myListViewItem.myFlexLayout = myFlexLayout; 
+    //             myListViewItem.tvDate = tvDate; 
+                
+            	var header = new ListViewItemHeader()
+            	myListViewItem.myHeader = header;
+            	// myListViewItem = new ListViewItemHeader();
+
+            }else{ 
+                 myListViewItem = new LstvSummary();
+            }
+          this.dispatch(addChild(`item${++itemIndex}`, myListViewItem));
+           
+          return myListViewItem;
+        };
     listView1.onRowHeight = function(index){
         if (dataArray[index].isHeader) {
             return 20;
         }
-        return 40;
+        return 60;
         };
         
 	listView1.onRowBind = function(listViewItem, index) {
-        // var myLabelTitle = listViewItem.myLabelTitle;
 	    console.log("the index is  : ",index)
+	    console.log("IS HEADER  : ",dataArray[index].isHeader);
 
-        if(dataArray[index].isHeader) {
-        	// this.layout.removeChild(flexLayoutPayments);
-	        var myFlexLayout = new FlexLayout({
-	    		alignSelf: FlexLayout.AlignSelf.STRETCH,
-	    		alignItems: FlexLayout.AlignItems.STRETCH,
-	    		backgroundColor: Color.create("#D3F6FF"),
-	    		justifyContent:FlexLayout.JustifyContent.SPACE_BETWEEN,
-	        });
-	        
-			var tv_date = new TextView({
-				alignSelf:FlexLayout.AlignSelf.FLEX_START,
-			});
-			var tv_amount = new TextView({
-				alignSelf:FlexLayout.AlignSelf.FLEX_END,
-			});
-			
-			const tvStyle = getCombinedStyle(".sf-paymentLstv");
-		    Object.assign(tv_date, tvStyle);
-		    Object.assign(tv_amount, tvStyle);
-		    console.log("dataArray[index].data.date : ",dataArray[index].data.date)
-	    	tv_date.text = dataArray[index].data.date;
-			tv_amount.text = dataArray[index].data.amount;
-			
-		    myFlexLayout.addChild(tv_date);
-		    myFlexLayout.addChild(tv_amount);
-		    this.layout.addChild(myFlexLayout);
-	        
-	        // myFlexLayout = Object.assign({}, flexLayoutPayments);
-			// var tvdate = new TextView();
-			// tvdate = tvDate;
-			   //     	var tvdate = tvDate;
-				
-				
-				
-				
-        	// var myFlexLayout = flexLayoutPayments;
-   //     	var tvdate = tvDate;
-	  //  	tvdate.text = "TODAY";
-		// myFlexLayout.addChild(tvdate);
-		// myFlexLayout.addChild(tvAmount);
+		if (dataArray[index].isHeader) {
+		        	// var date = listViewItem.tvDate;
+		        	// var amount = listViewItem.tvAmount;
 
-	// 	// page.layout.addChild(myFlexLayout);
- //       // myLabelTitle.text = dataArray[index].data
-        } else{
-        	
-			var iconImage = listViewItem.imgIcon;
-			var myTitle = listViewItem.tvTitle;
-			var mysign = listViewItem.tvsign;
-			var myPrice = listViewItem.tvPrice;
-	
-			iconImage.image = myDataSet[index].image;
-			myTitle.text = myDataSet[index].title;
-			myPrice.text = myDataSet[index].price;
-			mysign.text = myDataSet[index].sign;
-            }
+		         //   date.text = "the date "
+		         //   amount.text = "the amount "
+		         console.log("date",ListViewItem.tvDate)
+		         console.log("item : ",ListViewItem)
+		         console.log("",ListViewItem)
 
+
+		        }else{
+		            // myLabelTitle.backgroundColor = Color.create(dataArray[index].data);
+        			var iconImage = listViewItem.imgIcon;
+					var myTitle = listViewItem.tvTitle;
+					var mysign = listViewItem.tvsign;
+					var myPrice = listViewItem.tvPrice;
+		 			var mySign = listViewItem.tvDollersign;
 		
+					mySign.text = "$"
+		            myTitle.text = dataArray[index].data.title;
+		            iconImage.image = dataArray[index].data.image.android.round(50);
+					myPrice.text = dataArray[index].data.price;
+					mysign.text = dataArray[index].data.sign;
+		        }
 	}.bind(this);
 
     listView1.onRowType = function(index){
             if (dataArray[index].isHeader) {
-                return 2;
-            }else{
                 return 1;
+            }else{
+                return 2;
             }
         };
 	
-	
+    // listView1.onRowType = function(index){
+    //         var myListViewItem = new ListViewItem();
+    //         if (dataArray[index].isHeader) {
+    //         	myListViewItem = new ListViewItemHeader()
+    //         }else{ 
+    //              myListViewItem = new LstvSummary();
+    //         }
+    //       //this.dispatch(addChild(`item${++itemIndex}`, myListViewItem));
+           
+    //       return myListViewItem;
+    //     };
+		
 	
 }
 

@@ -24,7 +24,7 @@ function onLoad(superOnLoad) {
 	var profile_amount = page.routeData.amount;
     
 	let radius = imgProfile2.borderRadius;
-	imgProfile2.image = img_profile.android.round(radius);
+	imgProfile2.image = img_profile;
 	
 	tvAmount.text = profile_amount.text;
 	tvSend.text = "Sent to " + title_profile;

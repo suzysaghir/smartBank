@@ -9,6 +9,8 @@ const PgRegisterPhoneNumber_1Design = require('ui/ui_pgRegisterPhoneNumber_1');
 const PgRegisterPhoneNumber_1 = extend(PgRegisterPhoneNumber_1Design)(
 	function(_super) {
 		_super(this);
+        // this.headerBar.borderVisibility = true;
+
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
 	}

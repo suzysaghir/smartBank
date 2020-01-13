@@ -50,7 +50,7 @@
 			"userProps": {
 				"borderVisibility": false,
 				"transparent": false,
-				"visible": false
+				"visible": true
 			}
 		},
 		{
@@ -106,7 +106,6 @@
 			"id": "32d6-feb3-40c5-a52f",
 			"props": {
 				"children": [
-					"f024-b781-d556-0b18",
 					"22c1-6c4d-aa96-240b",
 					"4a32-a116-2464-47d0",
 					"f3b7-54eb-2b0b-ee1b",
@@ -120,28 +119,6 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"usePageVariable": true
-			}
-		},
-		{
-			"className": ".sf-imageView",
-			"id": "f024-b781-d556-0b18",
-			"props": {
-				"autoHeight": 18.18181818181818,
-				"autoWidth": 19.696969696969695,
-				"children": [],
-				"name": "imgBack",
-				"parent": "32d6-feb3-40c5-a52f"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"autoHeight": 18.18181818181818,
-				"autoWidth": 19.696969696969695,
-				"flexProps": {
-					"alignSelf": "FLEX_START"
-				},
-				"height": null,
-				"image": "icon_back.png",
-				"imageFillType": "ASPECTFILL"
 			}
 		},
 		{
@@ -520,7 +497,7 @@
 			"className": ".sf-button",
 			"id": "76c4-0940-da44-5236",
 			"props": {
-				"autoHeight": 23.333333333333332,
+				"autoHeight": 29.166666666666668,
 				"children": [],
 				"name": "btnResend",
 				"parent": "15d2-6237-7d22-d445",
@@ -529,7 +506,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 23.333333333333332,
+				"autoHeight": 29.166666666666668,
 				"backgroundColor": "rgba( 158, 238, 255, 1 )",
 				"left": 0,
 				"text": "Resend",

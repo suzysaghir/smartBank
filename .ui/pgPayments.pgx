@@ -237,7 +237,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .sf-listView-heaser",
 			"id": "14ac-3296-3acc-57e7",
 			"props": {
 				"children": [
@@ -250,14 +250,6 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"backgroundColor": "rgba( 211, 246, 255, 1 )",
-				"flexProps": {
-					"flexDirection": "ROW",
-					"justifyContent": "SPACE_BETWEEN",
-					"flexGrow": null,
-					"alignItems": "STRETCH",
-					"alignContent": "STRETCH"
-				},
 				"usePageVariable": true
 			}
 		},

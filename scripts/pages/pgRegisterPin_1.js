@@ -1,13 +1,21 @@
+const HeaderBarItem = require("sf-core/ui/headerbaritem");
+const Image = require("sf-core/ui/image");
+const PageTitleLayout = require("components/PageTitleLayout");
+const System = require("sf-core/device/system");
+const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 const Color = require("sf-core/ui/color");
 const ImageView = require("sf-core/ui/imageview");
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 const KeyboardType = require("sf-core/ui/keyboardtype");
 const Screen = require("sf-core/device/screen");
+const backClose = require("sf-extension-utils/lib/router/back-close");
+
+
 const extend = require('js-base/core/extend');
 const PgRegisterPin_1Design = require('ui/ui_pgRegisterPin_1');
 
 const PgRegisterPin_1 = extend(PgRegisterPin_1Design)(
-	function(_super) {
+	function(_super) {//routeData, router)
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
@@ -15,11 +23,39 @@ const PgRegisterPin_1 = extend(PgRegisterPin_1Design)(
 );
 
 function onShow(superOnShow) {
-	superOnShow();
+	const {routeData, headerBar} = this;
+    superOnShow();
+    // headerBar.titleLayout.applyLayout();
+    routeData && console.info("information: ",routeData.message);
 }
 
 function onLoad(superOnLoad) {
-	superOnLoad();
+    var headerBar;
+    superOnLoad();
+   if (System.OS === "Android") {
+        headerBar = this.headerBar;
+        // headerBar.setLeftItem(new HeaderBarItem({
+        //     onPress: () => {
+        //         this.router.goBack();
+        //     },
+        //     image: Image.createFromFile("images://icon_back.png")
+        // }));
+    }
+    else {
+        headerBar = this.parentController.headerBar;
+		// headerBar.leftItemEnabled = true;
+        // var leftItem = new HeaderBarItem();
+        // leftItem.image = Image.createFromFile("images://icon_back.png");
+        // leftItem.onPress = () =>  this.router.goBack();
+        // this.headerBar.setLeftItem(leftItem);
+ 
+    }
+    
+    headerBar.borderVisibility = false;
+    headerBar.itemColor = Color.WHITE;
+
+
+    
 	const page = this;
 	const { img_background, tvPasscode, tvAgreed, flexContainer, viewRegPin, viewRemoveTouch, tbHidden, btnContinue,
 			flxInside1, flxInside2, flxInside3, flxInside4 } = page;

@@ -1,0 +1,77 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .sf-flx-btn-icon",
+			"id": "fcdb-bbfc-5b9b-dd32",
+			"initialized": true,
+			"props": {
+				"children": [
+					"515e-db11-e49e-ce6d",
+					"2ed3-9b84-8dc6-31cf"
+				],
+				"name": "flexBtnIcon",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER"
+				},
+				"left": 0.8649997413158417,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"top": 635.9375
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "515e-db11-e49e-ce6d",
+			"props": {
+				"autoHeight": 21.875,
+				"autoWidth": 21.875,
+				"children": [],
+				"name": "imgIcon",
+				"parent": "fcdb-bbfc-5b9b-dd32",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 21.875,
+				"autoWidth": 21.875,
+				"image": "payment_icon_add_money.png",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "2ed3-9b84-8dc6-31cf",
+			"props": {
+				"autoHeight": 19.23076923076923,
+				"autoWidth": 59.52524038461538,
+				"children": [],
+				"name": "label1",
+				"parent": "fcdb-bbfc-5b9b-dd32",
+				"text": "  label1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 19.23076923076923,
+				"autoWidth": 59.52524038461538,
+				"marginLeft": 10,
+				"text": "  label1",
+				"textColor": "rgba( 87, 202, 179, 1 )",
+				"usePageVariable": true
+			}
+		}
+	]
+}

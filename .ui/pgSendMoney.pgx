@@ -22,7 +22,8 @@
 				},
 				"paddingBottom": null,
 				"paddingLeft": null,
-				"paddingRight": null
+				"paddingRight": null,
+				"paddingTop": null
 			},
 			"version": "6.15.1"
 		},
@@ -75,6 +76,7 @@
 					"justifyContent": "SPACE_BETWEEN",
 					"flexGrow": null
 				},
+				"marginTop": 0,
 				"usePageVariable": true
 			}
 		},

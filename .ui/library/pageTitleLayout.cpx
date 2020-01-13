@@ -1,0 +1,53 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout",
+			"id": "ea39-af43-8fd2-e234",
+			"initialized": true,
+			"props": {
+				"children": [
+					"0767-e868-33b6-fdf4"
+				],
+				"name": "pageTitleLayout",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"justifyContent": "CENTER"
+				},
+				"height": 58.937498927116394,
+				"left": 34.6976984114874,
+				"top": 751.6051519484747,
+				"width": 276.5625
+			}
+		},
+		{
+			"className": ".sf-textArea",
+			"id": "0767-e868-33b6-fdf4",
+			"props": {
+				"autoHeight": 36.36363636363637,
+				"autoWidth": 2.272727272727273,
+				"children": [],
+				"name": "textArea1",
+				"parent": "ea39-af43-8fd2-e234",
+				"text": "\n\n",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextArea",
+			"userProps": {
+				"autoHeight": 36.36363636363637,
+				"autoWidth": 2.272727272727273,
+				"text": "\n\n",
+				"usePageVariable": true
+			}
+		}
+	]
+}

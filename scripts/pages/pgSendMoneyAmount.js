@@ -36,7 +36,7 @@ function onLoad(superOnLoad) {
 	listView1.onRowBind = function(listViewItem, index) {
 		var iconImage = listViewItem.imgIcon;
 		var myTitle = listViewItem.tvTitle;
-		iconImage.image = img_profile;
+		iconImage.image = img_profile.android.round(50);
 		myTitle.text = title_profile;
 	}
 		// materialtextbox.selectedHintTextColor = Color.create(100, 86, 218, 245)

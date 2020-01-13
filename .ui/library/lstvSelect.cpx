@@ -44,6 +44,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"borderColor": "rgba( 144, 19, 254, 1 )",
 				"borderRadius": 30,
 				"flexProps": {
 					"alignSelf": "CENTER",
@@ -73,14 +74,17 @@
 			"type": "ImageView",
 			"userProps": {
 				"autoHeight": 218.57142857142858,
+				"borderColor": "rgba( 248, 231, 28, 1 )",
+				"borderRadius": 30,
 				"flexProps": {
-					"alignSelf": "STRETCH"
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
 				},
-				"height": null,
+				"height": 60,
 				"image": "app_icon.png",
-				"imageFillType": "ASPECTFIT",
+				"imageFillType": "ASPECTFILL",
 				"usePageVariable": true,
-				"width": null
+				"width": 60
 			}
 		},
 		{
@@ -121,8 +125,8 @@
 			"className": ".sf-textView",
 			"id": "2019-7d07-efaa-2363",
 			"props": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"children": [],
 				"html": "<br>",
 				"name": "tvsign",
@@ -135,8 +139,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "CENTER"

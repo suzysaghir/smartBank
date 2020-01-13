@@ -25,8 +25,8 @@
 					"flexDirection": "ROW"
 				},
 				"height": 81.42857142857143,
-				"left": 8.040332794189453,
-				"top": 311.65361404418945,
+				"left": 21.003295757152415,
+				"top": 426.46843239113133,
 				"width": 385.80357142857144
 			}
 		},
@@ -46,12 +46,14 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"borderColor": "rgba( 80, 227, 194, 1 )",
 				"borderRadius": 30,
 				"flexProps": {
 					"alignSelf": "CENTER",
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
-					"flexGrow": null
+					"flexGrow": null,
+					"alignContent": "STRETCH"
 				},
 				"height": 60,
 				"marginLeft": 15,
@@ -75,8 +77,10 @@
 			"type": "ImageView",
 			"userProps": {
 				"autoHeight": 218.57142857142858,
+				"borderColor": "rgba( 208, 2, 27, 1 )",
 				"flexProps": {
-					"alignSelf": "STRETCH"
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
 				},
 				"height": null,
 				"image": "app_icon.png",
@@ -112,6 +116,7 @@
 					"size": null
 				},
 				"html": "<br>",
+				"marginLeft": 5,
 				"text": "\n",
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"usePageVariable": true,
@@ -122,8 +127,8 @@
 			"className": ".sf-textView",
 			"id": "bca9-0ca2-cb77-fca8",
 			"props": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"children": [],
 				"html": "<br>",
 				"name": "tvsign",
@@ -136,8 +141,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "CENTER"
@@ -155,30 +160,30 @@
 			"className": ".sf-textView",
 			"id": "53a4-2828-5039-9b9d",
 			"props": {
-				"autoHeight": 19.44444497426351,
-				"autoWidth": 14.652778307596844,
+				"autoHeight": 20.3125,
+				"autoWidth": 15.2587890625,
 				"children": [],
 				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
 				"name": "tvDollersign",
 				"parent": "4eb6-cb4a-5fa1-a594",
-				"text": "$"
+				"text": "$",
+				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.44444497426351,
-				"autoWidth": 14.652778307596844,
+				"autoHeight": 20.3125,
+				"autoWidth": 15.2587890625,
 				"flexProps": {
 					"alignSelf": "CENTER"
 				},
-				"height": null,
 				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
 				"text": "$",
 				"textAlignment": "MIDRIGHT",
 				"textColor": "rgba( 140, 140, 140, 1 )",
-				"width": null
+				"usePageVariable": true
 			}
 		},
 		{

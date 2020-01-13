@@ -8,11 +8,8 @@
 				"children": [
 					"6159-4dfe-a04e-15aa",
 					"b625-d3cb-1133-a954",
-					"5c4d-d3d8-5e16-3e14",
-					"88eb-39b0-3b40-6632",
-					"226b-42c4-74e9-07af",
-					"0f94-750b-e4a9-19ba",
-					"00bd-e21a-d5b2-c222"
+					"b27a-199c-b1be-c517",
+					"c40c-8490-430d-07d9"
 				],
 				"name": "pgPayments_1",
 				"orientation": "PORTRAIT",
@@ -48,190 +45,331 @@
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "2b24-9a42-6177-ea44",
-				"title": "payments"
+				"parent": "2b24-9a42-6177-ea44"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "payments",
 				"visible": false
 			}
 		},
 		{
-			"className": ".sf-imageView",
-			"id": "5c4d-d3d8-5e16-3e14",
+			"className": ".sf-flexLayout",
+			"id": "b27a-199c-b1be-c517",
 			"props": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
+				"children": [
+					"179c-264b-c41c-b555"
+				],
+				"name": "flexLayout1",
+				"parent": "2b24-9a42-6177-ea44"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_AROUND"
+				},
+				"paddingLeft": 16,
+				"paddingRight": 16
+			}
+		},
+		{
+			"className": ".sf-scrollView",
+			"id": "179c-264b-c41c-b555",
+			"props": {
+				"children": [
+					"1d6a-e123-7905-6c1f",
+					"5e27-aec3-fb7d-d009",
+					"6dca-764d-8f6d-bd91"
+				],
+				"name": "scrollView1",
+				"parent": "b27a-199c-b1be-c517"
+			},
+			"type": "ScrollView",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
+				},
+				"height": null,
+				"layout": {
+					"flexProps": {
+						"justifyContent": "SPACE_BETWEEN"
+					}
+				}
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "1d6a-e123-7905-6c1f",
+			"props": {
+				"children": [
+					"722a-0b87-5905-12bd",
+					"6dbd-cf4b-6f0e-90cf",
+					"1fd7-86b0-d3ae-d6d4"
+				],
+				"name": "flexLayout2",
+				"parent": "179c-264b-c41c-b555"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null,
+					"flexDirection": "ROW"
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-imageView .sf-img-smartbank",
+			"id": "722a-0b87-5905-12bd",
+			"props": {
 				"children": [],
 				"name": "imgvSmartbankLogo",
-				"parent": "2b24-9a42-6177-ea44"
+				"parent": "1d6a-e123-7905-6c1f"
 			},
 			"type": "ImageView",
 			"userProps": {
-				"alpha": 1,
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
 				"flexProps": {
-					"positionType": "RELATIVE",
 					"alignSelf": "FLEX_START"
 				},
-				"height": 42.626725473711566,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
-				"left": 9.375,
-				"marginTop": 10,
-				"top": 17.1875,
-				"width": 192.1448738344254
+				"marginBottom": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "6dbd-cf4b-6f0e-90cf",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "1d6a-e123-7905-6c1f"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "1fd7-86b0-d3ae-d6d4",
+			"props": {
+				"autoHeight": 14.0625,
+				"autoWidth": 14.0625,
+				"children": [],
+				"name": "imgSearch",
+				"parent": "1d6a-e123-7905-6c1f"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 14.0625,
+				"autoWidth": 14.0625,
+				"flexProps": {
+					"alignSelf": "FLEX_START"
+				},
+				"height": null,
+				"image": "icon_search.png",
+				"imageFillType": "ASPECTFILL"
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5e27-aec3-fb7d-d009",
+			"props": {
+				"children": [
+					"4bbb-8aa6-6c36-c14f",
+					"4fc3-c717-a310-c5bd"
+				],
+				"name": "flexLayout3",
+				"parent": "179c-264b-c41c-b555"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"justifyContent": "CENTER",
+					"flexGrow": null
+				},
+				"left": 0,
+				"marginTop": 1,
+				"top": 0
 			}
 		},
 		{
 			"className": ".sf-textView",
-			"id": "88eb-39b0-3b40-6632",
+			"id": "4bbb-8aa6-6c36-c14f",
 			"props": {
-				"autoHeight": 63.15789473684211,
+				"autoHeight": 54.16666666666667,
 				"children": [],
 				"html": "<br>",
 				"name": "tvMoney",
-				"parent": "2b24-9a42-6177-ea44",
+				"parent": "5e27-aec3-fb7d-d009",
 				"text": "\n",
 				"usePageVariable": true
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 63.15789473684211,
+				"autoHeight": 54.16666666666667,
 				"font": {
 					"family": "SFProText",
 					"style": "Semibold",
 					"bold": true,
 					"italic": false,
-					"size": 60
+					"size": 50
 				},
 				"height": null,
 				"html": "<br>",
+				"left": 0,
 				"marginBottom": null,
-				"marginTop": 20,
+				"marginTop": 1,
 				"text": "\n",
 				"textAlignment": "BOTTOMCENTER",
+				"top": 0,
 				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-textView",
-			"id": "226b-42c4-74e9-07af",
+			"id": "4fc3-c717-a310-c5bd",
 			"props": {
-				"autoHeight": 19.29824561403509,
 				"children": [],
-				"html": "<br>",
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"name": "tvAccountBalance",
-				"parent": "2b24-9a42-6177-ea44",
-				"text": "\n",
+				"parent": "5e27-aec3-fb7d-d009",
 				"usePageVariable": true
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.29824561403509,
-				"font": {
-					"family": "SFProText",
-					"style": "Medium",
-					"bold": false,
-					"italic": false,
-					"size": 16
+				"flexProps": {
+					"alignSelf": "CENTER"
 				},
-				"height": null,
-				"html": "<br>",
-				"marginTop": null,
-				"text": "\n",
-				"textAlignment": "TOPCENTER",
-				"textColor": "rgba( 203, 244, 255, 1 )",
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "0f94-750b-e4a9-19ba",
+			"id": "6dca-764d-8f6d-bd91",
 			"props": {
 				"children": [
-					"23d3-1b47-1af6-9144",
-					"b461-ef52-d2e0-5975"
+					"8285-b8a4-9417-3ac9",
+					"a40c-ced9-66d4-346d"
 				],
-				"name": "flexLayoutbtn",
-				"parent": "2b24-9a42-6177-ea44",
+				"name": "flexLayout4",
+				"parent": "179c-264b-c41c-b555",
 				"usePageVariable": true
 			},
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
 					"flexDirection": "ROW",
-					"justifyContent": "SPACE_AROUND",
 					"flexGrow": null,
-					"positionType": "RELATIVE",
-					"flexWrap": "NOWRAP",
-					"alignContent": "CENTER",
-					"alignSelf": "STRETCH",
-					"alignItems": "CENTER"
+					"justifyContent": "FLEX_START",
+					"alignSelf": "STRETCH"
 				},
-				"height": null,
+				"height": 70,
+				"left": 0,
+				"maxHeight": 70,
+				"top": 0,
 				"usePageVariable": true,
 				"width": null
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "23d3-1b47-1af6-9144",
+			"className": ".sf-flexLayout .sf-flx-btn-icon",
+			"hiddenComponent": false,
+			"id": "8285-b8a4-9417-3ac9",
+			"initialized": false,
 			"props": {
-				"autoHeight": 22.46376949807872,
-				"autoWidth": 125.67934782608695,
 				"children": [],
-				"name": "btnAddMoney",
-				"parent": "0f94-750b-e4a9-19ba",
-				"text": "   Add Money   ",
+				"name": "flexBtnIconAddMoney",
+				"parent": "6dca-764d-8f6d-bd91",
 				"usePageVariable": true
 			},
-			"type": "Button",
+			"source": {
+				"page": "__library__",
+				"type": "flexBtnIcon",
+				"id": "fcdb-bbfc-5b9b-dd32"
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"autoHeight": 22.46376949807872,
-				"autoWidth": 125.67934782608695,
-				"flexProps": {
-					"alignSelf": "CENTER"
+				"flex": {
+					"justifyContent": 1,
+					"positionType": 0
 				},
-				"text": "   Add Money   ",
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"marginLeft": 16,
+				"marginRight": 16,
+				"paddingRight": 10,
+				"top": 0,
 				"usePageVariable": true
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "b461-ef52-d2e0-5975",
+			"className": ".sf-flexLayout .sf-flx-btn-icon",
+			"hiddenComponent": false,
+			"id": "a40c-ced9-66d4-346d",
+			"initialized": false,
 			"props": {
-				"autoHeight": 22.46376949807872,
-				"autoWidth": 135.0996432097062,
 				"children": [],
-				"name": "btnSendMoney",
-				"parent": "0f94-750b-e4a9-19ba",
-				"text": "   Send Money   ",
+				"name": "flexBtnIconSendMoney",
+				"parent": "6dca-764d-8f6d-bd91",
 				"usePageVariable": true
 			},
-			"type": "Button",
+			"source": {
+				"page": "__library__",
+				"type": "flexBtnIcon",
+				"id": "fcdb-bbfc-5b9b-dd32"
+			},
+			"type": "FlexLayout",
 			"userProps": {
-				"autoHeight": 22.46376949807872,
-				"autoWidth": 135.0996432097062,
-				"flexProps": {
-					"alignSelf": "CENTER"
+				"flex": {
+					"justifyContent": 1,
+					"positionType": 0
 				},
-				"text": "   Send Money   ",
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"marginRight": 16,
+				"paddingRight": 10,
+				"top": 0,
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "c40c-8490-430d-07d9",
+			"props": {
+				"children": [
+					"56c9-d4bd-1208-ba85"
+				],
+				"name": "flexLayout2",
+				"parent": "2b24-9a42-6177-ea44"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2
+				}
 			}
 		},
 		{
 			"className": ".sf-listView",
-			"id": "00bd-e21a-d5b2-c222",
+			"id": "56c9-d4bd-1208-ba85",
 			"props": {
 				"children": [
-					"e3f5-f59d-3684-ca20"
+					"5526-b195-9003-0dc0"
 				],
 				"itemCount": 4,
 				"name": "listView1",
-				"parent": "2b24-9a42-6177-ea44",
+				"parent": "c40c-8490-430d-07d9",
 				"rowHeight": 80,
 				"usePageVariable": true
 			},
@@ -245,20 +383,22 @@
 					"alignSelf": "STRETCH"
 				},
 				"itemCount": 4,
+				"left": 0,
 				"right": -1,
 				"rowHeight": 80,
+				"top": 0,
 				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-listViewItem",
 			"hiddenComponent": false,
-			"id": "e3f5-f59d-3684-ca20",
+			"id": "5526-b195-9003-0dc0",
 			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "lstvSummary",
-				"parent": "00bd-e21a-d5b2-c222"
+				"parent": "56c9-d4bd-1208-ba85"
 			},
 			"source": {
 				"page": "__library__",

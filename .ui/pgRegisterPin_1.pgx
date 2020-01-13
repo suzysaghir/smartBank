@@ -43,11 +43,13 @@
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "59fa-f500-8c58-c9f4"
+				"parent": "59fa-f500-8c58-c9f4",
+				"title": " "
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"visible": false
+				"title": " ",
+				"visible": true
 			}
 		},
 		{
@@ -76,8 +78,8 @@
 			"className": ".sf-imageView",
 			"id": "dbb8-dcfc-8067-89c0",
 			"props": {
-				"autoHeight": 125,
-				"autoWidth": 86.25,
+				"autoHeight": 126,
+				"autoWidth": 86,
 				"children": [],
 				"name": "img_background",
 				"parent": "eb34-a821-eb34-5915",
@@ -85,8 +87,8 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 125,
-				"autoWidth": 86.25,
+				"autoHeight": 126,
+				"autoWidth": 86,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"alignSelf": "FLEX_END"
@@ -103,7 +105,6 @@
 			"id": "5afc-61e5-5789-ceca",
 			"props": {
 				"children": [
-					"cfff-57cd-addf-b6d4",
 					"2f36-1ae8-949d-f981",
 					"d67a-c86b-9f33-b1d8",
 					"f06e-f2ae-6982-e880",
@@ -125,33 +126,11 @@
 			}
 		},
 		{
-			"className": ".sf-imageView",
-			"id": "cfff-57cd-addf-b6d4",
-			"props": {
-				"autoHeight": 17.5,
-				"autoWidth": 18.75,
-				"children": [],
-				"name": "imgBack",
-				"parent": "5afc-61e5-5789-ceca"
-			},
-			"type": "ImageView",
-			"userProps": {
-				"autoHeight": 17.5,
-				"autoWidth": 18.75,
-				"flexProps": {
-					"alignSelf": "FLEX_START"
-				},
-				"height": null,
-				"image": "icon_back.png",
-				"imageFillType": "ASPECTFILL"
-			}
-		},
-		{
 			"className": ".sf-imageView .sf-img-smartbank",
 			"id": "2f36-1ae8-949d-f981",
 			"props": {
-				"autoHeight": 41.25,
-				"autoWidth": 196.25,
+				"autoHeight": 42,
+				"autoWidth": 196,
 				"children": [],
 				"name": "imgvSmartbankLogo",
 				"parent": "5afc-61e5-5789-ceca",
@@ -159,8 +138,8 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 41.25,
-				"autoWidth": 196.25,
+				"autoHeight": 42,
+				"autoWidth": 196,
 				"usePageVariable": true
 			}
 		},
@@ -470,7 +449,7 @@
 			"className": ".sf-button",
 			"id": "9688-65df-7aea-3dd1",
 			"props": {
-				"autoHeight": 23.333333333333332,
+				"autoHeight": 29.166666666666668,
 				"children": [],
 				"name": "btnContinue",
 				"parent": "0eb1-c877-9c01-df34",
@@ -479,7 +458,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 23.333333333333332,
+				"autoHeight": 29.166666666666668,
 				"left": 0,
 				"text": "Continue",
 				"top": 0,

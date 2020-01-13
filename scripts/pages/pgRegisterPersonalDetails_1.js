@@ -1,11 +1,15 @@
-const Font = require("sf-core/ui/font");
 const Screen = require("sf-core/device/screen");
+const Button = require("sf-core/ui/button");
+const Router = require("@smartface/router/src/native/NativeRouter");
+const Font = require("sf-core/ui/font");
+const FlexLayout = require("sf-core/ui/flexlayout");
+const Color = require("sf-core/ui/color");
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 
 const extend = require('js-base/core/extend');
-const PgRegisterPersonalDetails_11Design = require('ui/ui_pgRegisterPersonalDetails_11');
+const PgRegisterPersonalDetails_1Design = require('ui/ui_pgRegisterPersonalDetails_1');
 
-const PgRegisterPersonalDetails_11 = extend(PgRegisterPersonalDetails_11Design)(
+const PgRegisterPersonalDetails_1 = extend(PgRegisterPersonalDetails_1Design)(
 	function(_super) {
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
@@ -22,9 +26,10 @@ function onLoad(superOnLoad) {
 	const page = this;	 
 	const { img_background, tvPersonalDetails, mtbFirstName, mtbLastName, mtbBirthDate, btnContinue } = page;
 	
-	img_background.height = Screen.height/3*2;
-	img_background.width = Screen.width/3*2;
-
+	img_background.height = Screen.height;
+	img_background.width = Screen.width;
+	const tvStyle = getCombinedStyle(".sf-textView");
+	Object.assign(tvPersonalDetails, tvStyle);
 	tvPersonalDetails.text = "What are your personal details?";
 	tvPersonalDetails.option = {
 		iOS:{
@@ -54,8 +59,8 @@ function onLoad(superOnLoad) {
 		}
 	};
 	
-	btnContinue.onPress = () => page.router.push("/pages/pgRegisterAddress_1");
+	btnContinue.onPress = () => page.router.push("/pages/pgRegisterAddress");
 
 }
 
-module.exports = PgRegisterPersonalDetails_11;
+module.exports = PgRegisterPersonalDetails_1;
