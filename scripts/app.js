@@ -35,12 +35,12 @@ const router = require("./routes");
 // router.push("/pages/pgRegisterPersonalDetails_11");
 
 
-// router.push("/pages/pgRegisterPhoneNumber_1");
+router.push("/pages/pgRegisterPhoneNumber_1");
 // router.push("/pages/pgRegisterPin_1");
 
 // router.push("/pages/pgRegisterActivationCode_11");
 
 // router.push("/pages/pgRegisterAccountCreate_1");
-router.push("/pages/pgPayments_1");
+// router.push("/pages/pgPayments_1");
 
 // router.push("/pages/pageTest");

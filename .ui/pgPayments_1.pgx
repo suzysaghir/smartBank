@@ -8,8 +8,7 @@
 				"children": [
 					"6159-4dfe-a04e-15aa",
 					"b625-d3cb-1133-a954",
-					"b27a-199c-b1be-c517",
-					"c40c-8490-430d-07d9"
+					"c54b-e542-aa3b-a69e"
 				],
 				"name": "pgPayments_1",
 				"orientation": "PORTRAIT",
@@ -54,37 +53,38 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "b27a-199c-b1be-c517",
+			"id": "c54b-e542-aa3b-a69e",
 			"props": {
 				"children": [
-					"179c-264b-c41c-b555"
+					"ed9c-30ae-0d0f-ce38",
+					"bb83-6b42-3faf-0a18"
 				],
 				"name": "flexLayout1",
 				"parent": "2b24-9a42-6177-ea44"
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"flexProps": {
-					"justifyContent": "SPACE_AROUND"
-				},
-				"paddingLeft": 16,
-				"paddingRight": 16
+				"left": 0,
+				"top": 0
 			}
 		},
 		{
 			"className": ".sf-scrollView",
-			"id": "179c-264b-c41c-b555",
+			"id": "ed9c-30ae-0d0f-ce38",
 			"props": {
+				"autoSizeEnabled": true,
 				"children": [
-					"1d6a-e123-7905-6c1f",
-					"5e27-aec3-fb7d-d009",
-					"6dca-764d-8f6d-bd91"
+					"7c00-0708-d75b-b906",
+					"5563-7827-d664-50fa",
+					"c1a7-0ab8-5af8-7281"
 				],
 				"name": "scrollView1",
-				"parent": "b27a-199c-b1be-c517"
+				"parent": "c54b-e542-aa3b-a69e",
+				"usePageVariable": true
 			},
 			"type": "ScrollView",
 			"userProps": {
+				"autoSizeEnabled": true,
 				"flexProps": {
 					"alignSelf": "STRETCH",
 					"flexGrow": 1
@@ -92,42 +92,47 @@
 				"height": null,
 				"layout": {
 					"flexProps": {
-						"justifyContent": "SPACE_BETWEEN"
+						"justifyContent": "FLEX_START"
 					}
-				}
+				},
+				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "1d6a-e123-7905-6c1f",
+			"id": "7c00-0708-d75b-b906",
 			"props": {
 				"children": [
-					"722a-0b87-5905-12bd",
-					"6dbd-cf4b-6f0e-90cf",
-					"1fd7-86b0-d3ae-d6d4"
+					"7125-356d-b81e-c8a1",
+					"0c03-9898-4b82-d8b6",
+					"11f4-1db4-32f5-7356"
 				],
 				"name": "flexLayout2",
-				"parent": "179c-264b-c41c-b555"
+				"parent": "ed9c-30ae-0d0f-ce38"
 			},
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": null,
-					"flexDirection": "ROW"
+					"flexDirection": "ROW",
+					"alignSelf": "STRETCH",
+					"alignItems": "CENTER"
 				},
 				"height": null,
 				"left": 0,
+				"paddingLeft": 16,
+				"paddingRight": 16,
 				"top": 0,
 				"width": null
 			}
 		},
 		{
 			"className": ".sf-imageView .sf-img-smartbank",
-			"id": "722a-0b87-5905-12bd",
+			"id": "7125-356d-b81e-c8a1",
 			"props": {
 				"children": [],
 				"name": "imgvSmartbankLogo",
-				"parent": "1d6a-e123-7905-6c1f"
+				"parent": "7c00-0708-d75b-b906"
 			},
 			"type": "ImageView",
 			"userProps": {
@@ -139,11 +144,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "6dbd-cf4b-6f0e-90cf",
+			"id": "0c03-9898-4b82-d8b6",
 			"props": {
 				"children": [],
 				"name": "flexLayout1",
-				"parent": "1d6a-e123-7905-6c1f"
+				"parent": "7c00-0708-d75b-b906"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -153,13 +158,13 @@
 		},
 		{
 			"className": ".sf-imageView",
-			"id": "1fd7-86b0-d3ae-d6d4",
+			"id": "11f4-1db4-32f5-7356",
 			"props": {
 				"autoHeight": 14.0625,
 				"autoWidth": 14.0625,
 				"children": [],
 				"name": "imgSearch",
-				"parent": "1d6a-e123-7905-6c1f"
+				"parent": "7c00-0708-d75b-b906"
 			},
 			"type": "ImageView",
 			"userProps": {
@@ -175,20 +180,20 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "5e27-aec3-fb7d-d009",
+			"id": "5563-7827-d664-50fa",
 			"props": {
 				"children": [
-					"4bbb-8aa6-6c36-c14f",
-					"4fc3-c717-a310-c5bd"
+					"5035-7a45-3d12-750e",
+					"ac8b-0f25-e2ff-9cb8"
 				],
 				"name": "flexLayout3",
-				"parent": "179c-264b-c41c-b555"
+				"parent": "ed9c-30ae-0d0f-ce38"
 			},
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
 					"alignSelf": "CENTER",
-					"justifyContent": "CENTER",
+					"justifyContent": "FLEX_START",
 					"flexGrow": null
 				},
 				"left": 0,
@@ -198,19 +203,22 @@
 		},
 		{
 			"className": ".sf-textView",
-			"id": "4bbb-8aa6-6c36-c14f",
+			"id": "5035-7a45-3d12-750e",
 			"props": {
 				"autoHeight": 54.16666666666667,
 				"children": [],
 				"html": "<br>",
 				"name": "tvMoney",
-				"parent": "5e27-aec3-fb7d-d009",
+				"parent": "5563-7827-d664-50fa",
 				"text": "\n",
 				"usePageVariable": true
 			},
 			"type": "TextView",
 			"userProps": {
 				"autoHeight": 54.16666666666667,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
 				"font": {
 					"family": "SFProText",
 					"style": "Semibold",
@@ -231,12 +239,12 @@
 		},
 		{
 			"className": ".sf-textView",
-			"id": "4fc3-c717-a310-c5bd",
+			"id": "ac8b-0f25-e2ff-9cb8",
 			"props": {
 				"children": [],
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"name": "tvAccountBalance",
-				"parent": "5e27-aec3-fb7d-d009",
+				"parent": "5563-7827-d664-50fa",
 				"usePageVariable": true
 			},
 			"type": "TextView",
@@ -245,19 +253,20 @@
 					"alignSelf": "CENTER"
 				},
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"marginTop": null,
 				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "6dca-764d-8f6d-bd91",
+			"id": "c1a7-0ab8-5af8-7281",
 			"props": {
 				"children": [
-					"8285-b8a4-9417-3ac9",
-					"a40c-ced9-66d4-346d"
+					"3194-b7fc-3efd-bf93",
+					"707a-99fe-25a0-6c5f"
 				],
 				"name": "flexLayout4",
-				"parent": "179c-264b-c41c-b555",
+				"parent": "ed9c-30ae-0d0f-ce38",
 				"usePageVariable": true
 			},
 			"type": "FlexLayout",
@@ -266,7 +275,8 @@
 					"flexDirection": "ROW",
 					"flexGrow": null,
 					"justifyContent": "FLEX_START",
-					"alignSelf": "STRETCH"
+					"alignSelf": "STRETCH",
+					"alignItems": "CENTER"
 				},
 				"height": 70,
 				"left": 0,
@@ -279,12 +289,12 @@
 		{
 			"className": ".sf-flexLayout .sf-flx-btn-icon",
 			"hiddenComponent": false,
-			"id": "8285-b8a4-9417-3ac9",
+			"id": "3194-b7fc-3efd-bf93",
 			"initialized": false,
 			"props": {
 				"children": [],
 				"name": "flexBtnIconAddMoney",
-				"parent": "6dca-764d-8f6d-bd91",
+				"parent": "c1a7-0ab8-5af8-7281",
 				"usePageVariable": true
 			},
 			"source": {
@@ -313,12 +323,12 @@
 		{
 			"className": ".sf-flexLayout .sf-flx-btn-icon",
 			"hiddenComponent": false,
-			"id": "a40c-ced9-66d4-346d",
+			"id": "707a-99fe-25a0-6c5f",
 			"initialized": false,
 			"props": {
 				"children": [],
 				"name": "flexBtnIconSendMoney",
-				"parent": "6dca-764d-8f6d-bd91",
+				"parent": "c1a7-0ab8-5af8-7281",
 				"usePageVariable": true
 			},
 			"source": {
@@ -345,32 +355,32 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "c40c-8490-430d-07d9",
+			"id": "bb83-6b42-3faf-0a18",
 			"props": {
 				"children": [
-					"56c9-d4bd-1208-ba85"
+					"b406-5719-e1e5-a4db"
 				],
-				"name": "flexLayout2",
-				"parent": "2b24-9a42-6177-ea44"
+				"name": "flexLayout1",
+				"parent": "c54b-e542-aa3b-a69e"
 			},
 			"type": "FlexLayout",
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 2
-				}
+				},
+				"marginTop": null
 			}
 		},
 		{
 			"className": ".sf-listView",
-			"id": "56c9-d4bd-1208-ba85",
+			"id": "b406-5719-e1e5-a4db",
 			"props": {
 				"children": [
-					"5526-b195-9003-0dc0"
+					"6f88-1b72-8056-5aba"
 				],
 				"itemCount": 4,
 				"name": "listView1",
-				"parent": "c40c-8490-430d-07d9",
-				"rowHeight": 80,
+				"parent": "bb83-6b42-3faf-0a18",
 				"usePageVariable": true
 			},
 			"type": "ListView",
@@ -379,13 +389,14 @@
 				"borderColor": "rgba( 242, 242, 242, 1 )",
 				"borderWidth": 1,
 				"flexProps": {
-					"flexGrow": 1,
+					"flexGrow": 2,
 					"alignSelf": "STRETCH"
 				},
+				"height": null,
 				"itemCount": 4,
 				"left": 0,
+				"minHeight": 216,
 				"right": -1,
-				"rowHeight": 80,
 				"top": 0,
 				"usePageVariable": true
 			}
@@ -393,12 +404,12 @@
 		{
 			"className": ".sf-listViewItem",
 			"hiddenComponent": false,
-			"id": "5526-b195-9003-0dc0",
+			"id": "6f88-1b72-8056-5aba",
 			"initialized": true,
 			"props": {
 				"children": [],
 				"name": "lstvSummary",
-				"parent": "56c9-d4bd-1208-ba85"
+				"parent": "b406-5719-e1e5-a4db"
 			},
 			"source": {
 				"page": "__library__",

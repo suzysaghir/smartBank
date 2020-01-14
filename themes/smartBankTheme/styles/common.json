@@ -25,8 +25,8 @@
 			},
 			"paddingLeft": 30,
 			"paddingRight": 30,
-			"marginBottom": 50,
-			"marginTop": 50
+			"marginBottom": 20,
+			"marginTop": 20
 		},
 		"&-textView": {
 			"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -166,9 +166,7 @@
 			"paddingLeft": 16,
 			"paddingRight": 16
 		},
-		"&-view": {
-			"backgroundColor": "rgba( 255, 255, 255, 0 )"
-		},
+		"&-view": {},
 		"&-flx": {
 			"&-btn": {
 				"&-icon": {
@@ -183,6 +181,21 @@
 					}
 				}
 			}
+		},
+		"&-listViewItem": {
+			"&-summary": {
+				"&-header": {
+					"backgroundColor": "rgba( 211, 246, 255, 1 )",
+					"flexProps": {
+						"flexDirection": "ROW",
+						"justifyContent": "SPACE_BETWEEN"
+					}
+				}
+			}
+		},
+		"&-payment": {
+			"paddingRight": 16,
+			"paddingLeft": 0
 		}
 	}
 }

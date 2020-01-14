@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 const Font = require("sf-core/ui/font");
 const Label = require("sf-core/ui/label");
 const ListViewItem = require("sf-core/ui/listviewitem");
@@ -7,10 +8,11 @@ const FlexLayout = require("sf-core/ui/flexlayout");
 const Image = require("sf-core/ui/image");
 const TextView = require("sf-core/ui/textview");
 const addChild = require("@smartface/contx/lib/smartface/action/addChild");
+const Device = require('sf-core/device');
 
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 var LstvSummary = require("components/LstvSummary")
-var ListViewItemHeader = require("components/FlexListViewHeader")
+var ListViewItemHeader = require("components/ListViewItemHeader")
 
 const extend = require('js-base/core/extend');
 const PgPayments_1Design = require('ui/ui_pgPayments_1');
@@ -19,11 +21,20 @@ const PgPayments_1 = extend(PgPayments_1Design)(
 		_super(this);
 		this.onShow = onShow.bind(this, this.onShow.bind(this));
 		this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+		
 	}
 );
 
 function onShow(superOnShow) {
 	superOnShow();
+   //if (System.OS === "Android") {
+   //     this.headerBar = this.headerBar;
+   //         	this.headerBar.borderVisibility = false;
+   // }
+   // else {
+   //  //   this.headerBar = this.parentController.headerBar;
+   // 	// this.headerBar.borderVisibility = false;
+   // }
 }
 
 
@@ -31,8 +42,8 @@ function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
 	const router = require("routes");
-	const { tvMoney, tvAccountBalance, flexBtnIconAddMoney, flexBtnIconSendMoney, flxLstvHeader, listView1, lstvSummary } = page;
-
+	const { tvMoney, tvAccountBalance, flexBtnIconAddMoney, flexBtnIconSendMoney, flxLstvHeader, listView1, lstvSummary, scrollView1 } = page;
+	scrollView1.layout.applyLayout() 
 	flexBtnIconAddMoney.imgIcon.image = Image.createFromFile("images://payment_icon_add_money.png");
 	flexBtnIconSendMoney.imgIcon.image = Image.createFromFile("images://payment_icon_send_money.png");
 
@@ -44,70 +55,79 @@ function onLoad(superOnLoad) {
 
 	// tvDate.text = "TODAY";
 	// tvAmount.text = "$200";
-// "TODAY", "YESTERDAY", "2 DAYS AGO", "LAST MONTH"
-    var _headerData = [
-        "Complementary",
-        "Analogous",
-        "Tetradic",
-        "Monochromatic"
+	// "TODAY", "YESTERDAY", "2 DAYS AGO", "LAST MONTH"
+    // var _headerData = [
+    //     "Complementary",
+    //     "Analogous",
+    //     "Tetradic",
+    //     "Monochromatic"
+    // ];
+        var _headerData = [
+        {date:"Today", amount:"$200", sign:"-"},
+        {date:"Yesterday", amount:"$650", sign:"+"},
+        {date:"2 Days ago", amount:"$943", sign:"+"},
+        {date:"1 Month ago", amount:"$140", sign:"-"},
+
     ];
-    
     var _rowData = [
         [{
-		title: '111 Doe',
+		title: 'Airline',
 		image: Image.createFromFile("images://travel.png"),
-		price: '40',
+		price: '832',
 		sign: "+"
 		},{
-		title: 'Frank James',
+		title: 'A Mall',
 		image: Image.createFromFile("images://shopping.png"),
 		price: '20',
 		sign: "-"
 	}], [{
-		title: '222 Doe',
+		title: 'John Doe',
 		image: Image.createFromFile("images://adam.png"),
 		price: '40',
 		sign: "+"
 		},{
 		title: 'Frank James',
 		image: Image.createFromFile("images://adam2.png"),
-		price: '20',
+		price: '3333',
 		sign: "-"
 	}], [{
-		title: '333 Doe',
+		title: 'Unknown',
 		image: Image.createFromFile("images://travel.png"),
 		price: '40',
 		sign: "+"
 		},{
-		title: 'Frank James',
+		title: 'Unknown',
 		image: Image.createFromFile("images://shopping.png"),
 		price: '20',
 		sign: "-"
 	}], [{
-		title: '444 Doe',
+		title: 'Unknown',
 		image: Image.createFromFile("images://travel.png"),
-		price: '40',
+		price: '403',
 		sign: "+"
 		},{
-		title: 'Frank James',
+		title: 'Unknown',
 		image: Image.createFromFile("images://shopping.png"),
 		price: '20',
 		sign: "-"
 	}]];
 
     var dataArray = [];
-        function pushDataToArray(headerData,rowData){
-            for (var i = 0; i < headerData.length; i++) {
-                dataArray.push({isHeader : true, data : headerData[i]});
-                for (var j = 0; j <  rowData[i].length; j++) {
-                    dataArray.push({isHeader : false, data : rowData[i][j]});
-                }
+    var count = 0;
+    function pushDataToArray(headerData,rowData){
+        for (var i = 0; i < headerData.length; i++) {
+            dataArray.push({isHeader : true, data : headerData[i]});
+            count++
+            for (var j = 0; j < rowData[i].length; j++) {
+                dataArray.push({isHeader : false, data : rowData[i][j]});
+                count++
             }
-        };
+        }
+    };
     
     pushDataToArray(_headerData,_rowData);
    	// listView1.itemCount =  myDataSet.length;
-   	listView1.itemCount = 8;
+   	listView1.itemCount = count;
    	
     var itemIndex = 0;
    	 listView1.onRowCreate = function(type) {
@@ -130,9 +150,9 @@ function onLoad(superOnLoad) {
     //             myListViewItem.myFlexLayout = myFlexLayout; 
     //             myListViewItem.tvDate = tvDate; 
                 
-            	var header = new ListViewItemHeader()
-            	myListViewItem.myHeader = header;
-            	// myListViewItem = new ListViewItemHeader();
+            	// var header = new ListViewItemHeader()
+            	// myListViewItem.myHeader = header;
+            	myListViewItem = new ListViewItemHeader();
 
             }else{ 
                  myListViewItem = new LstvSummary();
@@ -143,9 +163,9 @@ function onLoad(superOnLoad) {
         };
     listView1.onRowHeight = function(index){
         if (dataArray[index].isHeader) {
-            return 20;
+            return 30;
         }
-        return 60;
+        return 80;
         };
         
 	listView1.onRowBind = function(listViewItem, index) {
@@ -153,16 +173,14 @@ function onLoad(superOnLoad) {
 	    console.log("IS HEADER  : ",dataArray[index].isHeader);
 
 		if (dataArray[index].isHeader) {
-		        	// var date = listViewItem.tvDate;
-		        	// var amount = listViewItem.tvAmount;
+		        	var date = listViewItem.tvDate;
+		        	var amount = listViewItem.tvAmount;
+		        	var sign = listViewItem.tvSign;
 
-		         //   date.text = "the date "
-		         //   amount.text = "the amount "
-		         console.log("date",ListViewItem.tvDate)
-		         console.log("item : ",ListViewItem)
-		         console.log("",ListViewItem)
-
-
+		            date.text = dataArray[index].data.date;
+		            amount.text = dataArray[index].data.amount;
+		             sign.text = dataArray[index].data.sign;
+		            
 		        }else{
 		            // myLabelTitle.backgroundColor = Color.create(dataArray[index].data);
         			var iconImage = listViewItem.imgIcon;

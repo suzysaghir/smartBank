@@ -340,6 +340,7 @@
 			},
 			"type": "View",
 			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"alignSelf": "CENTER",
@@ -362,7 +363,6 @@
 			"type": "View",
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
-				"borderColor": "rgba( 208, 2, 27, 1 )",
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "STRETCH"
@@ -374,11 +374,12 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .sf-flexLayout2",
 			"id": "68ff-d8db-ab73-4ff2",
 			"props": {
 				"children": [
-					"0eb1-c877-9c01-df34"
+					"6067-8ef0-50b5-a7d1",
+					"68b5-d6a3-42ca-72c7"
 				],
 				"name": "flexLayout2",
 				"parent": "eb34-a821-eb34-5915"
@@ -396,41 +397,13 @@
 			}
 		},
 		{
-			"className": ".sf-scrollView",
-			"id": "0eb1-c877-9c01-df34",
-			"props": {
-				"children": [
-					"4705-9d3b-a67e-b96d",
-					"9688-65df-7aea-3dd1"
-				],
-				"name": "scrollView1",
-				"parent": "68ff-d8db-ab73-4ff2"
-			},
-			"type": "ScrollView",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "STRETCH"
-				},
-				"height": null,
-				"layout": {
-					"flexProps": {
-						"justifyContent": "SPACE_AROUND",
-						"alignItems": "CENTER",
-						"alignContent": "CENTER"
-					}
-				},
-				"width": null
-			}
-		},
-		{
 			"className": ".sf-textView",
-			"id": "4705-9d3b-a67e-b96d",
+			"id": "6067-8ef0-50b5-a7d1",
 			"props": {
 				"children": [],
 				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
 				"name": "tvAgreed",
-				"parent": "0eb1-c877-9c01-df34",
+				"parent": "68ff-d8db-ab73-4ff2",
 				"usePageVariable": true
 			},
 			"type": "TextView",
@@ -447,19 +420,21 @@
 		},
 		{
 			"className": ".sf-button",
-			"id": "9688-65df-7aea-3dd1",
+			"id": "68b5-d6a3-42ca-72c7",
 			"props": {
-				"autoHeight": 29.166666666666668,
+				"autoHeight": 27.77777777777778,
 				"children": [],
 				"name": "btnContinue",
-				"parent": "0eb1-c877-9c01-df34",
+				"parent": "68ff-d8db-ab73-4ff2",
 				"text": "Continue",
 				"usePageVariable": true
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 29.166666666666668,
+				"autoHeight": 27.77777777777778,
 				"left": 0,
+				"marginBottom": 20,
+				"marginTop": 20,
 				"text": "Continue",
 				"top": 0,
 				"usePageVariable": true

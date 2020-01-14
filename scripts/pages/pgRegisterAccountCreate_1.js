@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 const Screen = require("sf-core/device/screen");
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 
@@ -14,6 +15,19 @@ const PgRegisterAccountCreate_1 = extend(PgRegisterAccountCreate_1Design)(
 
 function onShow(superOnShow) {
 	superOnShow();
+	
+   if (System.OS === "Android") {
+        this.headerBar = this.headerBar;
+        console.log("header and")
+    }
+    else {
+        this.headerBar = this.parentController.headerBar;
+                console.log("header ios")
+
+    }
+    this.headerBar.visible = false;
+    this.headerBar.borderVisibility = false;
+    console.log("the header is: ",    this.headerBar.visible)
 }
 
 function onLoad(superOnLoad) {
@@ -23,6 +37,7 @@ function onLoad(superOnLoad) {
 
 	tvAccountCreate.text ="Your Smartbank account has been created.";
 	tvAccountCreate.maxLines=2;
+	page.router = require("routes");
 	btnDone.onPress = () => page.router.push("/tabs");
 
 

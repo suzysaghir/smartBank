@@ -36,7 +36,7 @@ var myDataSet = [{
 	listView1.onRowBind = function(listViewItem, index) {
 		var iconImage = listViewItem.imgIcon;
 		var myTitle = listViewItem.tvTitle;
-
+		// console.log("++++++")
 		iconImage.image = myDataSet[index].image.android.round(50);
 		myTitle.text = myDataSet[index].title;
 	}	

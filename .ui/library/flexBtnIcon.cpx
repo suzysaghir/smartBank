@@ -52,8 +52,8 @@
 			"className": ".sf-label",
 			"id": "2ed3-9b84-8dc6-31cf",
 			"props": {
-				"autoHeight": 19.23076923076923,
-				"autoWidth": 59.52524038461538,
+				"autoHeight": 20.967741935483872,
+				"autoWidth": 75.44102822580645,
 				"children": [],
 				"name": "label1",
 				"parent": "fcdb-bbfc-5b9b-dd32",
@@ -65,8 +65,8 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 19.23076923076923,
-				"autoWidth": 59.52524038461538,
+				"autoHeight": 20.967741935483872,
+				"autoWidth": 75.44102822580645,
 				"marginLeft": 10,
 				"text": "  label1",
 				"textColor": "rgba( 87, 202, 179, 1 )",

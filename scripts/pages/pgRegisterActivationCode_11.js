@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 const KeyboardType = require("sf-core/ui/keyboardtype");
 const Color = require("sf-core/ui/color");
@@ -15,7 +16,14 @@ const PgRegisterActivationCode_11 = extend(PgRegisterActivationCode_11Design)(
 
 function onShow(superOnShow) {
 	superOnShow();
-}
+   if (System.OS === "Android") {
+        this.headerBar = this.headerBar;
+    }
+    else {
+        this.headerBar = this.parentController.headerBar;
+    }
+    this.headerBar.borderVisibility = false;
+	}
 
 function onLoad(superOnLoad) {
 	superOnLoad();

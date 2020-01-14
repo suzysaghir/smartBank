@@ -13,7 +13,7 @@
 		},
 		"font": {
 			"size": 14,
-			"family": "Default"
+			"family": "BOLD"
 		},
 		"&-labelsFont": {
 			"font": {
@@ -56,7 +56,7 @@
 			"marginRight": -1,
 			"marginBottom": 16,
 			"+Device:Device.os === \"Android\"": {
-				"height": 48,
+				"height": 81,
 				"marginBottom": -8,
 				"marginLeft": -4,
 				"marginRight": -4
@@ -65,14 +65,14 @@
 				"flexProps": {
 					"positionType": "ABSOLUTE"
 				},
-				"right": 2,
-				"height": 30,
-				"width": 30,
-				"top": 20,
-				"image": "arrowbottom.png",
-				".hidden": {
-					"visible": false
-				}
+                "right": 2,
+                "height": 30,
+                "width": 30,
+                "top": 20,
+                "image": "phone_number_icon_arrow.png",
+                ".hidden": {
+                    "visible": false
+                }
 			}
 		}
 	}

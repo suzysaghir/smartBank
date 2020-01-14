@@ -21,7 +21,7 @@ const {
 require("sf-extension-utils/lib/router/goBack"); // Implements onBackButtonPressed
 
 
-backClose.setDefaultBackStyle({image: Image.createFromFile("images://icon_back.png"), hideTitle: true });
+backClose.setDefaultBackStyle({ image: Image.createFromFile("images://icon_back.png"), hideTitle: true });
 
 const router = Router.of({
     path: "/",
@@ -57,15 +57,15 @@ const router = Router.of({
                 Route.of({
                     path: "/pages/pgRegisterPin",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPin"), headerBarStyle: { visible: true } })
-                }),                
+                }),
                 Route.of({
                     path: "/pages/pgPayments",
                     build: buildExtender({ getPageClass: () => require("pages/pgPayments"), headerBarStyle: { visible: true } })
-                }),               
+                }),
                 Route.of({
                     path: "/pages/pgSendDone",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendDone"), headerBarStyle: { visible: true } })
-                }),   
+                }),
                 Route.of({
                     path: "/pages/pgTabSummary",
                     build: buildExtender({ getPageClass: () => require("pages/pgTabSummary"), headerBarStyle: { visible: true } })
@@ -73,104 +73,106 @@ const router = Router.of({
                 Route.of({
                     path: "/pages/pgSendMoney",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendMoney"), headerBarStyle: { visible: true } })
-                }),                
-               Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgSendMoneyAmount/:title,image",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendMoneyAmount"), headerBarStyle: { visible: true } })
-                }),                
-               Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgSend",
                     build: buildExtender({ getPageClass: () => require("pages/pgSend"), headerBarStyle: { visible: true } })
-                }),   
-               Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgSendMoneyReview",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendMoneyReview"), headerBarStyle: { visible: true } })
-                }),   
-              Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgSendMoneyAmount",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendMoneyAmount"), headerBarStyle: { visible: true } })
                 }),
-        Route.of({
+                Route.of({
                     path: "/pages/pgPayments_1",
                     build: buildExtender({ getPageClass: () => require("pages/pgPayments_1"), headerBarStyle: { visible: true } })
-                }),      
-        Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgRegisterPhoneNumber_1",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPhoneNumber_1"), headerBarStyle: { visible: true } })
                 }),
-        Route.of({
+                Route.of({
                     path: "/pages/pgRegisterPin_1",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPin_1"), headerBarStyle: { visible: true } })
-                }),  
-        Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgRegisterActivationCode_11",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterActivationCode_11"), headerBarStyle: { visible: true } })
-                }), 
-        Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgSendDone_1",
                     build: buildExtender({ getPageClass: () => require("pages/pgSendDone_1"), headerBarStyle: { visible: true } })
-                }),  
-        Route.of({
+                }),
+                Route.of({
                     path: "/pages/pgRegisterAccountCreate_1",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterAccountCreate_1"), headerBarStyle: { visible: true } })
                 }),
-        Route.of({
+                Route.of({
                     path: "/pages/pgRegisterPersonalDetails_11",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPersonalDetails_11"), headerBarStyle: { visible: true } })
                 }),
-                ]
-            }),     BottomTabBarRouter.of({
-                    path: "/tabs",
-                    // path: "/pages/pgRegisterSummary",
-                    tabbarParams: () => ({
-                        ios: { visible: false },
+            ]
+        }), 
+        BottomTabBarRouter.of({
+            path: "/tabs",
+            // path: "/pages/pgRegisterSummary",
+            tabbarParams: () => ({
+                ios: { visible: false },
                 itemColor: {
                     normal: Color.create("#b5bec0"),
                     selected: Color.create("#55dbf6")
-                    },
-                    backgroundColor: Color.create("#f8f8f8")
+                },
+                backgroundColor: Color.create("#f8f8f8")
+            }),
+            items: () => [{ title: "Accounts", icon: Image.createFromFile("images://tab_account.png") },
+                { title: "Summary", icon: Image.createFromFile("images://tab_summary.png") },
+                { title: "Payments", icon: Image.createFromFile("images://tab_payments.png") },
+                { title: "Cards", icon: Image.createFromFile("images://tab_cards.png") },
+                { title: "My Profiles", icon: Image.createFromFile("images://tab_my_profile.png") }
+            ],
+
+
+            routes: [
+                Route.of({
+                    path: "/tabs/accounts",
+                    build: (router, route) => {
+                        return new pgAccounts(router);
+                    }
                 }),
-            items: () => [{title: "Accounts", icon: Image.createFromFile("images://tab_account.png")},
-                          {title: "Summary", icon: Image.createFromFile("images://tab_summary.png") },
-                          {title: "Payments", icon: Image.createFromFile("images://tab_payments.png")},
-                          { title: "Cards", icon: Image.createFromFile("images://tab_cards.png")},
-                          { title: "My Profiles", icon: Image.createFromFile("images://tab_my_profile.png")}],
-        
-        
-        	routes: [
-                      Route.of({
-                            path: "/tabs/accounts",
-                            build: (router, route) => {
-                                 return new pgAccounts(router);
-                            }
-                        }),
-                        Route.of({
-                            path: "/tabs/summary",
-                            build: (router, route) => {
-                                return new pgTabs(router);
-                            }
-                        }),                       
-                        Route.of({
-                            path: "/tabs/payments",
-                            build: (router, route) => {
-                                return new pgPayments(router);
-                            }
-                        }),  
-                        Route.of({
-                            path: "/tabs/cards",
-                            build: (router, route) => {
-                                return new pgCards(router);
-                            }
-                        }),
-                      Route.of({
-                            path: "/tabs/myprofile",
-                            build: (router, route) => {
-                                return new pgMyProfile(router);
-                            }
-                        }) 
-        	            ]
-        	        })        
-]     
+                Route.of({
+                    path: "/tabs/summary",
+                    build: (router, route) => {
+                        return new pgTabs(router);
+                    }
+                }),
+                Route.of({
+                    path: "/tabs/payments",
+                    build: (router, route) => {
+                        return new pgPayments(router);
+                    }
+                }),
+                Route.of({
+                    path: "/tabs/cards",
+                    build: (router, route) => {
+                        return new pgCards(router);
+                    }
+                }),
+                Route.of({
+                    path: "/tabs/myprofile",
+                    build: (router, route) => {
+                        return new pgMyProfile(router);
+                    }
+                })
+            ]
+        })
+    ]
 });
 
 module.exports = router;

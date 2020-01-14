@@ -44,11 +44,13 @@
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "7e9f-f69c-e9be-6c3d"
+				"parent": "7e9f-f69c-e9be-6c3d",
+				"title": " "
 			},
 			"type": "HeaderBar",
 			"userProps": {
 				"borderVisibility": false,
+				"title": " ",
 				"transparent": false,
 				"visible": true
 			}

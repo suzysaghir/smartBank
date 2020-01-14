@@ -101,6 +101,7 @@
 				},
 				"height": null,
 				"left": 0,
+				"marginTop": null,
 				"top": 0,
 				"usePageVariable": true,
 				"width": null
@@ -285,7 +286,7 @@
 			"className": ".sf-button",
 			"id": "e77b-f803-e623-d980",
 			"props": {
-				"autoHeight": 29.166666666666668,
+				"autoHeight": 19.23076923076923,
 				"children": [],
 				"name": "btnCont",
 				"parent": "060e-eed4-2b85-f567",
@@ -294,7 +295,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 29.166666666666668,
+				"autoHeight": 19.23076923076923,
 				"left": 0,
 				"marginLeft": 16,
 				"marginRight": 16,

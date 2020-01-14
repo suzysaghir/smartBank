@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 const Font = require("sf-core/ui/font");
 const Screen = require("sf-core/device/screen");
 const extend = require('js-base/core/extend');
@@ -13,6 +14,14 @@ const PgRegisterEmail_1 = extend(PgRegisterEmail_1Design)(
 
 function onShow(superOnShow) {
 	superOnShow();
+	   if (System.OS === "Android") {
+        this.headerBar = this.headerBar;
+    }
+    else {
+        this.headerBar = this.parentController.headerBar;
+    }
+    this.headerBar.borderVisibility = false;
+
 }
 
 function onLoad(superOnLoad) {

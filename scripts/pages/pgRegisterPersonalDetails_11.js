@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 const Font = require("sf-core/ui/font");
 const Screen = require("sf-core/device/screen");
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
@@ -15,6 +16,13 @@ const PgRegisterPersonalDetails_11 = extend(PgRegisterPersonalDetails_11Design)(
 
 function onShow(superOnShow) {
 	superOnShow();
+   if (System.OS === "Android") {
+        this.headerBar = this.headerBar;
+    }
+    else {
+        this.headerBar = this.parentController.headerBar;
+    }
+    this.headerBar.borderVisibility = false;
 }
 
 function onLoad(superOnLoad) {

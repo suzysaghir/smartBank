@@ -1,3 +1,4 @@
+const System = require("sf-core/device/system");
 const Font = require("sf-core/ui/font");
 const Screen = require("sf-core/device/screen");
 
@@ -14,6 +15,14 @@ const PgRegisterAddress_1 = extend(PgRegisterAddress_1Design)(
 
 function onShow(superOnShow) {
 	superOnShow();
+	   if (System.OS === "Android") {
+        this.headerBar = this.headerBar;
+    }
+    else {
+        this.headerBar = this.parentController.headerBar;
+    }
+    this.headerBar.borderVisibility = false;
+
 }
 
 function onLoad(superOnLoad) {
@@ -38,6 +47,8 @@ function onLoad(superOnLoad) {
 			titleFont: Font.create("Default", 12)
 		}
 	};
+		mtbCountry.enableDropDown = true
+
 	mtbPostalCode.options = {
 		hint: "POSTAL CODE",
 		font: Font.create("SFProText", 16, "Medium"),

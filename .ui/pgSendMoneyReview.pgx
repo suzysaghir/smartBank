@@ -201,10 +201,11 @@
 			"userProps": {
 				"flexProps": {
 					"flexGrow": 1,
-					"justifyContent": "CENTER"
+					"justifyContent": "FLEX_END"
 				},
 				"marginBottom": null,
-				"marginTop": null
+				"marginTop": null,
+				"paddingBottom": 30
 			}
 		},
 		{
@@ -234,6 +235,7 @@
 				"html": "<br>",
 				"left": 0,
 				"text": "\n",
+				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 87, 217, 246, 1 )",
 				"top": 0,
 				"usePageVariable": true,

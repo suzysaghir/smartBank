@@ -53,8 +53,8 @@
 			"className": ".sf-textView .sf-tvLine",
 			"id": "3357-b22c-7315-aa7b",
 			"props": {
-				"autoHeight": 24.074074074074073,
-				"autoWidth": 37.96296296296296,
+				"autoHeight": 25.925925925925924,
+				"autoWidth": 31.48148148148148,
 				"children": [],
 				"html": "___",
 				"name": "tvLine",
@@ -64,8 +64,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 24.074074074074073,
-				"autoWidth": 37.96296296296296,
+				"autoHeight": 25.925925925925924,
+				"autoWidth": 31.48148148148148,
 				"html": "___",
 				"text": "___",
 				"usePageVariable": true
