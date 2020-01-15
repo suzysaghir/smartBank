@@ -2,10 +2,10 @@
 	"config": {
 		"theme": {
 			"currentTheme": "smartBankTheme",
-			"baseTheme": "baseTheme",
+			"baseTheme": "baseTheme",gi 
 			"themes": [
-				"baseTheme",
 				"defaultTheme",
+				"baseTheme",
 				"smartBankTheme"
 			]
 		},

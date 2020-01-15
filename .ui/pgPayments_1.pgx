@@ -65,6 +65,7 @@
 			"type": "FlexLayout",
 			"userProps": {
 				"left": 0,
+				"marginTop": 20,
 				"top": 0
 			}
 		},
