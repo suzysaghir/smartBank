@@ -37,6 +37,8 @@ function onLoad(superOnLoad) {
 
 	tvAccountCreate.text ="Your Smartbank account has been created.";
 	tvAccountCreate.maxLines=2;
+	tvAccountCreate.scrollEnabled = false;
+
 	page.router = require("routes");
 	btnDone.onPress = () => page.router.push("/tabs");
 

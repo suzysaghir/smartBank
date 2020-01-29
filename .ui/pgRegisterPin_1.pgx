@@ -385,16 +385,7 @@
 				"parent": "eb34-a821-eb34-5915"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignItems": "CENTER",
-					"alignContent": "CENTER",
-					"justifyContent": "SPACE_AROUND"
-				},
-				"paddingLeft": 16,
-				"paddingRight": 16
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-textView",

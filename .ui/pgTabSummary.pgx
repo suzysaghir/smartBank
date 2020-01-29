@@ -25,7 +25,7 @@
 				"paddingBottom": null,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"paddingTop": 25
+				"paddingTop": 20
 			},
 			"version": "6.15.1"
 		},
@@ -77,10 +77,12 @@
 					"flexDirection": "ROW",
 					"alignSelf": "STRETCH"
 				},
-				"height": 73.4375,
+				"height": 73,
 				"marginTop": null,
 				"paddingLeft": 16,
 				"paddingRight": 16,
+				"paddingTop": 20,
+				"top": 8,
 				"usePageVariable": true,
 				"width": null
 			}
@@ -211,8 +213,8 @@
 			"className": ".sf-textView .sf-paymentLstv",
 			"id": "d314-4ff3-0e70-4668",
 			"props": {
-				"autoHeight": 20.3125,
-				"autoWidth": 92.67578125,
+				"autoHeight": 19.607843137254903,
+				"autoWidth": 72.54901960784314,
 				"children": [],
 				"html": "<span style=\"font-size: 16px;\">Category</span><br>",
 				"name": "tvCategory",
@@ -222,8 +224,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 20.3125,
-				"autoWidth": 92.67578125,
+				"autoHeight": 19.607843137254903,
+				"autoWidth": 72.54901960784314,
 				"flexProps": {
 					"alignSelf": "FLEX_START"
 				},
@@ -240,8 +242,8 @@
 			"hiddenComponent": false,
 			"id": "2875-3271-d027-5810",
 			"props": {
-				"autoHeight": 20.3125,
-				"autoWidth": 95.5322265625,
+				"autoHeight": 19.607843137254903,
+				"autoWidth": 75.49019607843137,
 				"children": [],
 				"html": "<span style=\"font-size: 16px; white-space: pre-wrap;\">Spending</span><br>",
 				"name": "tvSpending",
@@ -251,8 +253,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 20.3125,
-				"autoWidth": 95.5322265625,
+				"autoHeight": 19.607843137254903,
+				"autoWidth": 75.49019607843137,
 				"flexProps": {
 					"alignSelf": "FLEX_END"
 				},

@@ -152,7 +152,7 @@
 		},
 		"&-flexLayout2": {
 			"flexProps": {
-				"justifyContent": "CENTER",
+				"justifyContent": "FLEX_END",
 				"flexGrow": 1
 			},
 			"paddingLeft": 16,
@@ -197,5 +197,13 @@
 			"paddingRight": 16,
 			"paddingLeft": 0
 		}
+	},
+	".tvNumber": {
+		"height": 40,
+		"flexProps": {
+			"flexGrow": 1,
+			"alignSelf": "CENTER"
+		},
+		"textAlignment": "MIDRIGHT"
 	}
 }

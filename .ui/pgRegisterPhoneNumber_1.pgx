@@ -81,8 +81,8 @@
 			"className": ".sf-imageView",
 			"id": "a27c-35fc-4757-48a1",
 			"props": {
-				"autoHeight": 124.99999999999999,
-				"autoWidth": 86.76470588235294,
+				"autoHeight": 125.35211267605635,
+				"autoWidth": 85.91549295774648,
 				"children": [],
 				"name": "img_background",
 				"parent": "e6f9-b1da-d491-420d",
@@ -90,8 +90,8 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 124.99999999999999,
-				"autoWidth": 86.76470588235294,
+				"autoHeight": 125.35211267605635,
+				"autoWidth": 85.91549295774648,
 				"flexProps": {
 					"positionType": "ABSOLUTE",
 					"alignSelf": "FLEX_END"
@@ -179,7 +179,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
-				"backgroundColor": "rgba( 208, 2, 27, 0 )",
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": null,
 					"justifyContent": "SPACE_AROUND",
@@ -198,18 +198,23 @@
 			"id": "0115-cd71-0062-9b3a",
 			"props": {
 				"children": [
-					"1344-87d6-6e1c-6044"
+					"1344-87d6-6e1c-6044",
+					"7069-8e1d-e47c-e5cc"
 				],
 				"name": "flxCountry",
 				"parent": "18eb-16ba-1808-cc6e"
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"alpha": 1,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"alignItems": "STRETCH",
 					"alignContent": "STRETCH"
 				},
-				"maxWidth": 100
+				"height": null,
+				"maxWidth": 110,
+				"width": null
 			}
 		},
 		{
@@ -243,6 +248,28 @@
 				"marginRight": 3,
 				"top": 0,
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-view",
+			"id": "7069-8e1d-e47c-e5cc",
+			"props": {
+				"children": [],
+				"name": "view1",
+				"parent": "0115-cd71-0062-9b3a",
+				"usePageVariable": true
+			},
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"flexGrow": 1,
+					"alignSelf": "CENTER"
+				},
+				"height": 48,
+				"usePageVariable": true,
+				"width": 1000
 			}
 		},
 		{
@@ -321,10 +348,16 @@
 					"88ca-1117-4e99-2bb7"
 				],
 				"name": "flexLayout2",
-				"parent": "e6f9-b1da-d491-420d"
+				"parent": "e6f9-b1da-d491-420d",
+				"usePageVariable": true
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "FLEX_END"
+				},
+				"usePageVariable": true
+			}
 		},
 		{
 			"className": ".sf-textView",

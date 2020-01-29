@@ -7,11 +7,11 @@ const OS = require('sf-core/device/system').OS;
 const buildExtender = require("sf-extension-utils/lib/router/buildExtender");
 const backClose = require("sf-extension-utils/lib/router/back-close");
 
-const pgAccounts = require('sf-core/ui/page');
+const pgAccounts = require('pages/pgAccounts.js');
 const pgTabs = require("pages/pgTabSummary");
 const pgPayments = require('pages/pgPayments_1');
-const pgCards = require('sf-core/ui/page');
-const pgMyProfile = require('sf-core/ui/page');
+const pgCards = require('pages/pgCards');
+const pgMyProfile = require('pages/pgMyProfile');
 
 const {
     NativeRouter: Router,
@@ -90,11 +90,15 @@ const router = Router.of({
                     path: "/pages/pgRegisterPersonalDetails_11",
                     build: buildExtender({ getPageClass: () => require("pages/pgRegisterPersonalDetails_11"), headerBarStyle: { visible: true } })
                 }),
+                Route.of({
+                    path: "/pages/test_keyboardLayout",
+                    build: buildExtender({ getPageClass: () => require("pages/test_keyboardLayout"), headerBarStyle: { visible: true } })
+                }),
             ]
-        }), 
+        }),
         BottomTabBarRouter.of({
             path: "/tabs",
-            // path: "/pages/pgRegisterSummary",
+            to:"/tabs/payments",
             tabbarParams: () => ({
                 ios: { visible: false },
                 itemColor: {

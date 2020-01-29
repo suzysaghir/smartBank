@@ -1,3 +1,6 @@
+const Color = require("sf-core/ui/color");
+const TextAlignment = require("sf-core/ui/textalignment");
+const TextView = require("sf-core/ui/textview");
 /* 
 		You can modify its contents.
 */
@@ -33,6 +36,27 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
 	superOnLoad();
+
+
+	var myText = new TextView({
+		width: 120,
+		height: 60,
+		backgroundColor: Color.create("#00A1F1"),
+		text: " consultant.turkcell@smfc.io",
+		textAlignment: TextAlignment.MIDCENTER
+	});
+
+	this.layout.addChild(myText);
+
+
+	function validateEmail(email) {
+		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
+	}
+
+	var result = validateEmail(myText.text);
+	console.log(result);
+
 }
 
 module.exports = Test;

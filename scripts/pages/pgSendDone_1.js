@@ -34,6 +34,8 @@ function onLoad(superOnLoad) {
    
 
 	tvTitle.text = "Send Money";
+	tvTitle.scrollEnabled = false;
+	
 	var img_profile =  page.routeData.image;
 	var title_profile =  page.routeData.title;
 	var profile_amount = page.routeData.amount;
@@ -41,9 +43,12 @@ function onLoad(superOnLoad) {
 	let radius = imgProfile2.borderRadius;
 	imgProfile2.image = img_profile;
 	
-	tvAmount.text = profile_amount.text;
+	tvAmount.text = profile_amount;
+	tvAmount.scrollEnabled = false
+
 	tvSend.text = "Sent to " + title_profile;
-	
+	tvSend.scrollEnabled = false;
+
 }
 
 module.exports = PgSendDone_1;

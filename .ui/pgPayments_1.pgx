@@ -19,7 +19,7 @@
 				"paddingBottom": null,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"paddingTop": null
+				"paddingTop": 20
 			},
 			"version": "6.15.1"
 		},
@@ -66,6 +66,7 @@
 			"userProps": {
 				"left": 0,
 				"marginTop": 20,
+				"paddingTop": 20,
 				"top": 0
 			}
 		},

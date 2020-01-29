@@ -471,11 +471,7 @@
 				"parent": "ba2f-6189-6dff-1305"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"justifyContent": "SPACE_AROUND"
-				}
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-textView",

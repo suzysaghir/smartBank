@@ -163,7 +163,7 @@
 			"id": "1c4a-c641-c3ba-8870",
 			"props": {
 				"children": [
-					"e1b5-4d05-1f1b-02be",
+					"3f28-805a-4d46-775e",
 					"a27c-1cd8-1ed7-669a",
 					"5030-d9bf-3207-5c03"
 				],
@@ -176,19 +176,40 @@
 					"justifyContent": "CENTER",
 					"alignItems": "STRETCH"
 				},
+				"height": null,
 				"left": 0,
 				"top": 0
 			}
 		},
 		{
+			"className": ".sf-flexLayout",
+			"id": "3f28-805a-4d46-775e",
+			"props": {
+				"children": [
+					"dd05-773b-e528-cac6",
+					"e6f1-3579-776e-f600"
+				],
+				"name": "flexLayout1",
+				"parent": "1c4a-c641-c3ba-8870"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null,
+					"alignItems": "STRETCH"
+				},
+				"height": 64
+			}
+		},
+		{
 			"className": ".materialTextBox-wrapper",
 			"hiddenComponent": false,
-			"id": "e1b5-4d05-1f1b-02be",
+			"id": "dd05-773b-e528-cac6",
 			"initialized": false,
 			"props": {
 				"children": [],
 				"name": "mtbCountry",
-				"parent": "1c4a-c641-c3ba-8870",
+				"parent": "3f28-805a-4d46-775e",
 				"usePageVariable": true
 			},
 			"source": {
@@ -210,6 +231,27 @@
 				"marginBottom": 16,
 				"top": 0,
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-view",
+			"id": "e6f1-3579-776e-f600",
+			"props": {
+				"children": [],
+				"name": "view1",
+				"parent": "3f28-805a-4d46-775e",
+				"usePageVariable": true
+			},
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"positionType": "ABSOLUTE"
+				},
+				"height": 48,
+				"usePageVariable": true,
+				"width": 1000
 			}
 		},
 		{
@@ -278,7 +320,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .sf-flexLayout2",
 			"id": "6386-0763-9148-c71f",
 			"props": {
 				"children": [
@@ -288,16 +330,7 @@
 				"parent": "4caa-bd57-79db-e5cc"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignItems": "CENTER",
-					"alignContent": "CENTER",
-					"justifyContent": "SPACE_AROUND"
-				},
-				"paddingLeft": 16,
-				"paddingRight": 16
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-button",

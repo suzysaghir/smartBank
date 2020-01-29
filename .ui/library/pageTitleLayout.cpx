@@ -30,8 +30,8 @@
 			"className": ".sf-textArea",
 			"id": "0767-e868-33b6-fdf4",
 			"props": {
-				"autoHeight": 54.83870967741935,
-				"autoWidth": 1.6129032258064517,
+				"autoHeight": 52.30769230769231,
+				"autoWidth": 1.5384615384615383,
 				"children": [],
 				"name": "textArea1",
 				"parent": "ea39-af43-8fd2-e234",
@@ -43,8 +43,8 @@
 			},
 			"type": "TextArea",
 			"userProps": {
-				"autoHeight": 54.83870967741935,
-				"autoWidth": 1.6129032258064517,
+				"autoHeight": 52.30769230769231,
+				"autoWidth": 1.5384615384615383,
 				"text": "\n\n",
 				"usePageVariable": true
 			}

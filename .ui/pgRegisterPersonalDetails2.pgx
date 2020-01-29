@@ -3,7 +3,7 @@
 		{
 			"className": ".sf-page .page",
 			"id": "64c7-2e8f-8248-880f",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"9c95-257c-1d51-3d3c",
@@ -293,7 +293,7 @@
 					"flexGrow": 1,
 					"alignItems": "CENTER",
 					"alignContent": "CENTER",
-					"justifyContent": "SPACE_AROUND"
+					"justifyContent": "FLEX_END"
 				},
 				"paddingLeft": 16,
 				"paddingRight": 16

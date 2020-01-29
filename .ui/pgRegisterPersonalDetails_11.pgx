@@ -107,8 +107,7 @@
 				"children": [
 					"cf76-2f4c-cd09-e0e1",
 					"6e97-f3d1-0b99-5c45",
-					"2642-830c-d289-a289",
-					"2dfc-1e00-c0d4-ba93"
+					"2642-830c-d289-a289"
 				],
 				"name": "flexLayout1",
 				"parent": "5b74-fa0f-f6b4-8c2b",
@@ -166,7 +165,7 @@
 				"children": [
 					"f3b7-4a2c-8663-6a90",
 					"2933-c279-536a-372e",
-					"3d1a-6963-1b49-d8ae"
+					"598e-10ba-8c9f-3c2c"
 				],
 				"name": "flexLayout_mtb",
 				"parent": "039e-f087-7d57-4188"
@@ -248,14 +247,34 @@
 			}
 		},
 		{
+			"className": ".sf-flexLayout",
+			"id": "598e-10ba-8c9f-3c2c",
+			"props": {
+				"children": [
+					"ab91-d5dd-a97a-81a5",
+					"b746-aba0-e2d7-e852"
+				],
+				"name": "flexLayout1",
+				"parent": "2642-830c-d289-a289"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null,
+					"alignItems": "STRETCH"
+				},
+				"height": 64
+			}
+		},
+		{
 			"className": ".materialTextBox-wrapper",
 			"hiddenComponent": false,
-			"id": "3d1a-6963-1b49-d8ae",
+			"id": "ab91-d5dd-a97a-81a5",
 			"initialized": false,
 			"props": {
 				"children": [],
 				"name": "mtbBirthDate",
-				"parent": "2642-830c-d289-a289",
+				"parent": "598e-10ba-8c9f-3c2c",
 				"usePageVariable": true
 			},
 			"source": {
@@ -279,18 +298,29 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
-			"id": "2dfc-1e00-c0d4-ba93",
+			"className": ".sf-view",
+			"id": "b746-aba0-e2d7-e852",
 			"props": {
 				"children": [],
-				"name": "flexLayout_mtb1",
-				"parent": "039e-f087-7d57-4188"
+				"name": "view1",
+				"parent": "598e-10ba-8c9f-3c2c",
+				"usePageVariable": true
 			},
-			"type": "FlexLayout",
-			"userProps": {}
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 48,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 1000
+			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .sf-flexLayout2",
 			"id": "4470-a8c0-bd13-dd68",
 			"props": {
 				"children": [
@@ -300,16 +330,7 @@
 				"parent": "5b74-fa0f-f6b4-8c2b"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignItems": "CENTER",
-					"alignContent": "CENTER",
-					"justifyContent": "SPACE_AROUND"
-				},
-				"paddingLeft": 16,
-				"paddingRight": 16
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-button",

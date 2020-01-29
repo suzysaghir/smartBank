@@ -21,6 +21,8 @@
 			},
 			"type": "ListViewItem",
 			"userProps": {
+				"borderColor": "rgba( 242, 242, 242, 1 )",
+				"borderWidth": 1,
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
@@ -110,10 +112,10 @@
 				"autoWidth": 1.6666666666666667,
 				"font": {
 					"family": "SFProText",
-					"style": "Regular",
+					"style": "Medium",
 					"bold": false,
 					"italic": false,
-					"size": null
+					"size": 18
 				},
 				"html": "<br>",
 				"marginLeft": 5,

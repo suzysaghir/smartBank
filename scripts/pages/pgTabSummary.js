@@ -19,7 +19,7 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
-	const {flexBtnIconRight, listView1, tvCategory, tvSpending} = page;
+	const { flexBtnIconRight, listView1, tvCategory, tvSpending } = page;
 	flexBtnIconRight.label1.text = "This Month";
 	flexBtnIconRight.imgIcon.image = Image.createFromFile("images://summary_arrow.png");
 	tvCategory.textColor = Color.create('#70C8E0');
@@ -28,38 +28,39 @@ function onLoad(superOnLoad) {
 	tvSpending.text = "Spending";
 	tvSpending.textColor = Color.create('#70C8E0');
 	var items = [
-	    "Yesterday",
-	    "Today",
-	    "This Month ",
-	    "Last Month"
+		"Yesterday",
+		"Today",
+		"This Month ",
+		"Last Month"
 	];
 
-    var index = 0;
+	var index = 0;
+
 	function btnPickOnPress() {
-        console.log(`Showing the picker with index ${index}`);
-        const itemPicker = new Picker({
-            items: items,
-            currentIndex: index //restores previous selection
-        });
-        itemPicker.show(okCallback, cancelCallback);
-    }
+		console.log(`Showing the picker with index ${index}`);
+		const itemPicker = new Picker({
+			items: items,
+			currentIndex: index //restores previous selection
+		});
+		itemPicker.show(okCallback, cancelCallback);
+	}
 
 	var okCallback = function(params) {
-    console.log('Selected index: ' + params.index);
+		console.log('Selected index: ' + params.index);
 	}
 	var cancelCallback = function() {
-	    console.log('Canceled');
+		console.log('Canceled');
 	}
-	flexBtnIconRight.onTouchEnded = () =>{
+	flexBtnIconRight.onTouchEnded = () => {
 		console.log(`Showing the picker with index ${index}`);
-        const itemPicker = new Picker({
-            items: items,
-            currentIndex: index //restores previous selection
-        });
-        itemPicker.show(okCallback, cancelCallback);
-	} 
-	
-		var myDataSet = [{
+		const itemPicker = new Picker({
+			items: items,
+			currentIndex: index //restores previous selection
+		});
+		itemPicker.show(okCallback, cancelCallback);
+	}
+
+	var myDataSet = [{
 		title: 'Travel',
 		image: Image.createFromFile("images://travel.png").android.round(50),
 		price: '40',
@@ -76,19 +77,24 @@ function onLoad(superOnLoad) {
 		image: Image.createFromFile("images://personal_care.png").android.round(50),
 		price: '389',
 	}];
-	listView1.itemCount =  myDataSet.length;
-		
+	listView1.itemCount = myDataSet.length;
+
 	listView1.onRowBind = function(listViewItem, index) {
 		var iconImage = listViewItem.imgIcon;
 		var myTitle = listViewItem.tvTitle;
 		var myPrice = listViewItem.tvPrice;
 		var mySign = listViewItem.tvDollersign;
-		
+		listViewItem.borderWidth = 1
+		// listViewItem.border = 1
+
 		mySign.text = "$"
 		iconImage.image = myDataSet[index].image;
 		myTitle.text = myDataSet[index].title;
 		myPrice.text = myDataSet[index].price;
-		
+	}
+	listView1.onPullRefresh = function() {
+		listView1.refreshData();
+		listView1.stopRefresh();
 	}
 }
 

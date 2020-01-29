@@ -19,6 +19,8 @@
 			},
 			"type": "ListViewItem",
 			"userProps": {
+				"borderColor": "rgba( 242, 242, 242, 1 )",
+				"borderWidth": 1,
 				"flexProps": {
 					"flexDirection": "ROW"
 				},

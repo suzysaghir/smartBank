@@ -19,8 +19,10 @@
 				"flexProps": {
 					"justifyContent": "SPACE_BETWEEN"
 				},
+				"left": 0,
 				"paddingLeft": null,
-				"paddingRight": null
+				"paddingRight": null,
+				"top": 82.35294117647058
 			},
 			"version": "6.15.1"
 		},
@@ -213,7 +215,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout",
+			"className": ".sf-flexLayout .sf-flexLayout2",
 			"id": "c4ad-c1f8-6273-b1b6",
 			"props": {
 				"children": [
@@ -223,22 +225,13 @@
 				"parent": "5359-db69-df1d-b81c"
 			},
 			"type": "FlexLayout",
-			"userProps": {
-				"flexProps": {
-					"flexGrow": 1,
-					"alignItems": "CENTER",
-					"alignContent": "CENTER",
-					"justifyContent": "SPACE_AROUND"
-				},
-				"paddingLeft": 16,
-				"paddingRight": 16
-			}
+			"userProps": {}
 		},
 		{
 			"className": ".sf-button",
 			"id": "fd5c-142a-0c00-9211",
 			"props": {
-				"autoHeight": 29.166666666666668,
+				"autoHeight": 20.408163265306122,
 				"children": [],
 				"name": "btnContinue",
 				"parent": "c4ad-c1f8-6273-b1b6",
@@ -247,7 +240,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 29.166666666666668,
+				"autoHeight": 20.408163265306122,
 				"left": 0,
 				"text": "Continue",
 				"top": 0,
