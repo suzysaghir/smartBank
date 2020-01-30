@@ -22,7 +22,7 @@
 				"paddingBottom": null,
 				"paddingLeft": null,
 				"paddingRight": null,
-				"paddingTop": null
+				"paddingTop": 20
 			},
 			"version": "6.15.1"
 		},
@@ -71,7 +71,8 @@
 					"alignItems": "STRETCH",
 					"alignContent": "STRETCH",
 					"positionType": "RELATIVE"
-				}
+				},
+				"marginTop": 10
 			}
 		},
 		{
@@ -363,7 +364,7 @@
 			"className": ".sf-button",
 			"id": "9bfb-3bd6-288b-a40b",
 			"props": {
-				"autoHeight": 21.27659574468085,
+				"autoHeight": 26.515151515151516,
 				"children": [],
 				"name": "btnContinue",
 				"parent": "13f9-8cdf-45cb-6e93",
@@ -372,7 +373,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 21.27659574468085,
+				"autoHeight": 26.515151515151516,
 				"text": "Done",
 				"usePageVariable": true
 			}

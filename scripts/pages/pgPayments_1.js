@@ -1,3 +1,4 @@
+const SearchView = require("sf-core/ui/searchview");
 const System = require("sf-core/device/system");
 const Font = require("sf-core/ui/font");
 const Label = require("sf-core/ui/label");
@@ -42,7 +43,7 @@ function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this;
 	const router = require("routes");
-	const { tvMoney, tvAccountBalance, flexBtnIconAddMoney, flexBtnIconSendMoney, flxLstvHeader, listView1, lstvSummary, scrollView1 } = page;
+	const { tvMoney, tvAccountBalance, flexBtnIconAddMoney, flexBtnIconSendMoney, flxLstvHeader, listView1, lstvSummary, scrollView1, imgSearch } = page;
 	scrollView1.layout.applyLayout()
 	flexBtnIconAddMoney.imgIcon.image = Image.createFromFile("images://payment_icon_add_money.png");
 	flexBtnIconSendMoney.imgIcon.image = Image.createFromFile("images://payment_icon_send_money.png");
@@ -54,66 +55,74 @@ function onLoad(superOnLoad) {
 	tvAccountBalance.text = "Acoount Balance";
 	tvAccountBalance.scrollEnabled = false;
 	flexBtnIconSendMoney.onTouchEnded = () => router.push("/pages/pgSendMoney");
+	var mySearchView = new SearchView({
+		marginLeft: 20,
+		marginRight: 20,
+		onTextChanged: function(searchText) {
+			console.log("searched text : " + searchText);
+		}
+	});
+	imgSearch.onTouchEnded = () => mySearchView.onSearchBegin;
 
-	// tvDate.text = "TODAY";
-	// tvAmount.text = "$200";
-	// "TODAY", "YESTERDAY", "2 DAYS AGO", "LAST MONTH"
-	// var _headerData = [
-	//     "Complementary",
-	//     "Analogous",
-	//     "Tetradic",
-	//     "Monochromatic"
-	// ];
-	var _headerData = [
-		{ date: "Today", amount: "$200", sign: "-" },
-		{ date: "Yesterday", amount: "$650", sign: "+" },
-		{ date: "2 Days ago", amount: "$943", sign: "+" },
-		{ date: "1 Month ago", amount: "$140", sign: "-" },
+		// tvDate.text = "TODAY";
+		// tvAmount.text = "$200";
+		// "TODAY", "YESTERDAY", "2 DAYS AGO", "LAST MONTH"
+		// var _headerData = [
+		//     "Complementary",
+		//     "Analogous",
+		//     "Tetradic",
+		//     "Monochromatic"
+		// ];
+		var _headerData = [
+			{ date: "Today", amount: "$200", sign: "-" },
+			{ date: "Yesterday", amount: "$60", sign: "+" },
+			{ date: "2 Days ago", amount: "$943", sign: "+" },
+			{ date: "1 Month ago", amount: "$1401", sign: "-" },
 
-	];
+		];
 	var _rowData = [
 		[{
 			title: 'Airline',
 			image: Image.createFromFile("images://travel.png"),
-			price: '832',
+			price: '+$832',
 			sign: "+"
 		}, {
 			title: 'A Mall',
 			image: Image.createFromFile("images://shopping.png"),
-			price: '20',
+			price: '-$20',
 			sign: "-"
 		}],
 		[{
 			title: 'John Doe',
 			image: Image.createFromFile("images://adam.png"),
-			price: '40',
-			sign: "+"
+			price: '-$40',
+			sign: "-"
 		}, {
 			title: 'Frank James',
 			image: Image.createFromFile("images://adam2.png"),
-			price: '3333',
+			price: '-$3333',
 			sign: "-"
 		}],
 		[{
-			title: 'Unknown',
+			title: 'name 1',
 			image: Image.createFromFile("images://travel.png"),
-			price: '40',
+			price: '+$40',
 			sign: "+"
 		}, {
-			title: 'Unknown',
+			title: 'name 2',
 			image: Image.createFromFile("images://shopping.png"),
-			price: '20',
+			price: '-$20',
 			sign: "-"
 		}],
 		[{
-			title: 'Unknown',
+			title: 'name 3',
 			image: Image.createFromFile("images://travel.png"),
-			price: '403',
+			price: '+$403',
 			sign: "+"
 		}, {
-			title: 'Unknown',
+			title: 'name 4',
 			image: Image.createFromFile("images://shopping.png"),
-			price: '20',
+			price: '+$320',
 			sign: "-"
 		}]
 	];
@@ -193,17 +202,17 @@ function onLoad(superOnLoad) {
 			var iconImage = listViewItem.imgIcon;
 			var myTitle = listViewItem.tvTitle;
 			var mysign = listViewItem.tvsign;
-			var myPrice = listViewItem.tvPrice;
-			var mySign = listViewItem.tvDollersign;
+			// var myPrice = listViewItem.tvPrice;
+			// var mySign = listViewItem.tvDollersign;
 
-			mySign.text = "$"
-			mySign.scrollEnabled = false;
+			// mySign.text = "$"
+			// mySign.scrollEnabled = false;
 			myTitle.text = dataArray[index].data.title;
 			myTitle.scrollEnabled = false;
 			iconImage.image = dataArray[index].data.image.android.round(50);
-			myPrice.text = dataArray[index].data.price;
-			myPrice.scrollEnabled = false;
-			mysign.text = dataArray[index].data.sign;
+			// myPrice.text = dataArray[index].data.price;
+			// myPrice.scrollEnabled = false;
+			mysign.text = dataArray[index].data.price;
 			mysign.scrollEnabled = false;
 		}
 	}.bind(this);

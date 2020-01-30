@@ -1,9 +1,13 @@
+const KeyboardType = require("sf-core/ui/keyboardtype");
+const Button = require("sf-core/ui/button");
+const FlexLayout = require("sf-core/ui/flexlayout");
 const Picker = require("sf-core/ui/picker");
 const Application = require("sf-core/application");
 const ActionKeyType = require("sf-core/ui/actionkeytype");
 const System = require("sf-core/device/system");
 const Font = require("sf-core/ui/font");
 const Screen = require("sf-core/device/screen");
+const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 
 const extend = require('js-base/core/extend');
 const PgRegisterAddress_1Design = require('ui/ui_pgRegisterAddress_1');
@@ -38,18 +42,34 @@ function onLoad(superOnLoad) {
 
 	tvAddressDetails.text = "What is your home address?";
 	tvAddressDetails.scrollEnabled = false;
+	btnContinue.onPress = () => page.router.push("/pages/pgRegisterEmail_1");
 
 	tvAddressDetails.option = {
 		iOS: {
 			titleFont: Font.create("Default", 12)
 		}
 	}
+	const myButton = new Button();
+	const btnStyle = getCombinedStyle(".sf-button");
+	Object.assign(myButton, btnStyle);
 
+	myButton.text = btnContinue.text;
+	myButton.onPress = btnContinue.onPress
+
+	var flexKeyboard = new FlexLayout({
+		height: 100,
+		alignSelf: FlexLayout.AlignSelf.STRETCH,
+		paddingRight: 16,
+		paddingLeft: 16,
+
+	});
+	flexKeyboard.addChild(myButton);
+	
 	mtbCountry.options = {
 		hint: "COUNTRY",
 		font: Font.create("SFProText", 16, "Medium"),
 		actionKeyType: ActionKeyType.NEXT,
-		iOS: {
+		ios: {
 			titleFont: Font.create("Default", 12)
 		}
 	};
@@ -59,26 +79,30 @@ function onLoad(superOnLoad) {
 		hint: "POSTAL CODE",
 		font: Font.create("SFProText", 16, "Medium"),
 		actionKeyType: ActionKeyType.NEXT,
-		iOS: {
-			titleFont: Font.create("Default", 12)
+		keyboardType: KeyboardType.NUMBER,
+		ios: {
+			titleFont: Font.create("Default", 12),
+			keyboardLayout: flexKeyboard
 		}
 	};
 	mtbAddress.options = {
 		hint: "ADDRESS",
 		font: Font.create("SFProText", 16, "Medium"),
 		actionKeyType: ActionKeyType.GO,
-		iOS: {
-			titleFont: Font.create("Default", 12)
+		ios: {
+			titleFont: Font.create("Default", 12),
+			keyboardLayout: flexKeyboard
+
 		}
 	};
 	view1.onTouchEnded = () => {
 		showPicker();
 	}
 	var items = [
-		"Yesterday",
-		"Today",
-		"This Month ",
-		"Last Month"
+		"UNITED STATES",
+		"JAPAN",
+		"CHINA",
+		"UNITED KINGDOM"
 	];
 	const myPicker = new Picker({
 		items: items,
@@ -99,7 +123,6 @@ function onLoad(superOnLoad) {
 	}
 	Application.android.keyboardMode = Application.Android.KeyboardMode.KeyboardAdjustResize;
 
-	btnContinue.onPress = () => page.router.push("/pages/pgRegisterEmail_1");
 
 }
 

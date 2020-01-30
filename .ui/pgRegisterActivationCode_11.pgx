@@ -120,6 +120,9 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"flexProps": {
+					"flexGrow": 4
+				},
 				"usePageVariable": true
 			}
 		},
@@ -403,14 +406,18 @@
 			"userProps": {
 				"autoHeight": 27.011494800962254,
 				"autoWidth": 7.579023262550091,
+				"borderWidth": null,
 				"flexProps": {
 					"alignSelf": "FLEX_END",
 					"positionType": "ABSOLUTE"
 				},
+				"height": 0,
 				"left": 0,
 				"text": " ",
 				"top": 0,
-				"usePageVariable": true
+				"usePageVariable": true,
+				"visible": true,
+				"width": 0
 			}
 		},
 		{

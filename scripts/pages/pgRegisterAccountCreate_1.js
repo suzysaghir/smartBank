@@ -25,9 +25,9 @@ function onShow(superOnShow) {
                 console.log("header ios")
 
     }
-    this.headerBar.visible = false;
-    this.headerBar.borderVisibility = false;
-    console.log("the header is: ",    this.headerBar.visible)
+    // this.headerBar.visible = false;
+    // this.headerBar.borderVisibility = false;
+    // console.log("the header is: ",    this.headerBar.visible)
 }
 
 function onLoad(superOnLoad) {
@@ -36,7 +36,7 @@ function onLoad(superOnLoad) {
 	const { tvAccountCreate, btnDone } = page;
 
 	tvAccountCreate.text ="Your Smartbank account has been created.";
-	tvAccountCreate.maxLines=2;
+	tvAccountCreate.maxLines = 2;
 	tvAccountCreate.scrollEnabled = false;
 
 	page.router = require("routes");

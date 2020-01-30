@@ -1,3 +1,7 @@
+const FlexLayout = require("sf-core/ui/flexlayout");
+const TextView = require("sf-core/ui/textview");
+const Timer = require("sf-core/timer");
+const AlertView = require("sf-core/ui/alertview");
 const Application = require("sf-core/application");
 const System = require("sf-core/device/system");
 const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
@@ -50,26 +54,36 @@ function onLoad(superOnLoad) {
 	img_background.width = Screen.width / 3 * 2;
 
 	tbHidden.keyboardType = KeyboardType.NUMBER;
-
+	tbHidden.text = "";
 	tvEnterDigits.text = "Enter the 6 digit code";
 	tvSendToPhone.text = "We’ve send it to your phone number";
-	tvResendCode.text = "You can re-send the code in 00:20"
 	tvSendToPhone.scrollEnabled = false;
 	tvEnterDigits.scrollEnabled = false;
 	tvResendCode.scrollEnabled = false;
-
-	viewDigitCode.onTouchEnded = () => {
-		tbHidden.requestFocus();
-	};
-	viewRemoveTouch.onTouchEnded = () => {
-		tbHidden.removeFocus();
-	}
+	btnResend.enabled = false;
 
 	var count = 0;
 	var digits = [flexLayoutActivationCode1, flexLayoutActivationCode2, flexLayoutActivationCode3, flexLayoutActivationCode4, flexLayoutActivationCode5, flexLayoutActivationCode6];
-	console.log("the digits length is : ", digits.length)
+	// console.log("the digits length is : ", digits.length)
 
 	tbHidden.onTextChanged = (e) => {
+		var wrongCodeAlert = new AlertView({
+			title: "Incorrect Digit Code",
+			message: "please, try again"
+		});
+		wrongCodeAlert.addButton({
+			type: AlertView.Android.ButtonType.NEGATIVE,
+			text: "OK"
+		});
+		var input = tbHidden.text;
+		var codes = ["111111", "000000", "123456"];
+		var checkPass = () => {
+			if (input.length == 6) {
+				var exist = codes.includes(input);
+				if (exist == false) { wrongCodeAlert.show(); }
+				return exist;
+			}
+		};
 		if (e.insertedText == "" && count > 0) {
 			count--;
 			digits[count].tvDigit.text = e.insertedText;
@@ -88,13 +102,63 @@ function onLoad(superOnLoad) {
 		else {
 			var input = tbHidden.text;
 			tbHidden.text = input.substring(0, input.length - 1);
-
 		}
-		console.log("the text is-------------: ", tbHidden.text)
+		if (checkPass() == true) {
+			page.router.push("/pages/pgRegisterPersonalDetails_11");
+		}
+		// console.log("the text is-------------: ", tbHidden.text)
 	};
+
+	function setTimer() {
+		var myTimer = Timer.setInterval({
+			task: changeBackgroundColor,
+			delay: 1000
+		});
+	}
+	var time = 10;
+
+	function changeBackgroundColor() {
+		if (time == 00) {
+			btnResend.backgroundColor = Color.create("#37ffb9");
+			btnResend.textColor = Color.create("#57cab3");
+			btnResend.enabled = true;
+			// btnResend.onPress = () => page.router.push("/pages/pgRegisterPersonalDetails_11");
+		}
+		else {
+			time -= 1
+			// tv.text = "00:" + time
+			tvResendCode.text = "You can re-send the code in 00:" + time;
+			
+		}
+	}
+	setTimer();
+	
+	const keyboardtv = new TextView();
+	const tbStyle = getCombinedStyle(".sf-textView");
+	Object.assign(keyboardtv, tbStyle);
+
+	keyboardtv.text = tvResendCode.text;
+	keyboardtv.textColor = tvResendCode.textColor;
+	keyboardtv.maxLines = tvResendCode.maxLines
+	var flexKeyboard = new FlexLayout({
+		height: 100,
+		alignSelf: FlexLayout.AlignSelf.STRETCH,
+		paddingRight: 16,
+		paddingLeft: 16,
+
+	});
+	flexKeyboard.addChild(keyboardtv);
+	viewDigitCode.ios.keyboardLayout = flexKeyboard;
+
+	viewDigitCode.onTouchEnded = () => {
+		tbHidden.requestFocus();
+	};
+	viewRemoveTouch.onTouchEnded = () => {
+		tbHidden.removeFocus();
+	}
+
 	Application.android.keyboardMode = Application.Android.KeyboardMode.KeyboardAdjustResize;
 
-	btnResend.onPress = () => page.router.push("/pages/pgRegisterPersonalDetails_11");
 
 }
 

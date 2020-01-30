@@ -1,9 +1,13 @@
+const Button = require("sf-core/ui/button");
+const FlexLayout = require("sf-core/ui/flexlayout");
+const TextView = require("sf-core/ui/textview");
 const Application = require("sf-core/application");
 const KeyboardType = require("sf-core/ui/keyboardtype");
 const Color = require("sf-core/ui/color");
 const Image = require("sf-core/ui/image");
 const extend = require('js-base/core/extend');
 const PgSendMoneyAmountDesign = require('ui/ui_pgSendMoneyAmount');
+const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 
 const PgSendMoneyAmount = extend(PgSendMoneyAmountDesign)(
 	function(_super) {
@@ -22,6 +26,7 @@ function onLoad(superOnLoad) {
 	const page = this;
 	const router = this.router;
 	const { listView1, flexLayout1, iconImage, myLabel, lblUsd, tbAmount, tvLine, materialtextbox, btnCont } = page;
+	btnCont.onPress = () => router.push("/pages/pgSendMoneyReview", { title: title_profile, image: img_profile, amount: txtBoxAmount });
 	// ########## NOTE ############
 	// page.match.params.myparam
 	// router.push("/pages/pgSendMoneyAmount/"+index);
@@ -53,7 +58,11 @@ function onLoad(superOnLoad) {
 	lblUsd.text = "USD";
 	tbAmount.hint = "0"
 	tbAmount.hintTextColor = Color.create("#383838");
-	tbAmount.keyboardType = KeyboardType.NUMBER;
+
+	const myButton = new Button();
+	const btnStyle = getCombinedStyle(".sf-button");
+	Object.assign(myButton, btnStyle);
+
 
 	// tbAmount.scrollEnabled = false;
 	// lblUsd.scrollEnabled = false;
@@ -63,12 +72,25 @@ function onLoad(superOnLoad) {
 	// }
 
 	// tvLine.text = ""
-	tbAmount.onEditEnds = () => {
+	tbAmount.onTextChanged = () => {
 		txtBoxAmount = tbAmount.text;
 	}
+	myButton.text = btnCont.text;
+	myButton.onPress = () => router.push("/pages/pgSendMoneyReview", { title: title_profile, image: img_profile, amount: txtBoxAmount });
+
+	var flexKeyboard = new FlexLayout({
+		height: 100,
+		alignSelf: FlexLayout.AlignSelf.STRETCH,
+		paddingRight: 16,
+		paddingLeft: 16,
+	});
+	flexKeyboard.addChild(myButton);
+
+	tbAmount.ios.keyboardLayout = flexKeyboard;
+	tbAmount.keyboardType = KeyboardType.NUMBER;
+
 	Application.android.keyboardMode = Application.Android.KeyboardMode.KeyboardAdjustResize;
 
-	btnCont.onPress = () => router.push("/pages/pgSendMoneyReview", { title: title_profile, image: img_profile, amount: txtBoxAmount });
 
 }
 

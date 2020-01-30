@@ -1,3 +1,6 @@
+const TextView = require("sf-core/ui/textview");
+const FlexLayout = require("sf-core/ui/flexlayout");
+const AlertView = require("sf-core/ui/alertview");
 const HeaderBarItem = require("sf-core/ui/headerbaritem");
 const Image = require("sf-core/ui/image");
 const PageTitleLayout = require("components/PageTitleLayout");
@@ -53,8 +56,6 @@ function onLoad(superOnLoad) {
 	headerBar.borderVisibility = false;
 	headerBar.itemColor = Color.WHITE;
 
-
-
 	const page = this;
 	const {
 		img_background,
@@ -64,7 +65,6 @@ function onLoad(superOnLoad) {
 		viewRegPin,
 		viewRemoveTouch,
 		tbHidden,
-		btnContinue,
 		flxInside1,
 		flxInside2,
 		flxInside3,
@@ -74,79 +74,112 @@ function onLoad(superOnLoad) {
 	img_background.width = Screen.width / 3 * 2;
 	tbHidden.keyboardType = KeyboardType.NUMBER;
 
-	//tbHidden.ios.KeyboardType = KeyboardType.NUMBER;
-
-	// tbHidden.KeyboardType = KeyboardType.android.NUMBER;
-
 	const tvStyle = getCombinedStyle(".sf-textView");
 	Object.assign(tvPasscode, tvStyle);
 	tvPasscode.text = "Create a passcode for your Smartbank account";
 	tvPasscode.maxLines = 3;
+	tbHidden.visible = true;
+	tbHidden.text = "";
+	// keyboardLayout: flexKeyboard
+	tvAgreed.text = "By entering your passcode, you agree to our Terms of Services";
+	tvAgreed.maxLines = 3;
+	tvAgreed.textColor = Color.create("#cbf4ff");
 
-	tbHidden.visible = false;
+	const keyboardtv = new TextView();
+	const tbStyle = getCombinedStyle(".sf-textView");
+	Object.assign(keyboardtv, tbStyle);
 
+	keyboardtv.text = tvAgreed.text;
+	keyboardtv.textColor = tvAgreed.textColor;
+	keyboardtv.maxLines = tvAgreed.maxLines
+	var flexKeyboard = new FlexLayout({
+		height: 100,
+		alignSelf: FlexLayout.AlignSelf.STRETCH,
+		paddingRight: 16,
+		paddingLeft: 16,
+
+	});
+	flexKeyboard.addChild(keyboardtv);
+	tbHidden.ios.keyboardLayout = flexKeyboard;
+	
 	viewRegPin.onTouchEnded = () => {
 		tbHidden.requestFocus();
 	};
 	viewRemoveTouch.onTouchEnded = () => {
 		tbHidden.removeFocus();
-
 	}
-
 	var count = 0;
-	var txtLength = 1;
+	var txtLength = 0;
 	var arr = [flxInside1, flxInside2, flxInside3, flxInside4]
+	
 	tbHidden.onTextChanged = (e) => {
-		// console.log("+++++++++++++++  ",e.location)
-		// if (e.location == 0){
-		// 	e.location = 1;
-		// }
-		//// when type clean twice it and a value 
-		// if (e.insertedText == "" && count > 0) {
-		// 	console.log("the inserted text is: ", typeof e.insertedText, " ## : ", e.insertedText, " count: ", count);
-		// 	count--;
-		// 	arr[count].backgroundColor = Color.create(50, 255, 255, 255);
-		// 	console.log("the subtraction count is : ", count)
-		// }
-		// else if (isNaN(e.insertedText) == false && count < arr.length) {
-
-		// 	console.log("the inserted text is: ", typeof e.insertedText, " ## : ", e.insertedText, " count: ", count);
-		// 	arr[count].backgroundColor = Color.WHITE;
-		// 	count++;
-		// 	console.log("the addition count is : ", count)
-		// }
-		// else {
-		// 	var input = tbHidden.text;
-		// 	tbHidden.text = input.substring(0, input.length - 1);
-
-		// }
-
+		var wrongCodeAlert = new AlertView({
+			title: "Incorrect Passcode",
+			message: "try again"
+		});
+		wrongCodeAlert.addButton({
+			type: AlertView.Android.ButtonType.NEGATIVE,
+			text: "OK"
+		});
 		var input = tbHidden.text;
+		var codes = ["1111", "0000", "1234"];
+		var checkPass = () => {
+			if (input.length == 4) {
+				var exist = codes.includes(input);
+				if (exist == false) { wrongCodeAlert.show(); }
+				return exist;
+			}
+		};
+		console.log("text length: ", input.length, " - ", txtLength, ", count : ", count);
 
-		if (input.length > txtLength && input.length - 2 < arr.length) {
+		if (input.length > txtLength && input.length - 1 < arr.length) {
 			arr[count].backgroundColor = Color.WHITE;
 			count++;
 			txtLength = input.length;
 		}
-		else if (input.length < txtLength && input.length >= 1) {
+		else if (input.length <= txtLength && input.length >= 0) {
 			count--;
 			arr[count].backgroundColor = Color.create(50, 255, 255, 255);
 			txtLength = input.length;
 		}
 		else {
 			var input = tbHidden.text;
-			tbHidden.text = input.substring(0, input.length - 1);
+			// tbHidden.text = input;
 		}
-
-		console.log("the text length is : ", tbHidden.text.length, " - ", txtLength, "   count : ", count);
+		// console.log("checkPass value ", checkPass(), " the text is : ", input, "  ", input.length)
+		if (checkPass() == true) {
+			page.router.push("/pages/pgRegisterActivationCode_11");
+		}
 	};
 
 
-	tvAgreed.text = "By entering your passcode, you agree to our Terms of Services";
-	tvAgreed.maxLines = 3;
 
-	btnContinue.onPress = () => page.router.push("/pages/pgRegisterActivationCode_11");
+
+	// btnContinue.onPress = () => page.router.push("/pages/pgRegisterActivationCode_11");
 
 }
 
 module.exports = PgRegisterPin_1;
+// console.log("+++++++++++++++  ",e.location)
+// if (e.location == 0){
+// 	e.location = 1;
+// }
+//// when type clean twice it and a value 
+// if (e.insertedText == "" && count > 0) {
+// 	console.log("the inserted text is: ", typeof e.insertedText, " ## : ", e.insertedText, " count: ", count);
+// 	count--;
+// 	arr[count].backgroundColor = Color.create(50, 255, 255, 255);
+// 	console.log("the subtraction count is : ", count)
+// }
+// else if (isNaN(e.insertedText) == false && count < arr.length) {
+
+// 	console.log("the inserted text is: ", typeof e.insertedText, " ## : ", e.insertedText, " count: ", count);
+// 	arr[count].backgroundColor = Color.WHITE;
+// 	count++;
+// 	console.log("the addition count is : ", count)
+// }
+// else {
+// 	var input = tbHidden.text;
+// 	tbHidden.text = input.substring(0, input.length - 1);
+
+// }

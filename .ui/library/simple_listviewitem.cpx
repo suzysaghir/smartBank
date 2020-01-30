@@ -28,8 +28,8 @@
 			"className": ".sf-label .sf-listViewItem-simple-title",
 			"id": "24ca-f21f-dfb6-5dc9",
 			"props": {
-				"autoHeight": 18.852459016393443,
-				"autoWidth": 186.75717213114754,
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 172.6089015151515,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "1841-ff9a-b968-028d",
@@ -40,8 +40,8 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 18.852459016393443,
-				"autoWidth": 186.75717213114754,
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 172.6089015151515,
 				"marginLeft": 16,
 				"text": "ListView Cell Title"
 			}

@@ -231,7 +231,7 @@
 			"className": ".sf-button",
 			"id": "fd5c-142a-0c00-9211",
 			"props": {
-				"autoHeight": 20.408163265306122,
+				"autoHeight": 27.77777777777778,
 				"children": [],
 				"name": "btnContinue",
 				"parent": "c4ad-c1f8-6273-b1b6",
@@ -240,7 +240,7 @@
 			},
 			"type": "Button",
 			"userProps": {
-				"autoHeight": 20.408163265306122,
+				"autoHeight": 27.77777777777778,
 				"left": 0,
 				"text": "Continue",
 				"top": 0,

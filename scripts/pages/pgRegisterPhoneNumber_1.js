@@ -79,6 +79,22 @@ function onLoad(superOnLoad) {
 	view1.onTouchEnded = () => {
 		showPicker();
 	}
+	const myButton = new Button();
+	const btnStyle = getCombinedStyle(".sf-button");
+	Object.assign(myButton, btnStyle);
+
+	myButton.text = btnContinue.text;
+	myButton.onPress = btnContinue.onPress
+
+	var flexKeyboard = new FlexLayout({
+		height: 100,
+		alignSelf: FlexLayout.AlignSelf.STRETCH,
+		paddingRight: 16,
+		paddingLeft: 16,
+
+	});
+	flexKeyboard.addChild(myButton);
+	
 	mtbPhoneNumber.options = {
 		hint: "PHONE NUMBER",
 		keyboardType: KeyboardType.NUMBER,
@@ -87,10 +103,10 @@ function onLoad(superOnLoad) {
 		}
 	};
 	var items = [
-		"Yesterday",
-		"Today",
-		"This Month ",
-		"Last Month"
+		"+90",
+		"+97",
+		"+91 ",
+		"+96"
 	];
 	const myPicker = new Picker({
 		items: items,
@@ -111,21 +127,7 @@ function onLoad(superOnLoad) {
 		console.log('Canceled');
 	}
 
-	const myButton = new Button();
-	const btnStyle = getCombinedStyle(".sf-button");
-	Object.assign(myButton, btnStyle);
-
-	myButton.text = btnContinue.text;
-	myButton.onPress = btnContinue.onPress
-
-	var flexKeyboard = new FlexLayout({
-		height: 100,
-		alignSelf: FlexLayout.AlignSelf.STRETCH,
-		paddingRight: 16,
-		paddingLeft: 16,
-
-	});
-	flexKeyboard.addChild(myButton);
+	
 	Application.android.keyboardMode = Application.Android.KeyboardMode.KeyboardAdjustResize;
 }
 

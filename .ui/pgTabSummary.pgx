@@ -213,8 +213,8 @@
 			"className": ".sf-textView .sf-paymentLstv",
 			"id": "d314-4ff3-0e70-4668",
 			"props": {
-				"autoHeight": 19.607843137254903,
-				"autoWidth": 72.54901960784314,
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 89.86742424242424,
 				"children": [],
 				"html": "<span style=\"font-size: 16px;\">Category</span><br>",
 				"name": "tvCategory",
@@ -224,8 +224,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.607843137254903,
-				"autoWidth": 72.54901960784314,
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 89.86742424242424,
 				"flexProps": {
 					"alignSelf": "FLEX_START"
 				},
@@ -242,8 +242,8 @@
 			"hiddenComponent": false,
 			"id": "2875-3271-d027-5810",
 			"props": {
-				"autoHeight": 19.607843137254903,
-				"autoWidth": 75.49019607843137,
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 92.6373106060606,
 				"children": [],
 				"html": "<span style=\"font-size: 16px; white-space: pre-wrap;\">Spending</span><br>",
 				"name": "tvSpending",
@@ -253,8 +253,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.607843137254903,
-				"autoWidth": 75.49019607843137,
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 92.6373106060606,
 				"flexProps": {
 					"alignSelf": "FLEX_END"
 				},
@@ -321,6 +321,7 @@
 				},
 				"height": 81.42857142857143,
 				"left": 0,
+				"paddingRight": 20,
 				"top": 0,
 				"width": 385.80357142857144
 			}

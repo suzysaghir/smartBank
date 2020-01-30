@@ -9,9 +9,7 @@
 				"children": [
 					"c2d1-2738-ad4b-ed2a",
 					"0196-08ed-8528-4a84",
-					"bca9-0ca2-cb77-fca8",
-					"53a4-2828-5039-9b9d",
-					"157a-4716-f265-0a46"
+					"bca9-0ca2-cb77-fca8"
 				],
 				"name": "lstvSummary",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -27,8 +25,9 @@
 					"flexDirection": "ROW"
 				},
 				"height": 81.42857142857143,
-				"left": 21.003295757152415,
-				"top": 426.46843239113133,
+				"left": 14.94268937544389,
+				"paddingRight": 20,
+				"top": 255.2563291607481,
 				"width": 385.80357142857144
 			}
 		},
@@ -110,6 +109,9 @@
 			"type": "TextView",
 			"userProps": {
 				"autoWidth": 1.6666666666666667,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"font": {
 					"family": "SFProText",
 					"style": "Medium",
@@ -118,8 +120,12 @@
 					"size": 18
 				},
 				"html": "<br>",
+				"ios": {
+					"shadowColor": "rgba( 56, 56, 56, 1 )"
+				},
 				"marginLeft": 5,
 				"text": "\n",
+				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"usePageVariable": true,
 				"width": null
@@ -146,75 +152,12 @@
 				"autoHeight": 19.166666666666668,
 				"autoWidth": 1.6666666666666667,
 				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "CENTER"
+					"alignSelf": "CENTER",
+					"flexGrow": 1
 				},
 				"height": null,
 				"html": "<br>",
 				"text": "\n",
-				"textAlignment": "MIDRIGHT",
-				"textColor": "rgba( 140, 140, 140, 1 )",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".sf-textView",
-			"id": "53a4-2828-5039-9b9d",
-			"props": {
-				"autoHeight": 20.3125,
-				"autoWidth": 15.2587890625,
-				"children": [],
-				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
-				"name": "tvDollersign",
-				"parent": "4eb6-cb4a-5fa1-a594",
-				"text": "$",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "TextView",
-			"userProps": {
-				"autoHeight": 20.3125,
-				"autoWidth": 15.2587890625,
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
-				"text": "$",
-				"textAlignment": "MIDRIGHT",
-				"textColor": "rgba( 140, 140, 140, 1 )",
-				"usePageVariable": true
-			}
-		},
-		{
-			"className": ".sf-textView",
-			"id": "157a-4716-f265-0a46",
-			"props": {
-				"autoHeight": 18.852459016393443,
-				"autoWidth": 31.147540983606557,
-				"children": [],
-				"html": "",
-				"name": "tvPrice",
-				"parent": "4eb6-cb4a-5fa1-a594",
-				"text": "",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "TextView",
-			"userProps": {
-				"autoHeight": 18.852459016393443,
-				"autoWidth": 31.147540983606557,
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"height": null,
-				"html": "",
-				"marginRight": 20,
-				"text": "",
 				"textAlignment": "MIDRIGHT",
 				"textColor": "rgba( 140, 140, 140, 1 )",
 				"usePageVariable": true,

@@ -63,31 +63,31 @@ function onLoad(superOnLoad) {
 	var myDataSet = [{
 		title: 'Travel',
 		image: Image.createFromFile("images://travel.png").android.round(50),
-		price: '40',
+		price: '$40',
 	}, {
 		title: 'Shopping',
 		image: Image.createFromFile("images://shopping.png").android.round(50),
-		price: '20',
+		price: '$20',
 	}, {
 		title: 'Resturant',
 		image: Image.createFromFile("images://resturant.png").android.round(50),
-		price: '200',
+		price: '$200',
 	}, {
 		title: 'Personal Care',
 		image: Image.createFromFile("images://personal_care.png").android.round(50),
-		price: '389',
+		price: '$389',
 	}];
 	listView1.itemCount = myDataSet.length;
 
 	listView1.onRowBind = function(listViewItem, index) {
 		var iconImage = listViewItem.imgIcon;
 		var myTitle = listViewItem.tvTitle;
-		var myPrice = listViewItem.tvPrice;
-		var mySign = listViewItem.tvDollersign;
+		var myPrice = listViewItem.tvsign;
+		// var mySign = listViewItem.tvDollersign;
 		listViewItem.borderWidth = 1
 		// listViewItem.border = 1
 
-		mySign.text = "$"
+		// mySign.text = "$"
 		iconImage.image = myDataSet[index].image;
 		myTitle.text = myDataSet[index].title;
 		myPrice.text = myDataSet[index].price;

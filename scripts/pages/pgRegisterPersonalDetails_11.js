@@ -1,3 +1,6 @@
+const Color = require("sf-core/ui/color");
+const Button = require("sf-core/ui/button");
+const FlexLayout = require("sf-core/ui/flexlayout");
 const Application = require("sf-core/application");
 const ActionKeyType = require("sf-core/ui/actionkeytype");
 const System = require("sf-core/device/system");
@@ -51,26 +54,51 @@ function onLoad(superOnLoad) {
 
 	tvPersonalDetails.text = "What are your personal details?";
 	tvPersonalDetails.scrollEnabled = false;
+	btnContinue.text = 'Continue';
+	btnContinue.onPress = () => page.router.push("/pages/pgRegisterAddress_1");
+
+	const myButton = new Button();
+	const btnStyle = getCombinedStyle(".sf-button");
+	Object.assign(myButton, btnStyle);
+
+	myButton.text = btnContinue.text;
+	myButton.onPress = btnContinue.onPress;
+
+	var flexKeyboard = new FlexLayout({
+		height: 100,
+		alignSelf: FlexLayout.AlignSelf.STRETCH,
+		paddingRight: 16,
+		paddingLeft: 16,
+		// backgroundColor : Color.RED
+	});
+	flexKeyboard.addChild(myButton);
+	
+	// this.layout.addChild(flexKeyboard)
+
 	tvPersonalDetails.option = {
 		iOS: {
-			titleFont: Font.create("Default", 12)
+			titleFont: Font.create("Default", 12),
 		}
 	};
 	mtbFirstName.options = {
-		hint: "FIRST NAME ",
-		font: Font.create("SFProText", 16, "Medium"),
+		hint: "FIRST NAME",
+		ios: {
+			keyboardLayout: flexKeyboard,
+			titleFont: Font.create("Default", 12),
+			actionKeyType: ActionKeyType.NEXT,
+		},
 		actionKeyType: ActionKeyType.NEXT,
-		iOS: {
-			titleFont: Font.create("Default", 12)
-		}
+		font: Font.create("SFProText", 16, "Medium"),
 	};
 	mtbLastName.options = {
 		hint: "LAST NAME ",
-		actionKeyType: ActionKeyType.SEND,
+		ios: {
+			keyboardLayout: flexKeyboard,
+			titleFont: Font.create("Default", 12),
+			// actionKeyType: ActionKeyType.NEXT,
+		},
 		font: Font.create("SFProText", 16, "Medium"),
-		iOS: {
-			titleFont: Font.create("Default", 12)
-		}
+		actionKeyType: ActionKeyType.DEFAULT,
 	};
 
 	view1.onTouchEnded = () => {
@@ -82,13 +110,10 @@ function onLoad(superOnLoad) {
 		myDatePicker.show();
 	}
 	myDatePicker.onDateSelected = function(date) {
-		myDatePicker.okText = ' ' + date.getFullYear() + '/' + date.getMonth()+1 + '/' + date.getDate();
-
+		myDatePicker.okText = ' ' + date.getFullYear() + '/' + date.getMonth() + 1 + '/' + date.getDate();
 		mtbBirthDate.materialTextBox.text = myDatePicker.okText;
 	};
 	Application.android.keyboardMode = Application.Android.KeyboardMode.KeyboardAdjustResize;
-
-	btnContinue.onPress = () => page.router.push("/pages/pgRegisterAddress_1");
 
 }
 

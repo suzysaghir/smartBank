@@ -166,7 +166,8 @@
 				"autoWidth": 14.0625,
 				"children": [],
 				"name": "imgSearch",
-				"parent": "7c00-0708-d75b-b906"
+				"parent": "7c00-0708-d75b-b906",
+				"usePageVariable": true
 			},
 			"type": "ImageView",
 			"userProps": {
@@ -177,7 +178,8 @@
 				},
 				"height": null,
 				"image": "icon_search.png",
-				"imageFillType": "ASPECTFILL"
+				"imageFillType": "ASPECTFILL",
+				"usePageVariable": true
 			}
 		},
 		{
@@ -378,7 +380,7 @@
 			"id": "b406-5719-e1e5-a4db",
 			"props": {
 				"children": [
-					"6f88-1b72-8056-5aba"
+					"ebf4-36f7-58ed-b743"
 				],
 				"itemCount": 4,
 				"name": "listView1",
@@ -406,7 +408,7 @@
 		{
 			"className": ".sf-listViewItem",
 			"hiddenComponent": false,
-			"id": "6f88-1b72-8056-5aba",
+			"id": "ebf4-36f7-58ed-b743",
 			"initialized": true,
 			"props": {
 				"children": [],
@@ -420,6 +422,8 @@
 			},
 			"type": "ListViewItem",
 			"userProps": {
+				"borderColor": "rgba( 242, 242, 242, 1 )",
+				"borderWidth": 1,
 				"flex": {
 					"flexDirection": 2,
 					"positionType": 0

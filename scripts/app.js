@@ -24,22 +24,22 @@ const router = require("./routes");
 
 
 
-// router.push("/pages/pgRegisterAccountCreate");
+// router.push("/pages/pgRegisterAccountCreate_1");
 // router.push("/pages/pgTabSummary");
 // router.push("/pages/pgSendDone_1");
 // router.push("/pages/pgSendMoneyAmount");
 // router.push("/pages/pgPayments");
 
 // router.push("/tabs");
-router.push("/pages/pgRegisterPersonalDetails_11");
+// router.push("/pages/pgRegisterPersonalDetails_11");
 
 
 // router.push("/pages/pgRegisterPhoneNumber_1");
 // router.push("/pages/pgRegisterPin_1");
 
-// router.push("/pages/pgRegisterActivationCode_11");
+// router.push("/pages/pgRegisterAddress_1");
 
-// router.push("/pages/pgRegisterAccountCreate_1");
+router.push("/pages/pgRegisterActivationCode_11");
 
-// router.push("/pages/pgSendDone_1");
+// router.push("/pages/tes/tDelete");
 

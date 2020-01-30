@@ -45,13 +45,15 @@
 				"autoHeight": 20,
 				"autoWidth": 61.53846153846153,
 				"flexProps": {
-					"alignSelf": "CENTER"
+					"alignSelf": "CENTER",
+					"flexGrow": 1
 				},
 				"height": null,
 				"html": "<span style=\"white-space: pre-wrap; background-color: rgba(255, 255, 255, 0);\">Today</span>",
 				"text": "Today",
+				"textAlignment": "MIDLEFT",
 				"usePageVariable": true,
-				"width": null
+				"width": 100
 			}
 		},
 		{
