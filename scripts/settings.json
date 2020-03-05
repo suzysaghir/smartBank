@@ -4,8 +4,8 @@
 			"currentTheme": "smartBankTheme",
 			"baseTheme": "baseTheme",
 			"themes": [
-				"baseTheme",
 				"defaultTheme",
+				"baseTheme",
 				"smartBankTheme"
 			]
 		},
@@ -13,7 +13,7 @@
 			"pgxFolder": ".ui",
 			"uiFolder": "scripts/ui",
 			"pagesFolder": "scripts/pages",
-			"libraryUiFolder": "scripts/node_modules/library",
+			"libraryUiFolder": "scripts/library",
 			"libraryUserFolder": "scripts/components",
 			"themesFolder": "themes",
 			"themesDistFolder": "scripts/themes"
