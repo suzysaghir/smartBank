@@ -63,7 +63,7 @@
 						"active": false
 					}
 				},
-				"playerPath": "/player-6.14.1-release.1.zip"
+				"playerPath": null
 			},
 			"android": {
 				"scripts": "scripts",
@@ -84,7 +84,7 @@
 						"active": false
 					}
 				},
-				"playerPath": "/player-6.14.1.zip"
+				"playerPath": null 
 			},
 			"keys": {
 				"project3DesKey": "DsrAYNxt7BvfsBhY9yrUWIwr9087nn5o",
