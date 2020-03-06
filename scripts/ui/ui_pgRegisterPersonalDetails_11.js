@@ -19,6 +19,7 @@ const Button = extend(require('sf-core/ui/button'));
 const propFactory = require('@smartface/contx/lib/smartface/sfCorePropFactory');
 const AttributedString = require('sf-core/ui/attributedstring');
 const createAttributedStrings = require('@smartface/html-to-text');
+const Materialtextbox = extend(require('materialtextbox'));
 
 function addChild(childName, ChildClass, pageInstance) {
 	this.children = this.children || {};
@@ -229,7 +230,7 @@ $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbFirstName.$$styleContext = {
 		width: null
 	}
 };
-const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbFirstName_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbFirstName_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbFirstName
 );
 
@@ -251,7 +252,7 @@ $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbLastName.$$styleContext = {
 		top: 0
 	}
 };
-const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbLastName_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbLastName_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbLastName
 );
 
@@ -298,7 +299,7 @@ $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbBirthDate.$$styleCont
 	defaultClassNames: '.default_common .default_flexLayout',
 	userProps: { flexProps: { positionType: 'RELATIVE' }, left: 0, top: 0 }
 };
-const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbBirthDate_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbBirthDate_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbBirthDate
 );
 

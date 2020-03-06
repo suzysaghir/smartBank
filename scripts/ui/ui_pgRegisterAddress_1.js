@@ -19,6 +19,7 @@ const Button = extend(require('sf-core/ui/button'));
 const propFactory = require('@smartface/contx/lib/smartface/sfCorePropFactory');
 const AttributedString = require('sf-core/ui/attributedstring');
 const createAttributedStrings = require('@smartface/html-to-text');
+const Materialtextbox = extend(require('materialtextbox'));
 
 function addChild(childName, ChildClass, pageInstance) {
 	this.children = this.children || {};
@@ -258,7 +259,7 @@ $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbCountry.$$styleContex
 		top: 0
 	}
 };
-const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbCountry_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbCountry_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$FlexLayout1$$MtbCountry
 );
 
@@ -297,7 +298,7 @@ $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbPostalCode.$$styleContext = {
 	defaultClassNames: '.default_common .default_flexLayout',
 	userProps: { flexProps: { positionType: 'RELATIVE' }, left: 0, top: 0 }
 };
-const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbPostalCode_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbPostalCode_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbPostalCode
 );
 
@@ -321,7 +322,7 @@ $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbAddress.$$styleContext = {
 		width: null
 	}
 };
-const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbAddress_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbAddress_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexLayout_mtb$$MtbAddress
 );
 

@@ -19,6 +19,7 @@ const Button = extend(require('sf-core/ui/button'));
 const propFactory = require('@smartface/contx/lib/smartface/sfCorePropFactory');
 const AttributedString = require('sf-core/ui/attributedstring');
 const createAttributedStrings = require('@smartface/html-to-text');
+const Materialtextbox = extend(require('materialtextbox'));
 
 function addChild(childName, ChildClass, pageInstance) {
 	this.children = this.children || {};
@@ -276,7 +277,7 @@ $FlexLayout1$$FlexLayout1$$FlexMtb$$FlxCountry$$MtbCountry.$$styleContext = {
 		top: 0
 	}
 };
-const $FlexLayout1$$FlexLayout1$$FlexMtb$$FlxCountry$$MtbCountry_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexMtb$$FlxCountry$$MtbCountry_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexMtb$$FlxCountry$$MtbCountry
 );
 
@@ -339,7 +340,7 @@ $FlexLayout1$$FlexLayout1$$FlexMtb$$FlxNumber$$MtbPhoneNumber.$$styleContext = {
 		top: 0
 	}
 };
-const $FlexLayout1$$FlexLayout1$$FlexMtb$$FlxNumber$$MtbPhoneNumber_ = FlexLayout(
+const $FlexLayout1$$FlexLayout1$$FlexMtb$$FlxNumber$$MtbPhoneNumber_ = Materialtextbox(
 	$FlexLayout1$$FlexLayout1$$FlexMtb$$FlxNumber$$MtbPhoneNumber
 );
 
