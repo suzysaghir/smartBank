@@ -20,7 +20,7 @@ function addChild(childName, ChildClass, pageInstance) {
 	else this.addChild(this.children[childName]);
 }
 // Constructor
-function $PgAccounts(_super, props) {
+function $PgCards(_super, props) {
 	// Initalizes super class for this page scope
 	_super(
 		this,
@@ -36,9 +36,9 @@ function $PgAccounts(_super, props) {
 	this.children['statusBar'] = this.statusBar || {};
 	this.children['headerBar'] = this.headerBar;
 	addChild.call(this, 'label1', $Label1_, this);
-	pageContextPatch(this, 'pgAccounts');
+	pageContextPatch(this, 'pgCards');
 }
-$PgAccounts.$$styleContext = {
+$PgCards.$$styleContext = {
 	classNames: '.sf-page',
 	defaultClassNames: ' .default_page',
 	userProps: {
@@ -60,15 +60,15 @@ $PgAccounts.$$styleContext = {
 		userProps: {}
 	}
 };
-const $PgAccounts_ = Page($PgAccounts);
+const $PgCards_ = Page($PgCards);
 function $Label1(_super, pageInstance) {
-	_super(this, { text: 'Accounts page ' });
+	_super(this, { text: 'Cards page' });
 }
 $Label1.$$styleContext = {
 	classNames: '.sf-label',
 	defaultClassNames: '.default_common .default_label',
 	userProps: {
-		flexProps: { alignSelf: 'AUTO' },
+		flexProps: { alignSelf: 'CENTER' },
 		height: 167.74193548387098,
 		textAlignment: 'MIDCENTER',
 		width: 345.16129032258067
@@ -85,4 +85,4 @@ function onLoad() {
 	this.headerBar.title = 'pgAccounts';
 }
 
-module.exports = $PgAccounts_;
+module.exports = $PgCards_;

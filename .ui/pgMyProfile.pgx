@@ -2,15 +2,15 @@
 	"components": [
 		{
 			"className": ".sf-page",
-			"id": "c05a-9b12-959b-3144",
+			"id": "e5c8-40f3-c4bb-7b33",
 			"initialized": true,
 			"props": {
 				"children": [
-					"c5d9-ea17-9736-bdc1",
-					"047d-011a-8f1d-beef",
-					"6cda-cf76-d949-e0af"
+					"edb6-5f8a-b924-5b68",
+					"cef6-3d6a-de9d-ff99",
+					"d5be-4f41-aafe-7859"
 				],
-				"name": "pgAccounts",
+				"name": "pgMyProfile",
 				"orientation": "PORTRAIT",
 				"parent": null
 			},
@@ -26,24 +26,24 @@
 		},
 		{
 			"className": ".sf-statusBar",
-			"id": "c5d9-ea17-9736-bdc1",
+			"id": "edb6-5f8a-b924-5b68",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "statusBar",
-				"parent": "c05a-9b12-959b-3144"
+				"parent": "e5c8-40f3-c4bb-7b33"
 			},
 			"type": "StatusBar",
 			"userProps": {}
 		},
 		{
 			"className": ".sf-headerBar",
-			"id": "047d-011a-8f1d-beef",
+			"id": "cef6-3d6a-de9d-ff99",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "c05a-9b12-959b-3144",
+				"parent": "e5c8-40f3-c4bb-7b33",
 				"title": "pgAccounts"
 			},
 			"type": "HeaderBar",
@@ -53,12 +53,12 @@
 		},
 		{
 			"className": ".sf-label",
-			"id": "6cda-cf76-d949-e0af",
+			"id": "d5be-4f41-aafe-7859",
 			"props": {
 				"children": [],
 				"name": "label1",
-				"parent": "c05a-9b12-959b-3144",
-				"text": "Accounts page "
+				"parent": "e5c8-40f3-c4bb-7b33",
+				"text": "my Profile Page"
 			},
 			"type": "Label",
 			"userProps": {
@@ -66,7 +66,7 @@
 					"alignSelf": "AUTO"
 				},
 				"height": 167.74193548387098,
-				"text": "Accounts page ",
+				"text": "my Profile Page",
 				"textAlignment": "MIDCENTER",
 				"width": 345.16129032258067
 			}

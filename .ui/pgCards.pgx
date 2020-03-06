@@ -2,15 +2,15 @@
 	"components": [
 		{
 			"className": ".sf-page",
-			"id": "c05a-9b12-959b-3144",
+			"id": "2341-8544-9463-36eb",
 			"initialized": true,
 			"props": {
 				"children": [
-					"c5d9-ea17-9736-bdc1",
-					"047d-011a-8f1d-beef",
-					"6cda-cf76-d949-e0af"
+					"177e-5feb-20c8-99e0",
+					"ab49-6054-a70f-9f9d",
+					"360f-bfa7-9ac3-9ec2"
 				],
-				"name": "pgAccounts",
+				"name": "pgCards",
 				"orientation": "PORTRAIT",
 				"parent": null
 			},
@@ -26,24 +26,24 @@
 		},
 		{
 			"className": ".sf-statusBar",
-			"id": "c5d9-ea17-9736-bdc1",
+			"id": "177e-5feb-20c8-99e0",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "statusBar",
-				"parent": "c05a-9b12-959b-3144"
+				"parent": "2341-8544-9463-36eb"
 			},
 			"type": "StatusBar",
 			"userProps": {}
 		},
 		{
 			"className": ".sf-headerBar",
-			"id": "047d-011a-8f1d-beef",
+			"id": "ab49-6054-a70f-9f9d",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "c05a-9b12-959b-3144",
+				"parent": "2341-8544-9463-36eb",
 				"title": "pgAccounts"
 			},
 			"type": "HeaderBar",
@@ -53,20 +53,20 @@
 		},
 		{
 			"className": ".sf-label",
-			"id": "6cda-cf76-d949-e0af",
+			"id": "360f-bfa7-9ac3-9ec2",
 			"props": {
 				"children": [],
 				"name": "label1",
-				"parent": "c05a-9b12-959b-3144",
-				"text": "Accounts page "
+				"parent": "2341-8544-9463-36eb",
+				"text": "Cards page"
 			},
 			"type": "Label",
 			"userProps": {
 				"flexProps": {
-					"alignSelf": "AUTO"
+					"alignSelf": "CENTER"
 				},
 				"height": 167.74193548387098,
-				"text": "Accounts page ",
+				"text": "Cards page",
 				"textAlignment": "MIDCENTER",
 				"width": 345.16129032258067
 			}
