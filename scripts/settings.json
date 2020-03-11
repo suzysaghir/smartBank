@@ -4,8 +4,8 @@
 			"currentTheme": "smartBankTheme",
 			"baseTheme": "baseTheme",
 			"themes": [
-				"baseTheme",
 				"defaultTheme",
+				"baseTheme",
 				"smartBankTheme"
 			]
 		},
