@@ -6,7 +6,6 @@ const Image = require("sf-core/ui/image");
 const OS = require('sf-core/device/system').OS;
 const buildExtender = require("sf-extension-utils/lib/router/buildExtender");
 const backClose = require("sf-extension-utils/lib/router/back-close");
-
 const pgAccounts = require('pages/pgAccounts.js');
 const pgTabs = require("pages/pgTabSummary");
 const pgPayments = require('pages/pgPayments_1');
