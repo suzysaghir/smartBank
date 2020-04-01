@@ -1,0 +1,387 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "41c7-e864-487d-1e67",
+			"initialized": true,
+			"props": {
+				"children": [
+					"e817-195a-74f5-c45c",
+					"db29-3b02-29b6-f428",
+					"5c95-6c67-a516-8cd1",
+					"060e-eed4-2b85-f567"
+				],
+				"name": "pgSendMoneyAmount",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"flexWrap": "NOWRAP"
+				},
+				"paddingBottom": null,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"paddingTop": null
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "e817-195a-74f5-c45c",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "41c7-e864-487d-1e67"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"hiddenComponent": false,
+			"id": "db29-3b02-29b6-f428",
+			"props": {
+				"borderVisibility": true,
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "41c7-e864-487d-1e67",
+				"title": "Amount "
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"borderVisibility": true,
+				"title": "Amount "
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flexLayout1",
+			"hiddenComponent": false,
+			"id": "5c95-6c67-a516-8cd1",
+			"props": {
+				"children": [
+					"8b3a-b77b-d499-5db4",
+					"b06a-5cf1-8ecc-283c",
+					"eff1-f5e0-0a2b-3f25"
+				],
+				"name": "flexLayout1",
+				"parent": "41c7-e864-487d-1e67"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "FLEX_START"
+				},
+				"marginTop": null,
+				"paddingLeft": null,
+				"paddingRight": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "8b3a-b77b-d499-5db4",
+			"props": {
+				"children": [
+					"11ed-9b04-ad80-6a49",
+					"cd40-97e9-7f89-a064"
+				],
+				"name": "flexLayout1",
+				"parent": "5c95-6c67-a516-8cd1",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 211, 246, 255, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "FLEX_START",
+					"flexGrow": null
+				},
+				"height": 100,
+				"left": 0,
+				"marginTop": null,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "11ed-9b04-ad80-6a49",
+			"props": {
+				"children": [
+					"fa55-50dc-8065-d03e"
+				],
+				"name": "flexLayout1",
+				"parent": "8b3a-b77b-d499-5db4"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"borderRadius": 30,
+				"flexProps": {
+					"flexGrow": null,
+					"alignSelf": "CENTER",
+					"justifyContent": "CENTER"
+				},
+				"height": 60,
+				"marginLeft": 16,
+				"width": 60
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "fa55-50dc-8065-d03e",
+			"props": {
+				"children": [],
+				"name": "iconImage",
+				"parent": "11ed-9b04-ad80-6a49",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"borderRadius": 30,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "FLEX_END"
+				},
+				"height": 60,
+				"imageFillType": "ASPECTFILL",
+				"left": 0,
+				"marginLeft": 16,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 60
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "cd40-97e9-7f89-a064",
+			"props": {
+				"autoHeight": 20.714285714285715,
+				"autoWidth": 66.81919642857143,
+				"children": [],
+				"name": "myLabel",
+				"parent": "8b3a-b77b-d499-5db4",
+				"text": "  label1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 20.714285714285715,
+				"autoWidth": 66.81919642857143,
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"flexGrow": 1
+				},
+				"height": null,
+				"marginLeft": 16,
+				"text": "  label1",
+				"textAlignment": "MIDLEFT",
+				"textColor": "rgba( 56, 56, 56, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "b06a-5cf1-8ecc-283c",
+			"props": {
+				"children": [
+					"c19f-1044-53a2-501f",
+					"bce5-4d09-b69f-0a58",
+					"3391-f58e-0bdf-41aa"
+				],
+				"name": "flexLayout2",
+				"parent": "5c95-6c67-a516-8cd1"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN",
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"left": 0,
+				"marginTop": 10,
+				"top": 0,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-label",
+			"hiddenComponent": false,
+			"id": "c19f-1044-53a2-501f",
+			"props": {
+				"autoHeight": 44.28571428571429,
+				"autoWidth": 85.703125,
+				"children": [],
+				"name": "lblUsd",
+				"parent": "b06a-5cf1-8ecc-283c",
+				"text": "USD",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 44.28571428571429,
+				"autoWidth": 85.703125,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"size": 40,
+					"bold": false,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Regular"
+				},
+				"left": 20,
+				"marginLeft": 16,
+				"text": "USD",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 86, 219, 245, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"hiddenComponent": false,
+			"id": "bce5-4d09-b69f-0a58",
+			"props": {
+				"autoHeight": 44.28571428571429,
+				"autoWidth": 27.377232142857146,
+				"children": [],
+				"name": "label1",
+				"parent": "b06a-5cf1-8ecc-283c",
+				"text": "$"
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 44.28571428571429,
+				"autoWidth": 27.377232142857146,
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"size": 40,
+					"bold": false,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Regular"
+				},
+				"text": "$",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 56, 56, 56, 1 )"
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"hiddenComponent": false,
+			"id": "3391-f58e-0bdf-41aa",
+			"props": {
+				"autoHeight": 50.714285714285715,
+				"autoWidth": 51.81919642857143,
+				"children": [],
+				"hint": "0",
+				"name": "tbAmount",
+				"parent": "b06a-5cf1-8ecc-283c",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"autoHeight": 50.714285714285715,
+				"autoWidth": 51.81919642857143,
+				"borderColor": "rgba( 144, 19, 254, 1 )",
+				"borderRadius": null,
+				"borderWidth": null,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"font": {
+					"size": 40,
+					"bold": false,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Regular"
+				},
+				"height": null,
+				"hint": "0",
+				"marginRight": 30,
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"visible": true,
+				"width": 100
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "eff1-f5e0-0a2b-3f25",
+			"props": {
+				"children": [],
+				"name": "flxLine",
+				"parent": "5c95-6c67-a516-8cd1",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"borderColor": "rgba( 238, 238, 238, 1 )",
+				"borderWidth": 1,
+				"flexProps": {
+					"flexGrow": null
+				},
+				"left": 0,
+				"marginLeft": 30,
+				"marginRight": 30,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flexLayout2",
+			"id": "060e-eed4-2b85-f567",
+			"props": {
+				"children": [
+					"e77b-f803-e623-d980"
+				],
+				"name": "flexLayout2",
+				"parent": "41c7-e864-487d-1e67"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"paddingLeft": null,
+				"paddingRight": null
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "e77b-f803-e623-d980",
+			"props": {
+				"autoHeight": 26.923076923076923,
+				"children": [],
+				"name": "btnCont",
+				"parent": "060e-eed4-2b85-f567",
+				"text": "Continue",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 26.923076923076923,
+				"left": 0,
+				"marginLeft": 16,
+				"marginRight": 16,
+				"text": "Continue",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

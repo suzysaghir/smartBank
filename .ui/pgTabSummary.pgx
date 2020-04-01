@@ -3,14 +3,14 @@
 		{
 			"className": ".sf-page .page",
 			"id": "e217-940f-1daa-9101",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"0606-f28c-3b01-b82f",
 					"5211-86a3-1c73-4e46",
-					"6246-ac62-f639-084b",
-					"7d43-857c-1fe2-69e9",
+					"acdc-f2ad-dd18-85e7",
 					"00b3-c370-3a7c-920b",
+					"c788-5546-a409-3ed9",
 					"a028-2653-3803-813b"
 				],
 				"name": "pgTabSummary",
@@ -24,7 +24,8 @@
 				},
 				"paddingBottom": null,
 				"paddingLeft": null,
-				"paddingRight": null
+				"paddingRight": null,
+				"paddingTop": 20
 			},
 			"version": "6.15.1"
 		},
@@ -52,62 +53,115 @@
 				"parent": "e217-940f-1daa-9101"
 			},
 			"type": "HeaderBar",
-			"userProps": {}
-		},
-		{
-			"className": ".sf-imageView",
-			"id": "6246-ac62-f639-084b",
-			"props": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
-				"children": [],
-				"name": "imgvSmartbankLogo",
-				"parent": "e217-940f-1daa-9101"
-			},
-			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 28.571428571428573,
-				"autoWidth": 125.39682539682539,
-				"flexProps": {
-					"positionType": "ABSOLUTE",
-					"alignSelf": "FLEX_START"
-				},
-				"height": 42.626725473711566,
-				"image": "smartlogo.png",
-				"imageFillType": "STRETCH",
-				"left": 9.375,
-				"top": 17.1875,
-				"width": 192.1448738344254
+				"visible": false
 			}
 		},
 		{
-			"className": ".sf-button",
-			"id": "7d43-857c-1fe2-69e9",
+			"className": ".sf-flexLayout",
+			"id": "acdc-f2ad-dd18-85e7",
 			"props": {
-				"autoHeight": 24.47916716337204,
-				"autoWidth": 104.72005605697632,
-				"children": [],
-				"name": "btnThisMonth",
+				"children": [
+					"48a1-8882-0172-8d7d",
+					"42e6-427c-1ed9-e0d3",
+					"8d8e-a4fc-3a88-3bcf"
+				],
+				"name": "flexLayout2",
 				"parent": "e217-940f-1daa-9101",
-				"text": "This Month"
+				"usePageVariable": true
 			},
-			"type": "Button",
+			"type": "FlexLayout",
 			"userProps": {
-				"autoHeight": 24.47916716337204,
-				"autoWidth": 104.72005605697632,
 				"flexProps": {
-					"alignSelf": "FLEX_END"
+					"flexGrow": null,
+					"flexDirection": "ROW",
+					"alignSelf": "STRETCH"
 				},
-				"height": 46.87499701976776,
-				"text": "This Month",
-				"width": 134.4075083732605
+				"height": 73,
+				"marginTop": null,
+				"paddingLeft": 16,
+				"paddingRight": 16,
+				"paddingTop": 20,
+				"top": 8,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-imageView .sf-img-smartbank",
+			"id": "48a1-8882-0172-8d7d",
+			"props": {
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "acdc-f2ad-dd18-85e7"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"marginBottom": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "42e6-427c-1ed9-e0d3",
+			"props": {
+				"children": [],
+				"name": "flexLayout1",
+				"parent": "acdc-f2ad-dd18-85e7"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flx-btn-icon",
+			"hiddenComponent": false,
+			"id": "8d8e-a4fc-3a88-3bcf",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "flexBtnIconRight",
+				"parent": "acdc-f2ad-dd18-85e7",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flexBtnIconRight",
+				"id": "f26d-6309-2365-0425"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"justifyContent": 1,
+					"positionType": 0
+				},
+				"flexProps": {
+					"justifyContent": "SPACE_AROUND",
+					"positionType": "RELATIVE",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"flexWrap": "NOWRAP",
+					"flexGrow": null,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"marginTop": null,
+				"maxHeight": 50,
+				"minHeight": -22,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-imageView",
 			"id": "00b3-c370-3a7c-920b",
 			"props": {
-				"autoHeight": 220.6896551724138,
+				"autoHeight": 201.66666666666669,
 				"children": [],
 				"name": "imageView1",
 				"parent": "e217-940f-1daa-9101",
@@ -115,14 +169,101 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 220.6896551724138,
+				"autoHeight": 201.66666666666669,
 				"flexProps": {
 					"flexGrow": 1
 				},
 				"height": null,
-				"image": "summary.png",
+				"image": "summary_img.png",
 				"imageFillType": "STRETCH",
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "c788-5546-a409-3ed9",
+			"props": {
+				"children": [
+					"d314-4ff3-0e70-4668",
+					"2875-3271-d027-5810"
+				],
+				"name": "flexLayoutHeader",
+				"parent": "e217-940f-1daa-9101",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 211, 246, 255, 1 )",
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "SPACE_BETWEEN",
+					"flexGrow": null,
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				},
+				"height": 25,
+				"left": 0,
+				"marginTop": null,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView .sf-paymentLstv",
+			"id": "d314-4ff3-0e70-4668",
+			"props": {
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 89.86742424242424,
+				"children": [],
+				"html": "<span style=\"font-size: 16px;\">Category</span><br>",
+				"name": "tvCategory",
+				"parent": "c788-5546-a409-3ed9",
+				"text": "Category\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 89.86742424242424,
+				"flexProps": {
+					"alignSelf": "FLEX_START"
+				},
+				"height": null,
+				"html": "<span style=\"font-size: 16px;\">Category</span><br>",
+				"left": 16,
+				"text": "Category\n",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textView .sf-paymentLstv",
+			"hiddenComponent": false,
+			"id": "2875-3271-d027-5810",
+			"props": {
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 92.6373106060606,
+				"children": [],
+				"html": "<span style=\"font-size: 16px; white-space: pre-wrap;\">Spending</span><br>",
+				"name": "tvSpending",
+				"parent": "c788-5546-a409-3ed9",
+				"text": "Spending\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 19.696969696969695,
+				"autoWidth": 92.6373106060606,
+				"flexProps": {
+					"alignSelf": "FLEX_END"
+				},
+				"height": null,
+				"html": "<span style=\"font-size: 16px; white-space: pre-wrap;\">Spending</span><br>",
+				"right": 16,
+				"text": "Spending\n",
+				"usePageVariable": true,
+				"width": null
 			}
 		},
 		{
@@ -180,6 +321,7 @@
 				},
 				"height": 81.42857142857143,
 				"left": 0,
+				"paddingRight": 20,
 				"top": 0,
 				"width": 385.80357142857144
 			}

@@ -1,0 +1,75 @@
+{
+	"components": [
+		{
+			"className": ".sf-page",
+			"id": "2341-8544-9463-36eb",
+			"initialized": true,
+			"props": {
+				"children": [
+					"177e-5feb-20c8-99e0",
+					"ab49-6054-a70f-9f9d",
+					"360f-bfa7-9ac3-9ec2"
+				],
+				"name": "pgCards",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignContent": "FLEX_START",
+					"alignItems": "STRETCH"
+				}
+			}
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "177e-5feb-20c8-99e0",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "2341-8544-9463-36eb"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "ab49-6054-a70f-9f9d",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "2341-8544-9463-36eb",
+				"title": "pgAccounts"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "pgAccounts"
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "360f-bfa7-9ac3-9ec2",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "2341-8544-9463-36eb",
+				"text": "Cards page"
+			},
+			"type": "Label",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"height": 167.74193548387098,
+				"text": "Cards page",
+				"textAlignment": "MIDCENTER",
+				"width": 345.16129032258067
+			}
+		}
+	]
+}

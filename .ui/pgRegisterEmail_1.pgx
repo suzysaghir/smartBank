@@ -1,0 +1,251 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "b53a-a94d-0c74-baff",
+			"initialized": true,
+			"props": {
+				"children": [
+					"c525-9c50-62c9-6a69",
+					"500e-d780-f182-72e6",
+					"5359-db69-df1d-b81c"
+				],
+				"name": "pgRegisterEmail_1",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"left": 0,
+				"paddingLeft": null,
+				"paddingRight": null,
+				"top": 82.35294117647058
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "c525-9c50-62c9-6a69",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "b53a-a94d-0c74-baff"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "500e-d780-f182-72e6",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "b53a-a94d-0c74-baff",
+				"title": " "
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": " ",
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5359-db69-df1d-b81c",
+			"props": {
+				"children": [
+					"f9b8-0b9b-d9fd-045c",
+					"d2cb-e8b9-dd39-5f2d",
+					"c4ad-c1f8-6273-b1b6"
+				],
+				"name": "flexLayout1",
+				"parent": "b53a-a94d-0c74-baff"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"positionType": "RELATIVE"
+				}
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "f9b8-0b9b-d9fd-045c",
+			"props": {
+				"autoHeight": 125,
+				"autoWidth": 85.9375,
+				"children": [],
+				"name": "img_background",
+				"parent": "5359-db69-df1d-b81c",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 125,
+				"autoWidth": 85.9375,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "FLEX_END"
+				},
+				"height": null,
+				"image": "background_image.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "d2cb-e8b9-dd39-5f2d",
+			"props": {
+				"children": [
+					"e0e5-7204-20d7-dbcf",
+					"fd0f-eb30-ed72-43a9",
+					"f1f9-d560-d7d3-0f35"
+				],
+				"name": "flexLayout1",
+				"parent": "5359-db69-df1d-b81c",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2,
+					"justifyContent": "SPACE_AROUND"
+				},
+				"paddingLeft": 16,
+				"paddingRight": 16,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView .sf-img-smartbank",
+			"id": "e0e5-7204-20d7-dbcf",
+			"props": {
+				"autoHeight": 40.625,
+				"autoWidth": 195.3125,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "d2cb-e8b9-dd39-5f2d",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 40.625,
+				"autoWidth": 195.3125,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "fd0f-eb30-ed72-43a9",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvEmail",
+				"parent": "d2cb-e8b9-dd39-5f2d",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "f1f9-d560-d7d3-0f35",
+			"props": {
+				"children": [
+					"eec6-2205-2201-3ed8"
+				],
+				"name": "flexLayout_mtb",
+				"parent": "d2cb-e8b9-dd39-5f2d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH"
+				},
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "eec6-2205-2201-3ed8",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbEmail",
+				"parent": "f1f9-d560-d7d3-0f35",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 48,
+				"left": 0,
+				"marginBottom": 16,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flexLayout2",
+			"id": "c4ad-c1f8-6273-b1b6",
+			"props": {
+				"children": [
+					"fd5c-142a-0c00-9211"
+				],
+				"name": "flexLayout2",
+				"parent": "5359-db69-df1d-b81c"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button",
+			"id": "fd5c-142a-0c00-9211",
+			"props": {
+				"autoHeight": 27.77777777777778,
+				"children": [],
+				"name": "btnContinue",
+				"parent": "c4ad-c1f8-6273-b1b6",
+				"text": "Continue",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 27.77777777777778,
+				"left": 0,
+				"text": "Continue",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

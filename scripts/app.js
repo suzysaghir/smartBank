@@ -22,22 +22,4 @@ require("sf-extension-utils");
 require("./theme");
 const router = require("./routes");
 
-
-// router.push("/pages/pgRegisterPhoneNumber");
-
-// router.push("/pages/pgRegisterAccountCreate");
-// router.push("/pages/pgRegisterSummary");
-// router.push("/pages/pgSendDone");
-// router.push("/pages/pgSendMoneyAmount");
-// router.push("/pages/pgPayments_1");
-// router.push("/pages/pgPayments");
-
-// router.push("/tabs");
-// router.push("/pages/pgSendMoney");
-
-
 router.push("/pages/pgRegisterPhoneNumber_1");
-// router.push("/pages/pgRegisterPin_1");
-
-
-

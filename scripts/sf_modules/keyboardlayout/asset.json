@@ -1,0 +1,26 @@
+{
+	"name": "keyboardlayout",
+	"type": "library",
+	"title": "KeyboardLayout",
+	"author": "furkan.arabaci@smartface.io",
+	"description": "A template keyboard layout for iOS for ease of usage",
+	"themePath": "themes/KeyboardLayout.json",
+	"resources": {
+		"images": [
+			"keyboardlayout_down",
+			"keyboardlayout_up"
+		],
+		"fonts": [
+			"SFProText"
+		],
+		"classNames": [
+			".keyboardLayout"
+		]
+	},
+	"dependencies": [],
+	"imagePaths": [
+		"preview/keyboardLayout.png"
+	],
+	"version": "1.0.1",
+	"readMePath": "README.md"
+}

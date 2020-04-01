@@ -25,8 +25,8 @@
 			},
 			"paddingLeft": 30,
 			"paddingRight": 30,
-			"marginBottom": 50,
-			"marginTop": 50
+			"marginBottom": 20,
+			"marginTop": 20
 		},
 		"&-textView": {
 			"backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -42,7 +42,7 @@
 				"size": null
 			},
 			"height": null,
-			"paddingTop": 20,
+			"paddingTop": 0,
 			"textAlignment": "MIDCENTER",
 			"borderColor": "rgba( 255, 255, 255, 0 )"
 		},
@@ -136,10 +136,74 @@
 				},
 				"imageFillType": "ASPECTFILL",
 				"image": "logo_smartbank.png",
-				"marginTop": 30,
-				"marginBottom": 30,
-				"height": null
+				"marginTop": null,
+				"marginBottom": 10,
+				"height": 32,
+				"width": 153
 			}
+		},
+		"&-ImageView": {
+			"&-icon": {
+				"&-tick": {
+					"top": 80,
+					"left": 80
+				}
+			}
+		},
+		"&-flexLayout2": {
+			"flexProps": {
+				"justifyContent": "FLEX_END",
+				"flexGrow": 1
+			},
+			"paddingLeft": 16,
+			"paddingRight": 16
+		},
+		"&-flexLayout1": {
+			"flexProps": {
+				"flexGrow": 2,
+				"justifyContent": "SPACE_AROUND"
+			},
+			"paddingLeft": 16,
+			"paddingRight": 16
+		},
+		"&-view": {},
+		"&-flx": {
+			"&-btn": {
+				"&-icon": {
+					"backgroundColor": "rgba( 55, 255, 185, 1 )",
+					"borderRadius": 30,
+					"height": 50,
+					"paddingLeft": 10,
+					"paddingRight": 10,
+					"flexProps": {
+						"flexDirection": "ROW",
+						"justifyContent": "CENTER"
+					}
+				}
+			}
+		},
+		"&-listViewItem": {
+			"&-summary": {
+				"&-header": {
+					"backgroundColor": "rgba( 211, 246, 255, 1 )",
+					"flexProps": {
+						"flexDirection": "ROW",
+						"justifyContent": "SPACE_BETWEEN"
+					}
+				}
+			}
+		},
+		"&-payment": {
+			"paddingRight": 16,
+			"paddingLeft": 0
 		}
+	},
+	".tvNumber": {
+		"height": 40,
+		"flexProps": {
+			"flexGrow": 1,
+			"alignSelf": "CENTER"
+		},
+		"textAlignment": "MIDRIGHT"
 	}
 }

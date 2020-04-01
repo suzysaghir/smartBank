@@ -9,9 +9,7 @@
 				"children": [
 					"c2d1-2738-ad4b-ed2a",
 					"0196-08ed-8528-4a84",
-					"bca9-0ca2-cb77-fca8",
-					"53a4-2828-5039-9b9d",
-					"157a-4716-f265-0a46"
+					"bca9-0ca2-cb77-fca8"
 				],
 				"name": "lstvSummary",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -21,12 +19,15 @@
 			},
 			"type": "ListViewItem",
 			"userProps": {
+				"borderColor": "rgba( 242, 242, 242, 1 )",
+				"borderWidth": 1,
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
 				"height": 81.42857142857143,
-				"left": 8.040332794189453,
-				"top": 311.65361404418945,
+				"left": 12.765957446808512,
+				"paddingRight": 20,
+				"top": 278.72340425531917,
 				"width": 385.80357142857144
 			}
 		},
@@ -46,12 +47,14 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"borderColor": "rgba( 80, 227, 194, 1 )",
 				"borderRadius": 30,
 				"flexProps": {
 					"alignSelf": "CENTER",
 					"alignItems": "STRETCH",
 					"justifyContent": "CENTER",
-					"flexGrow": null
+					"flexGrow": null,
+					"alignContent": "STRETCH"
 				},
 				"height": 60,
 				"marginLeft": 15,
@@ -75,8 +78,10 @@
 			"type": "ImageView",
 			"userProps": {
 				"autoHeight": 218.57142857142858,
+				"borderColor": "rgba( 208, 2, 27, 1 )",
 				"flexProps": {
-					"alignSelf": "STRETCH"
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
 				},
 				"height": null,
 				"image": "app_icon.png",
@@ -104,15 +109,23 @@
 			"type": "TextView",
 			"userProps": {
 				"autoWidth": 1.6666666666666667,
+				"flexProps": {
+					"flexGrow": 1
+				},
 				"font": {
 					"family": "SFProText",
-					"style": "Regular",
+					"style": "Medium",
 					"bold": false,
 					"italic": false,
-					"size": null
+					"size": 18
 				},
 				"html": "<br>",
+				"ios": {
+					"shadowColor": "rgba( 56, 56, 56, 1 )"
+				},
+				"marginLeft": 5,
 				"text": "\n",
+				"textAlignment": "MIDLEFT",
 				"textColor": "rgba( 0, 0, 0, 1 )",
 				"usePageVariable": true,
 				"width": null
@@ -122,8 +135,8 @@
 			"className": ".sf-textView",
 			"id": "bca9-0ca2-cb77-fca8",
 			"props": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"children": [],
 				"html": "<br>",
 				"name": "tvsign",
@@ -136,78 +149,15 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"flexProps": {
-					"flexGrow": 1,
-					"alignSelf": "CENTER"
+					"alignSelf": "CENTER",
+					"flexGrow": 1
 				},
 				"height": null,
 				"html": "<br>",
 				"text": "\n",
-				"textAlignment": "MIDRIGHT",
-				"textColor": "rgba( 140, 140, 140, 1 )",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
-			"className": ".sf-textView",
-			"id": "53a4-2828-5039-9b9d",
-			"props": {
-				"autoHeight": 19.44444497426351,
-				"autoWidth": 14.652778307596844,
-				"children": [],
-				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
-				"name": "tvDollersign",
-				"parent": "4eb6-cb4a-5fa1-a594",
-				"text": "$"
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "TextView",
-			"userProps": {
-				"autoHeight": 19.44444497426351,
-				"autoWidth": 14.652778307596844,
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"height": null,
-				"html": "<span style=\"white-space: pre-wrap; background-color: rgb(255, 255, 255);\">$</span>",
-				"text": "$",
-				"textAlignment": "MIDRIGHT",
-				"textColor": "rgba( 140, 140, 140, 1 )",
-				"width": null
-			}
-		},
-		{
-			"className": ".sf-textView",
-			"id": "157a-4716-f265-0a46",
-			"props": {
-				"autoHeight": 18.852459016393443,
-				"autoWidth": 31.147540983606557,
-				"children": [],
-				"html": "",
-				"name": "tvPrice",
-				"parent": "4eb6-cb4a-5fa1-a594",
-				"text": "",
-				"usePageVariable": true
-			},
-			"source": {
-				"page": "__library__"
-			},
-			"type": "TextView",
-			"userProps": {
-				"autoHeight": 18.852459016393443,
-				"autoWidth": 31.147540983606557,
-				"flexProps": {
-					"alignSelf": "CENTER"
-				},
-				"height": null,
-				"html": "",
-				"marginRight": 20,
-				"text": "",
 				"textAlignment": "MIDRIGHT",
 				"textColor": "rgba( 140, 140, 140, 1 )",
 				"usePageVariable": true,

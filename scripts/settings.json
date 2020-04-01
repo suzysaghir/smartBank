@@ -13,7 +13,7 @@
 			"pgxFolder": ".ui",
 			"uiFolder": "scripts/ui",
 			"pagesFolder": "scripts/pages",
-			"libraryUiFolder": "scripts/node_modules/library",
+			"libraryUiFolder": "scripts/library",
 			"libraryUserFolder": "scripts/components",
 			"themesFolder": "themes",
 			"themesDistFolder": "scripts/themes"

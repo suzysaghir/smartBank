@@ -1,12 +1,12 @@
 {
 	"components": [
 		{
-			"className": ".flexLayout",
-			"id": "0201-dc86-607b-2891",
+			"className": ".sf-flexLayout",
+			"id": "ea39-af43-8fd2-e234",
 			"initialized": true,
 			"props": {
 				"children": [
-					"bc78-f2d3-ac3c-5b22"
+					"0767-e868-33b6-fdf4"
 				],
 				"name": "pageTitleLayout",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -20,32 +20,33 @@
 				"flexProps": {
 					"justifyContent": "CENTER"
 				},
-				"height": 24,
+				"height": 58.937498927116394,
 				"left": 34.6976984114874,
 				"top": 751.6051519484747,
-				"width": 150
+				"width": 276.5625
 			}
 		},
 		{
-			"className": ".imageView .pageTitleLayout_logo",
-			"id": "bc78-f2d3-ac3c-5b22",
+			"className": ".sf-textArea",
+			"id": "0767-e868-33b6-fdf4",
 			"props": {
-				"autoHeight": 54.6875,
+				"autoHeight": 52.30769230769231,
+				"autoWidth": 1.5384615384615383,
 				"children": [],
-				"name": "logo",
-				"parent": "0201-dc86-607b-2891",
+				"name": "textArea1",
+				"parent": "ea39-af43-8fd2-e234",
+				"text": "\n\n",
 				"usePageVariable": true
 			},
 			"source": {
 				"page": "__library__"
 			},
-			"type": "ImageView",
+			"type": "TextArea",
 			"userProps": {
-				"autoHeight": 54.6875,
-				"image": "smartface.png",
-				"imageFillType": "ASPECTFIT",
-				"usePageVariable": true,
-				"width": null
+				"autoHeight": 52.30769230769231,
+				"autoWidth": 1.5384615384615383,
+				"text": "\n\n",
+				"usePageVariable": true
 			}
 		}
 	]

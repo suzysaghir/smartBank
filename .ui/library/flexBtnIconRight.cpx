@@ -1,0 +1,83 @@
+{
+	"components": [
+		{
+			"className": ".sf-flexLayout .sf-flx-btn-icon",
+			"id": "f26d-6309-2365-0425",
+			"initialized": true,
+			"props": {
+				"children": [
+					"fd9d-ed36-43d4-49ac",
+					"cc78-c356-e801-f6bc"
+				],
+				"name": "flexBtnIconRight",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				},
+				"left": 10.864999741315842,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"top": 645.9375
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "fd9d-ed36-43d4-49ac",
+			"props": {
+				"autoHeight": 20,
+				"autoWidth": 71.95913461538461,
+				"children": [],
+				"name": "label1",
+				"parent": "f26d-6309-2365-0425",
+				"text": "  label1",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 20,
+				"autoWidth": 71.95913461538461,
+				"marginLeft": 10,
+				"marginRight": 10,
+				"text": "  label1",
+				"textColor": "rgba( 87, 202, 179, 1 )",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "cc78-c356-e801-f6bc",
+			"props": {
+				"autoHeight": 21.666666666666668,
+				"autoWidth": 21.666666666666668,
+				"children": [],
+				"name": "imgIcon",
+				"parent": "f26d-6309-2365-0425",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 21.666666666666668,
+				"autoWidth": 21.666666666666668,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"image": "payment_icon_add_money.png",
+				"usePageVariable": true
+			}
+		}
+	]
+}

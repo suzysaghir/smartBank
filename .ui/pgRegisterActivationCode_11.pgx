@@ -1,0 +1,524 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "7e9f-f69c-e9be-6c3d",
+			"initialized": true,
+			"props": {
+				"children": [
+					"0741-164f-c2fa-9b86",
+					"bf09-d696-fccb-e9d6",
+					"ba2f-6189-6dff-1305"
+				],
+				"name": "pgRegisterActivationCode_11",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"paddingLeft": null,
+				"paddingRight": null
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "0741-164f-c2fa-9b86",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "7e9f-f69c-e9be-6c3d"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "bf09-d696-fccb-e9d6",
+			"props": {
+				"borderVisibility": false,
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "7e9f-f69c-e9be-6c3d",
+				"title": " "
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"borderVisibility": false,
+				"title": " ",
+				"transparent": false,
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "ba2f-6189-6dff-1305",
+			"props": {
+				"children": [
+					"31e1-8da5-68cd-e193",
+					"32d6-feb3-40c5-a52f",
+					"15d2-6237-7d22-d445"
+				],
+				"name": "flexLayout1",
+				"parent": "7e9f-f69c-e9be-6c3d"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"positionType": "RELATIVE",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH"
+				}
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "31e1-8da5-68cd-e193",
+			"props": {
+				"autoHeight": 125.80645161290323,
+				"autoWidth": 87.09677419354838,
+				"children": [],
+				"name": "img_background",
+				"parent": "ba2f-6189-6dff-1305",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 125.80645161290323,
+				"autoWidth": 87.09677419354838,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "FLEX_END"
+				},
+				"height": null,
+				"image": "background_image.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flexLayout1",
+			"id": "32d6-feb3-40c5-a52f",
+			"props": {
+				"children": [
+					"22c1-6c4d-aa96-240b",
+					"4a32-a116-2464-47d0",
+					"f3b7-54eb-2b0b-ee1b",
+					"c6eb-5c45-c540-0688",
+					"752f-b1d3-c4b2-523d"
+				],
+				"name": "flexLayout1",
+				"parent": "ba2f-6189-6dff-1305",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 4
+				},
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView .sf-img-smartbank",
+			"id": "22c1-6c4d-aa96-240b",
+			"props": {
+				"autoHeight": 40.90909090909091,
+				"autoWidth": 195.45454545454544,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "32d6-feb3-40c5-a52f",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 40.90909090909091,
+				"autoWidth": 195.45454545454544,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "4a32-a116-2464-47d0",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvEnterDigits",
+				"parent": "32d6-feb3-40c5-a52f",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"height": null,
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "f3b7-54eb-2b0b-ee1b",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvSendToPhone",
+				"parent": "32d6-feb3-40c5-a52f",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "c6eb-5c45-c540-0688",
+			"props": {
+				"children": [
+					"b9a8-b4f5-2656-5c53",
+					"ce2d-e5f3-fa9a-1937",
+					"ce91-451d-a3f7-4d77",
+					"2e29-2a26-e3a5-efe0",
+					"1a2b-1b66-c580-ff87",
+					"cd67-51f1-5e49-5960",
+					"d825-c7e2-be4e-be4c",
+					"c103-72ac-a991-f453"
+				],
+				"name": "flexLayout1",
+				"parent": "32d6-feb3-40c5-a52f",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexDirection": "ROW"
+				},
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": true,
+			"id": "b9a8-b4f5-2656-5c53",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "flexLayoutActivationCode1",
+				"parent": "c6eb-5c45-c540-0688",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flexLayoutActivationCode",
+				"id": "b643-7ac7-b196-2056"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "ce2d-e5f3-fa9a-1937",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "flexLayoutActivationCode2",
+				"parent": "c6eb-5c45-c540-0688",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flexLayoutActivationCode",
+				"id": "b643-7ac7-b196-2056"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "ce91-451d-a3f7-4d77",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "flexLayoutActivationCode3",
+				"parent": "c6eb-5c45-c540-0688",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flexLayoutActivationCode",
+				"id": "b643-7ac7-b196-2056"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "2e29-2a26-e3a5-efe0",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "flexLayoutActivationCode4",
+				"parent": "c6eb-5c45-c540-0688",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flexLayoutActivationCode",
+				"id": "b643-7ac7-b196-2056"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "1a2b-1b66-c580-ff87",
+			"initialized": true,
+			"props": {
+				"children": [],
+				"name": "flexLayoutActivationCode5",
+				"parent": "c6eb-5c45-c540-0688",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flexLayoutActivationCode",
+				"id": "b643-7ac7-b196-2056"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"hiddenComponent": false,
+			"id": "cd67-51f1-5e49-5960",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "flexLayoutActivationCode6",
+				"parent": "c6eb-5c45-c540-0688",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flexLayoutActivationCode",
+				"id": "b643-7ac7-b196-2056"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-textBox",
+			"hiddenComponent": false,
+			"id": "d825-c7e2-be4e-be4c",
+			"props": {
+				"autoHeight": 27.011494800962254,
+				"autoWidth": 7.579023262550091,
+				"children": [],
+				"name": "tbHidden",
+				"parent": "c6eb-5c45-c540-0688",
+				"text": " ",
+				"usePageVariable": true
+			},
+			"type": "TextBox",
+			"userProps": {
+				"autoHeight": 27.011494800962254,
+				"autoWidth": 7.579023262550091,
+				"borderWidth": null,
+				"flexProps": {
+					"alignSelf": "FLEX_END",
+					"positionType": "ABSOLUTE"
+				},
+				"height": 0,
+				"left": 0,
+				"text": " ",
+				"top": 0,
+				"usePageVariable": true,
+				"visible": true,
+				"width": 0
+			}
+		},
+		{
+			"className": ".sf-view",
+			"hiddenComponent": true,
+			"id": "c103-72ac-a991-f453",
+			"props": {
+				"children": [],
+				"name": "viewDigitCode",
+				"parent": "c6eb-5c45-c540-0688",
+				"usePageVariable": true
+			},
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "AUTO"
+				},
+				"height": 500,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 500
+			}
+		},
+		{
+			"className": ".sf-view",
+			"hiddenComponent": true,
+			"id": "752f-b1d3-c4b2-523d",
+			"props": {
+				"children": [],
+				"name": "viewRemoveTouch",
+				"parent": "32d6-feb3-40c5-a52f",
+				"usePageVariable": true
+			},
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"borderColor": "rgba( 208, 2, 27, 1 )",
+				"flexProps": {
+					"flexGrow": 1,
+					"alignSelf": "STRETCH"
+				},
+				"height": null,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flexLayout2",
+			"id": "15d2-6237-7d22-d445",
+			"props": {
+				"children": [
+					"173e-2af8-737e-69b9",
+					"76c4-0940-da44-5236"
+				],
+				"name": "flexLayout2",
+				"parent": "ba2f-6189-6dff-1305"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "173e-2af8-737e-69b9",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvResendCode",
+				"parent": "15d2-6237-7d22-d445",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-button",
+			"id": "76c4-0940-da44-5236",
+			"props": {
+				"autoHeight": 29.166666666666668,
+				"children": [],
+				"name": "btnResend",
+				"parent": "15d2-6237-7d22-d445",
+				"text": "Resend",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 29.166666666666668,
+				"backgroundColor": "rgba( 158, 238, 255, 1 )",
+				"left": 0,
+				"text": "Resend",
+				"textColor": "rgba( 129, 215, 238, 1 )",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

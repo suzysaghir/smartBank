@@ -30,6 +30,7 @@
 			"userProps": {}
 		},
 		{
+			"className": "",
 			"id": "76f4-a7ec-36e9-a444",
 			"props": {
 				"children": [],
@@ -40,7 +41,8 @@
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "__library__"
+				"title": "__library__",
+				"visible": true
 			}
 		}
 	]

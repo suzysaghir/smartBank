@@ -5,9 +5,10 @@ const Color = require("sf-core/ui/color");
 const FlexLayout = require("sf-core/ui/flexlayout");
 const ImageView = require("sf-core/ui/imageview");
 const Image = require("sf-core/ui/image");
+const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
+
 const extend = require('js-base/core/extend');
 const PgSendDoneDesign = require('ui/ui_pgSendDone');
-const { getCombinedStyle } = require("sf-extension-utils/lib/getCombinedStyle");
 
 const PgSendDone = extend(PgSendDoneDesign)(
 	function(_super) {
@@ -89,7 +90,7 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
 	superOnLoad();
 	const page = this 
-	const { flexLayout1, imgBackground, imgProfile2, imgIcon, tvAmount, tvSend } = page;
+	const { flexLayout1, imgBackground, imgProfile2, imgIcon, tvAmount, tvSend, tvTitle } = page;
 
 	var img_profile =  page.routeData.image;
 	var title_profile =  page.routeData.title;
@@ -100,6 +101,7 @@ function onLoad(superOnLoad) {
 	var imgPost = imgProfile2.getScreenLocation();
 	imgIcon.right = imgPost.x - 30;
 	imgIcon.bottom = imgPost.y - 5;
+	tvTitle.text = "Send Money";
 	
 	// var borderRadius = 50;
  //   var image_Profile = Image.createFromFile("images://adam.png");

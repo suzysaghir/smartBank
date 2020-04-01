@@ -1,0 +1,356 @@
+{
+	"components": [
+		{
+			"className": ".sf-page .page",
+			"id": "44e9-451a-f339-0a71",
+			"initialized": true,
+			"props": {
+				"children": [
+					"b21e-f7f3-136e-71be",
+					"9fb7-f8ae-59c4-c590",
+					"5b74-fa0f-f6b4-8c2b"
+				],
+				"name": "pgRegisterPersonalDetails_11",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "SPACE_BETWEEN"
+				},
+				"paddingLeft": null,
+				"paddingRight": null
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "b21e-f7f3-136e-71be",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "44e9-451a-f339-0a71"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "9fb7-f8ae-59c4-c590",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "44e9-451a-f339-0a71",
+				"title": " "
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": " ",
+				"visible": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "5b74-fa0f-f6b4-8c2b",
+			"props": {
+				"children": [
+					"7a6a-1015-c8ee-8ed9",
+					"039e-f087-7d57-4188",
+					"4470-a8c0-bd13-dd68"
+				],
+				"name": "flexLayout1",
+				"parent": "44e9-451a-f339-0a71"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH",
+					"alignContent": "STRETCH",
+					"positionType": "RELATIVE"
+				}
+			}
+		},
+		{
+			"className": ".sf-imageView",
+			"id": "7a6a-1015-c8ee-8ed9",
+			"props": {
+				"autoHeight": 125.53191489361703,
+				"autoWidth": 87.2340425531915,
+				"children": [],
+				"name": "img_background",
+				"parent": "5b74-fa0f-f6b4-8c2b",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 125.53191489361703,
+				"autoWidth": 87.2340425531915,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignSelf": "FLEX_END"
+				},
+				"height": null,
+				"image": "background_image.png",
+				"imageFillType": "ASPECTFIT",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "039e-f087-7d57-4188",
+			"props": {
+				"children": [
+					"cf76-2f4c-cd09-e0e1",
+					"6e97-f3d1-0b99-5c45",
+					"2642-830c-d289-a289"
+				],
+				"name": "flexLayout1",
+				"parent": "5b74-fa0f-f6b4-8c2b",
+				"usePageVariable": true
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": 2,
+					"justifyContent": "SPACE_AROUND"
+				},
+				"paddingLeft": 16,
+				"paddingRight": 16,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-imageView .sf-img-smartbank",
+			"id": "cf76-2f4c-cd09-e0e1",
+			"props": {
+				"autoHeight": 35.526315789473685,
+				"autoWidth": 168.42105263157896,
+				"children": [],
+				"name": "imgvSmartbankLogo",
+				"parent": "039e-f087-7d57-4188",
+				"usePageVariable": true
+			},
+			"type": "ImageView",
+			"userProps": {
+				"autoHeight": 35.526315789473685,
+				"autoWidth": 168.42105263157896,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "6e97-f3d1-0b99-5c45",
+			"props": {
+				"children": [],
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"name": "tvPersonalDetails",
+				"parent": "039e-f087-7d57-4188",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"html": "<span style=\"font-family: SFProText-Regular; font-size: 16px; white-space: pre-wrap; background-color: rgb(255, 255, 255);\">  Lorem ipsum dolor sit amet, consectetur \n  adipiscing elit. <span style=\"color: rgb(0, 161, 241); font-size: 17.3913px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255);\">Donec quis semper justo. In  \n  ultrices metus nec sodales consectetur.</span> \n  Aliquam erat volutpat. <span style=\"font-size: 16px; font-family: SFProText-Regular; background-color: rgb(255, 255, 255); text-decoration-color: rgb(0, 0, 0); text-decoration-line: underline;\">Suspendisse</span> potenti.</span><br>",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "2642-830c-d289-a289",
+			"props": {
+				"children": [
+					"f3b7-4a2c-8663-6a90",
+					"2933-c279-536a-372e",
+					"598e-10ba-8c9f-3c2c"
+				],
+				"name": "flexLayout_mtb",
+				"parent": "039e-f087-7d57-4188"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH"
+				},
+				"left": 0,
+				"top": 0
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "f3b7-4a2c-8663-6a90",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbFirstName",
+				"parent": "2642-830c-d289-a289",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"height": 48,
+				"left": 0,
+				"marginBottom": 16,
+				"top": 0,
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "2933-c279-536a-372e",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbLastName",
+				"parent": "2642-830c-d289-a289",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"marginBottom": 16,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-flexLayout",
+			"id": "598e-10ba-8c9f-3c2c",
+			"props": {
+				"children": [
+					"ab91-d5dd-a97a-81a5",
+					"b746-aba0-e2d7-e852"
+				],
+				"name": "flexLayout1",
+				"parent": "2642-830c-d289-a289"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"flexGrow": null,
+					"alignItems": "STRETCH"
+				},
+				"height": 64
+			}
+		},
+		{
+			"className": ".materialTextBox-wrapper",
+			"hiddenComponent": false,
+			"id": "ab91-d5dd-a97a-81a5",
+			"initialized": false,
+			"props": {
+				"children": [],
+				"name": "mtbBirthDate",
+				"parent": "598e-10ba-8c9f-3c2c",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__modules__",
+				"moduleName": "Materialtextbox",
+				"modulePath": "materialtextbox",
+				"type": "Materialtextbox",
+				"id": "8fb2-10a8-12e4-9b45"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flex": {
+					"positionType": 0
+				},
+				"flexProps": {
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-view",
+			"id": "b746-aba0-e2d7-e852",
+			"props": {
+				"children": [],
+				"name": "view1",
+				"parent": "598e-10ba-8c9f-3c2c",
+				"usePageVariable": true
+			},
+			"type": "View",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"height": 48,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"width": 1000
+			}
+		},
+		{
+			"className": ".sf-flexLayout .sf-flexLayout2",
+			"id": "4470-a8c0-bd13-dd68",
+			"props": {
+				"children": [
+					"6a05-a74f-49fd-468e"
+				],
+				"name": "flexLayout2",
+				"parent": "5b74-fa0f-f6b4-8c2b"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-button",
+			"id": "6a05-a74f-49fd-468e",
+			"props": {
+				"autoHeight": 25.735294117647058,
+				"children": [],
+				"name": "btnContinue",
+				"parent": "4470-a8c0-bd13-dd68",
+				"text": "Continue",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 25.735294117647058,
+				"left": 0,
+				"text": "Continue",
+				"top": 0,
+				"usePageVariable": true
+			}
+		}
+	]
+}

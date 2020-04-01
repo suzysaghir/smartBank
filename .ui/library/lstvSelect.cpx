@@ -7,7 +7,7 @@
 			"initialized": true,
 			"props": {
 				"children": [
-					"2eca-6c5c-1733-80b2",
+					"7548-6d21-c089-971e",
 					"8052-5b87-f652-ac25",
 					"2019-7d07-efaa-2363"
 				],
@@ -19,6 +19,8 @@
 			},
 			"type": "ListViewItem",
 			"userProps": {
+				"borderColor": "rgba( 242, 242, 242, 1 )",
+				"borderWidth": 1,
 				"flexProps": {
 					"flexDirection": "ROW"
 				},
@@ -30,12 +32,12 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "2eca-6c5c-1733-80b2",
+			"id": "7548-6d21-c089-971e",
 			"props": {
 				"children": [
-					"ebfb-f7c9-ca38-15e9"
+					"286b-5e72-b99e-942f"
 				],
-				"name": "flexLayout1",
+				"name": "flexLayout1_1",
 				"parent": "3179-64b7-16eb-e9b7",
 				"usePageVariable": true
 			},
@@ -44,6 +46,7 @@
 			},
 			"type": "FlexLayout",
 			"userProps": {
+				"borderColor": "rgba( 144, 19, 254, 1 )",
 				"borderRadius": 30,
 				"flexProps": {
 					"alignSelf": "CENTER",
@@ -59,13 +62,12 @@
 		},
 		{
 			"className": ".sf-imageView",
-			"id": "ebfb-f7c9-ca38-15e9",
+			"id": "286b-5e72-b99e-942f",
 			"props": {
-				"autoHeight": 219.6078431372549,
-				"autoWidth": 219.6078431372549,
+				"autoHeight": 218.57142857142858,
 				"children": [],
 				"name": "imgIcon",
-				"parent": "2eca-6c5c-1733-80b2",
+				"parent": "7548-6d21-c089-971e",
 				"usePageVariable": true
 			},
 			"source": {
@@ -73,16 +75,18 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 219.6078431372549,
-				"autoWidth": 219.6078431372549,
+				"autoHeight": 218.57142857142858,
+				"borderColor": "rgba( 248, 231, 28, 1 )",
+				"borderRadius": 30,
 				"flexProps": {
-					"alignSelf": "CENTER"
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
 				},
-				"height": null,
+				"height": 60,
 				"image": "app_icon.png",
 				"imageFillType": "ASPECTFILL",
 				"usePageVariable": true,
-				"width": null
+				"width": 60
 			}
 		},
 		{
@@ -123,8 +127,8 @@
 			"className": ".sf-textView",
 			"id": "2019-7d07-efaa-2363",
 			"props": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"children": [],
 				"html": "<br>",
 				"name": "tvsign",
@@ -137,8 +141,8 @@
 			},
 			"type": "TextView",
 			"userProps": {
-				"autoHeight": 19.29824561403509,
-				"autoWidth": 1.7543859649122808,
+				"autoHeight": 19.166666666666668,
+				"autoWidth": 1.6666666666666667,
 				"flexProps": {
 					"flexGrow": 1,
 					"alignSelf": "CENTER"

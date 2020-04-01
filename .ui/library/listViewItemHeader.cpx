@@ -1,0 +1,119 @@
+{
+	"components": [
+		{
+			"className": ".sf-listViewItem .sf-listViewItem-summary-header",
+			"id": "fe15-ac42-cd3e-29cf",
+			"initialized": true,
+			"props": {
+				"children": [
+					"f9e5-fdeb-03cc-f75e",
+					"c0e9-067d-2f09-8a6f",
+					"b923-4333-cbf2-45eb"
+				],
+				"name": "listViewItemHeader",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "ListViewItem",
+			"userProps": {
+				"backgroundColor": "rgba( 211, 246, 255, 1 )",
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"alignItems": "STRETCH"
+				},
+				"left": 25.79656862745098,
+				"top": 100.5438112745098
+			}
+		},
+		{
+			"className": ".sf-textView .sf-paymentLstv",
+			"id": "f9e5-fdeb-03cc-f75e",
+			"props": {
+				"autoHeight": 20,
+				"autoWidth": 61.53846153846153,
+				"children": [],
+				"html": "<span style=\"white-space: pre-wrap; background-color: rgba(255, 255, 255, 0);\">Today</span>",
+				"name": "tvDate",
+				"parent": "fe15-ac42-cd3e-29cf",
+				"text": "Today",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 20,
+				"autoWidth": 61.53846153846153,
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"flexGrow": 1
+				},
+				"height": null,
+				"html": "<span style=\"white-space: pre-wrap; background-color: rgba(255, 255, 255, 0);\">Today</span>",
+				"text": "Today",
+				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
+				"width": 100
+			}
+		},
+		{
+			"className": ".sf-textView",
+			"id": "c0e9-067d-2f09-8a6f",
+			"props": {
+				"autoHeight": 18.88888888888889,
+				"autoWidth": 2.2222222222222223,
+				"children": [],
+				"html": "-",
+				"name": "tvSign",
+				"parent": "fe15-ac42-cd3e-29cf",
+				"text": "-",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 18.88888888888889,
+				"autoWidth": 2.2222222222222223,
+				"flexProps": {
+					"alignSelf": "CENTER",
+					"flexGrow": 1
+				},
+				"height": 71.11111061245788,
+				"html": "-",
+				"text": "-",
+				"textAlignment": "MIDRIGHT",
+				"textColor": "rgba( 112, 200, 224, 1 )",
+				"usePageVariable": true,
+				"width": 272.88854262408086
+			}
+		},
+		{
+			"className": ".sf-textView .sf-paymentLstv .sf-payment",
+			"hiddenComponent": false,
+			"id": "b923-4333-cbf2-45eb",
+			"props": {
+				"autoHeight": 18.867924528301884,
+				"autoWidth": 1.8867924528301885,
+				"children": [],
+				"html": "<br>",
+				"name": "tvAmount",
+				"parent": "fe15-ac42-cd3e-29cf",
+				"text": "\n",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"autoHeight": 18.867924528301884,
+				"autoWidth": 1.8867924528301885,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				},
+				"height": null,
+				"html": "<br>",
+				"text": "\n",
+				"textAlignment": "MIDLEFT",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

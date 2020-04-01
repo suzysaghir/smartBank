@@ -33,7 +33,7 @@
             "paddingBottom": 4,
             "flexProps": {
                 "alignItems": "FLEX_END",
-                "justifyContent": "FLEX_END",
+                "justifyContent": "FLEX_START",
                 "flexGrow": 1
             },
             "+Device:Device.os === \"Android\"": {
